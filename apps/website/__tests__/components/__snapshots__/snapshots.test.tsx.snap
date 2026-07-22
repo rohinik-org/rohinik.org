@@ -1,0 +1,423 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`component snapshots > Button primary matches snapshot 1`] = `
+<div>
+  <button
+    class="font-mono uppercase tracking-widest transition-colors inline-flex items-center justify-center cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed bg-primary text-on-primary border border-primary hover:bg-primary-container px-5 py-2.5 text-[12px]"
+  >
+    READ THE SPEC
+  </button>
+</div>
+`;
+
+exports[`component snapshots > Card with title matches snapshot 1`] = `
+<div>
+  <div
+    class="border border-outline-muted bg-surface-container-lowest transition-colors hover:border-primary"
+  >
+    <div
+      class="bg-surface-container-high border-b border-outline-muted px-4 py-2 flex items-center justify-between"
+    >
+      <span
+        class="font-mono uppercase tracking-widest text-on-surface-variant text-[11px]"
+      >
+        AFS-0001
+      </span>
+    </div>
+    <div
+      class="p-4"
+    >
+      Specification content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`component snapshots > Footer matches snapshot 1`] = `
+<div>
+  <footer
+    class="border-t border-outline-variant bg-surface-container-low"
+  >
+    <div
+      class="max-w-site mx-auto px-[var(--spacing-margin-edge)] py-16"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12"
+      >
+        <div>
+          <span
+            class="font-mono text-label-caps uppercase tracking-[0.15em] text-on-surface block mb-4"
+          >
+            Rohinik Foundation
+          </span>
+          <p
+            class="text-body-md text-on-surface-variant font-body leading-relaxed"
+          >
+            Open intelligent computing platform. Memory First. Capability First. LLM Last.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant mb-4"
+          >
+            Foundation
+          </h3>
+          <ul
+            class="space-y-2"
+          >
+            <li>
+              <a
+                class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
+                href="/about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
+                href="/governance"
+              >
+                Governance
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
+                href="/community"
+              >
+                Community
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3
+            class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant mb-4"
+          >
+            Standards
+          </h3>
+          <ul
+            class="space-y-2"
+          >
+            <li>
+              <a
+                class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
+                href="/specifications"
+              >
+                Specifications
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
+                href="/rs-1"
+              >
+                RS-1
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
+                href="/architecture"
+              >
+                Architecture
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3
+            class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant mb-4"
+          >
+            Resources
+          </h3>
+          <ul
+            class="space-y-2"
+          >
+            <li>
+              <a
+                class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
+                href="/documentation"
+              >
+                Documentation
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
+                href="/releases"
+              >
+                Releases
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
+                href="/ecosystem"
+              >
+                Ecosystem
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-outline-variant pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4"
+      >
+        <p
+          aria-label="© 2026–present Rohinik Foundation. All rights reserved."
+          class="font-mono text-label-caps text-on-surface-variant uppercase tracking-widest"
+        >
+          © 
+          <span>
+            2026
+          </span>
+          –present. All rights reserved.
+        </p>
+        <div
+          class="flex items-center gap-6"
+        >
+          <a
+            aria-label="GitHub"
+            class="font-mono text-label-caps text-on-surface-variant hover:text-on-surface uppercase tracking-widest transition-colors"
+            href="https://github.com/rohinik"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`component snapshots > Timeline matches snapshot 1`] = `
+<div>
+  <ol
+    class="relative"
+    role="list"
+  >
+    <li
+      class="flex gap-4 pb-8 last:pb-0 relative"
+    >
+      <div
+        aria-hidden="true"
+        class="absolute left-[7px] top-4 bottom-0 w-px bg-outline-variant"
+      />
+      <div
+        class="relative z-10 mt-1.5 shrink-0"
+      >
+        <div
+          aria-hidden="true"
+          class="w-2 h-2 bg-secondary"
+        />
+      </div>
+      <div
+        class="flex-1 min-w-0"
+      >
+        <div
+          class="flex items-center gap-3 mb-1"
+        >
+          <span
+            class="font-mono text-[14px] text-on-surface font-medium"
+          >
+            Foundation
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="flex gap-4 pb-8 last:pb-0 relative"
+    >
+      <div
+        aria-hidden="true"
+        class="absolute left-[7px] top-4 bottom-0 w-px bg-outline-variant"
+      />
+      <div
+        class="relative z-10 mt-1.5 shrink-0"
+      >
+        <div
+          aria-hidden="true"
+          class="w-2 h-2 bg-primary"
+        />
+      </div>
+      <div
+        class="flex-1 min-w-0"
+      >
+        <div
+          class="flex items-center gap-3 mb-1"
+        >
+          <span
+            class="font-mono text-[14px] text-on-surface font-medium"
+          >
+            Kernel
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      class="flex gap-4 pb-8 last:pb-0 relative"
+    >
+      <div
+        class="relative z-10 mt-1.5 shrink-0"
+      >
+        <div
+          aria-hidden="true"
+          class="w-2 h-2 bg-outline-variant"
+        />
+      </div>
+      <div
+        class="flex-1 min-w-0"
+      >
+        <div
+          class="flex items-center gap-3 mb-1"
+        >
+          <span
+            class="font-mono text-[14px] text-on-surface font-medium"
+          >
+            Runtime
+          </span>
+        </div>
+      </div>
+    </li>
+  </ol>
+</div>
+`;
+
+exports[`component snapshots > TopNav matches snapshot 1`] = `
+<div>
+  <header
+    class="fixed top-0 w-full z-50 bg-white/90 dark:bg-inverse-surface/90 backdrop-blur-xl border-b border-outline-variant"
+  >
+    <a
+      class="skip-to-content"
+      href="#main-content"
+    >
+      Skip to main content
+    </a>
+    <div
+      class="max-w-site mx-auto px-[var(--spacing-margin-edge)] h-16 flex items-center justify-between"
+    >
+      <a
+        class="flex items-center gap-3 shrink-0"
+        href="/"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="24"
+          viewBox="0 0 128 128"
+          width="24"
+        >
+          <path
+            d="M64,96 L108,74 L64,52 L20,74 Z"
+            fill="var(--logo-base)"
+            fill-opacity="0.4"
+          />
+          <path
+            d="M64,74 L108,52 L64,30 L20,52 Z"
+            fill="var(--logo-base)"
+            fill-opacity="0.7"
+          />
+          <path
+            d="M64,52 L86,41 L64,30 L42,41 Z"
+            fill="var(--logo-accent)"
+          />
+          <line
+            stroke="var(--logo-base)"
+            stroke-dasharray="4 4"
+            stroke-width="6"
+            x1="64"
+            x2="64"
+            y1="30"
+            y2="96"
+          />
+        </svg>
+        <span
+          class="font-mono text-label-caps uppercase tracking-[0.15em] text-on-surface"
+        >
+          ROHINIK
+        </span>
+      </a>
+      <nav
+        aria-label="Main navigation"
+        class="hidden md:flex items-center gap-6"
+      >
+        <a
+          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          href="/"
+        >
+          Home
+        </a>
+        <a
+          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          href="/architecture"
+        >
+          Architecture
+        </a>
+        <a
+          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          href="/specifications"
+        >
+          Specifications
+        </a>
+        <a
+          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          href="/governance"
+        >
+          Governance
+        </a>
+        <a
+          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          href="/rs-1"
+        >
+          RS-1
+        </a>
+        <a
+          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          href="/ecosystem"
+        >
+          Ecosystem
+        </a>
+        <a
+          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          href="/documentation"
+        >
+          Documentation
+        </a>
+        <a
+          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          href="/releases"
+        >
+          Releases
+        </a>
+        <a
+          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          href="/community"
+        >
+          Community
+        </a>
+      </nav>
+      <div
+        class="flex items-center gap-3"
+      >
+        <button
+          aria-label="Theme: LIGHT. Click to switch to DARK"
+          class="font-mono uppercase tracking-widest transition-colors px-2 py-1 border border-transparent hover:border-outline-variant text-on-surface-variant hover:text-on-surface"
+        >
+          LIGHT
+        </button>
+        <button
+          aria-label="Open navigation menu"
+          class="md:hidden font-mono text-label-caps uppercase border border-outline-variant px-3 py-1 text-on-surface-variant hover:text-on-surface transition-colors"
+        >
+          MENU
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+`;
