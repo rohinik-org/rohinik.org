@@ -4,7 +4,7 @@ import { ThemeToggle } from './ThemeToggle';
 
 export function TopNav() {
   return (
-    <header className="fixed top-0 w-full z-50 bg-white/90 dark:bg-inverse-surface/90 backdrop-blur-xl border-b border-outline-variant">
+    <header className="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant dark:border-outline">
       <a href="#main-content" className="skip-to-content">
         Skip to main content
       </a>

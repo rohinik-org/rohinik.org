@@ -37,7 +37,7 @@ export const FOOTER_SECTIONS: readonly FooterSection[] = [
 ] as const;
 
 export const FOOTER_EXTERNAL_LINKS: readonly FooterLink[] = [
-  { label: 'GitHub', href: 'https://github.com/rohinik', external: true },
+  { label: 'GitHub', href: 'https://github.com/rohinik-org/', external: true },
 ] as const;
 
 export const FOUNDATION_NAME = 'Rohinik Foundation' as const;

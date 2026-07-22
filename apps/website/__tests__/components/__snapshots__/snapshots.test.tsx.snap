@@ -181,7 +181,7 @@ exports[`component snapshots > Footer matches snapshot 1`] = `
           <a
             aria-label="GitHub"
             class="font-mono text-label-caps text-on-surface-variant hover:text-on-surface uppercase tracking-widest transition-colors"
-            href="https://github.com/rohinik"
+            href="https://github.com/rohinik-org/"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -290,7 +290,7 @@ exports[`component snapshots > Timeline matches snapshot 1`] = `
 exports[`component snapshots > TopNav matches snapshot 1`] = `
 <div>
   <header
-    class="fixed top-0 w-full z-50 bg-white/90 dark:bg-inverse-surface/90 backdrop-blur-xl border-b border-outline-variant"
+    class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant dark:border-outline"
   >
     <a
       class="skip-to-content"
