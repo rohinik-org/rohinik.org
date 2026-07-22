@@ -1,0 +1,14 @@
+{
+  "name": "@rohinik/search",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Search index generator and client — used by website and future CLI",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
