@@ -1,0 +1,298 @@
+- generic [active] [ref=f6e1]:
+    - banner [ref=f6e2]:
+        - link "Skip to main content" [ref=f6e3] [cursor=pointer]:
+            - /url: '#main-content'
+        - generic [ref=f6e4]:
+            - link "ROHINIK" [ref=f6e5] [cursor=pointer]:
+                - /url: /
+            - navigation "Main navigation" [ref=f6e11]:
+                - link "Home" [ref=f6e12] [cursor=pointer]:
+                    - /url: /
+                - link "Architecture" [ref=f6e13] [cursor=pointer]:
+                    - /url: /architecture
+                - link "Specifications" [ref=f6e14] [cursor=pointer]:
+                    - /url: /specifications
+                - link "Governance" [ref=f6e15] [cursor=pointer]:
+                    - /url: /governance
+                - link "RS-1" [ref=f6e16] [cursor=pointer]:
+                    - /url: /rs-1
+                - link "Ecosystem" [ref=f6e17] [cursor=pointer]:
+                    - /url: /ecosystem
+                - link "Documentation" [ref=f6e18] [cursor=pointer]:
+                    - /url: /documentation
+                - link "Releases" [ref=f6e19] [cursor=pointer]:
+                    - /url: /releases
+                - link "Community" [ref=f6e20] [cursor=pointer]:
+                    - /url: /community
+            - 'button "Theme: SYSTEM. Click to switch to LIGHT" [ref=f6e22]': LIGHT
+    - main [ref=f6e23]:
+        - region [ref=f6e24]:
+            - generic [ref=f6e26]:
+                - generic [ref=f6e27]:
+                    - generic [ref=f6e28]: ROHINIK FOUNDATION
+                    - heading "The Intelligent Computing Platform" [level=1] [ref=f6e29]
+                    - paragraph [ref=f6e30]: An open computing architecture built on deterministic memory, composable capabilities, and specification-driven execution. Not a wrapper. Not a framework. A platform.
+                    - generic [ref=f6e31]:
+                        - link "READ THE ARCHITECTURE" [ref=f6e32] [cursor=pointer]:
+                            - /url: /architecture
+                        - link "BROWSE SPECIFICATIONS" [ref=f6e33] [cursor=pointer]:
+                            - /url: /specifications
+                    - list "Rohinik principles" [ref=f6e34]:
+                        - listitem [ref=f6e35]: Memory First
+                        - listitem [ref=f6e36]: Capability First
+                        - listitem [ref=f6e37]: LLM Last
+                - generic [ref=f6e38]:
+                    - generic [ref=f6e39]: Architecture Layers
+                    - list [ref=f6e40]:
+                        - listitem [ref=f6e41]:
+                            - generic [ref=f6e42]: '1'
+                            - generic [ref=f6e43]: Shell
+                        - listitem [ref=f6e44]:
+                            - generic [ref=f6e45]: '2'
+                            - generic [ref=f6e46]: Compiler
+                        - listitem [ref=f6e47]:
+                            - generic [ref=f6e48]: '3'
+                            - generic [ref=f6e49]: Memory
+                        - listitem [ref=f6e50]:
+                            - generic [ref=f6e51]: '4'
+                            - generic [ref=f6e52]: Intelligence
+                        - listitem [ref=f6e53]:
+                            - generic [ref=f6e54]: '5'
+                            - generic [ref=f6e55]: Runtime
+                        - listitem [ref=f6e56]:
+                            - generic [ref=f6e57]: '6'
+                            - generic [ref=f6e58]: Kernel
+                        - listitem [ref=f6e59]:
+                            - generic [ref=f6e60]: '7'
+                            - generic [ref=f6e61]: Foundation
+        - region [ref=f6e62]:
+            - generic [ref=f6e63]:
+                - heading "Why Rohinik Exists" [level=2] [ref=f6e64]
+                - generic [ref=f6e65]:
+                    - article [ref=f6e66]:
+                        - generic [ref=f6e67]: MEMORY
+                        - heading "Deterministic, not probabilistic" [level=3] [ref=f6e68]
+                        - paragraph [ref=f6e69]: Every agent state, every capability invocation, every execution trace — written to a structured memory graph. Recall is exact. Audit is complete. LLMs read memory; they do not own it.
+                    - article [ref=f6e70]:
+                        - generic [ref=f6e71]: CAPABILITIES
+                        - heading "Composed, not prompted" [level=3] [ref=f6e72]
+                        - paragraph [ref=f6e73]: Capabilities are registered, typed, versioned, and governed. An agent selects from a registry — not from inference. The capability boundary is the system boundary.
+                    - article [ref=f6e74]:
+                        - generic [ref=f6e75]: MODELS
+                        - heading "Consumed, not trusted" [level=3] [ref=f6e76]
+                        - paragraph [ref=f6e77]: Language models are inference endpoints. They generate; they do not decide. Every model output is validated against a contract before it touches state. The model is the last call, not the first.
+        - region [ref=f6e78]:
+            - generic [ref=f6e79]:
+                - generic [ref=f6e80]:
+                    - heading "Seven-Layer Architecture" [level=2] [ref=f6e81]
+                    - paragraph [ref=f6e82]: From Foundation to Shell — each layer has one job.
+                - list "Architecture layers" [ref=f6e83]:
+                    - listitem [ref=f6e84]:
+                        - link "01 Shell User-facing interface layer. CLI, SDK, web. Translates intent into platform requests." [ref=f6e85] [cursor=pointer]:
+                            - /url: /architecture#shell
+                            - generic [ref=f6e86]: '01'
+                            - generic [ref=f6e87]:
+                                - generic [ref=f6e88]: Shell
+                                - paragraph [ref=f6e89]: User-facing interface layer. CLI, SDK, web. Translates intent into platform requests.
+                            - generic [ref=f6e90]: →
+                    - listitem [ref=f6e91]:
+                        - link "02 Compiler Transforms natural language intent into typed capability graphs. Deterministic, auditable, no guessing." [ref=f6e92] [cursor=pointer]:
+                            - /url: /architecture#compiler
+                            - generic [ref=f6e93]: '02'
+                            - generic [ref=f6e94]:
+                                - generic [ref=f6e95]: Compiler
+                                - paragraph [ref=f6e96]: Transforms natural language intent into typed capability graphs. Deterministic, auditable, no guessing.
+                            - generic [ref=f6e97]: →
+                    - listitem [ref=f6e98]:
+                        - link "03 Memory Structured memory graph. Every agent state, capability trace, and execution event is a first-class record." [ref=f6e99] [cursor=pointer]:
+                            - /url: /architecture#memory
+                            - generic [ref=f6e100]: '03'
+                            - generic [ref=f6e101]:
+                                - generic [ref=f6e102]: Memory
+                                - paragraph [ref=f6e103]: Structured memory graph. Every agent state, capability trace, and execution event is a first-class record.
+                            - generic [ref=f6e104]: →
+                    - listitem [ref=f6e105]:
+                        - link "04 Intelligence The boundary where language models are consumed. Models read context; they do not write state." [ref=f6e106] [cursor=pointer]:
+                            - /url: /architecture#intelligence
+                            - generic [ref=f6e107]: '04'
+                            - generic [ref=f6e108]:
+                                - generic [ref=f6e109]: Intelligence
+                                - paragraph [ref=f6e110]: The boundary where language models are consumed. Models read context; they do not write state.
+                            - generic [ref=f6e111]: →
+                    - listitem [ref=f6e112]:
+                        - link "05 Runtime Executes capability graphs. Manages capability lifecycle, concurrency, and error boundaries." [ref=f6e113] [cursor=pointer]:
+                            - /url: /architecture#runtime
+                            - generic [ref=f6e114]: '05'
+                            - generic [ref=f6e115]:
+                                - generic [ref=f6e116]: Runtime
+                                - paragraph [ref=f6e117]: Executes capability graphs. Manages capability lifecycle, concurrency, and error boundaries.
+                            - generic [ref=f6e118]: →
+                    - listitem [ref=f6e119]:
+                        - 'link "06 Kernel Core platform services: scheduling, resource allocation, lifecycle management, policy enforcement." [ref=f6e120] [cursor=pointer]':
+                            - /url: /architecture#kernel
+                            - generic [ref=f6e121]: '06'
+                            - generic [ref=f6e122]:
+                                - generic [ref=f6e123]: Kernel
+                                - paragraph [ref=f6e124]: 'Core platform services: scheduling, resource allocation, lifecycle management, policy enforcement.'
+                            - generic [ref=f6e125]: →
+                    - listitem [ref=f6e126]:
+                        - link "07 Foundation Specification governance, standards registry, and the normative contracts all layers implement against." [ref=f6e127] [cursor=pointer]:
+                            - /url: /architecture#foundation
+                            - generic [ref=f6e128]: '07'
+                            - generic [ref=f6e129]:
+                                - generic [ref=f6e130]: Foundation
+                                - paragraph [ref=f6e131]: Specification governance, standards registry, and the normative contracts all layers implement against.
+                            - generic [ref=f6e132]: →
+        - region [ref=f6e133]:
+            - generic [ref=f6e134]:
+                - heading "Core Principles" [level=2] [ref=f6e135]
+                - generic [ref=f6e136]:
+                    - generic [ref=f6e137]:
+                        - generic [ref=f6e138]: '01'
+                        - generic [ref=f6e139]: Specification-Driven
+                        - paragraph [ref=f6e140]: Every interface, every contract, every capability is defined by a specification before it is implemented. Code is an artifact of the spec, not the other way around.
+                    - generic [ref=f6e141]:
+                        - generic [ref=f6e142]: '02'
+                        - generic [ref=f6e143]: Memory First
+                        - paragraph [ref=f6e144]: State lives in structured memory, not in model context windows. Memory is queryable, versionable, and owned by the platform — not by any model.
+                    - generic [ref=f6e145]:
+                        - generic [ref=f6e146]: '03'
+                        - generic [ref=f6e147]: Capability Composition
+                        - paragraph [ref=f6e148]: Behaviour is assembled from versioned, typed capabilities in a registry. Composition is explicit. There is no hidden prompt engineering.
+                    - generic [ref=f6e149]:
+                        - generic [ref=f6e150]: '04'
+                        - generic [ref=f6e151]: Governed Execution
+                        - paragraph [ref=f6e152]: Every execution passes through a governance layer before it reaches state. Policies are declared, not ad-hoc. Every decision is traceable.
+        - region [ref=f6e153]:
+            - generic [ref=f6e154]:
+                - generic [ref=f6e155]:
+                    - heading "Execution Lifecycle" [level=2] [ref=f6e156]
+                    - paragraph [ref=f6e157]: Seven deterministic stages. Every invocation follows this path.
+                - list "Rohinik execution flow" [ref=f6e158]:
+                    - listitem [ref=f6e159]:
+                        - generic [ref=f6e160]: '1'
+                        - generic [ref=f6e161]: Intent
+                        - paragraph [ref=f6e162]: User or agent expresses an intent. Structured, not free-form.
+                    - listitem [ref=f6e163]:
+                        - generic [ref=f6e164]: '2'
+                        - generic [ref=f6e165]: Context
+                        - paragraph [ref=f6e166]: Memory graph is queried. Relevant state is assembled.
+                    - listitem [ref=f6e167]:
+                        - generic [ref=f6e168]: '3'
+                        - generic [ref=f6e169]: Compile
+                        - paragraph [ref=f6e170]: Intent is compiled into a typed capability graph.
+                    - listitem [ref=f6e171]:
+                        - generic [ref=f6e172]: '4'
+                        - generic [ref=f6e173]: Govern
+                        - paragraph [ref=f6e174]: Governance layer validates the graph against policies.
+                    - listitem [ref=f6e175]:
+                        - generic [ref=f6e176]: '5'
+                        - generic [ref=f6e177]: Execute
+                        - paragraph [ref=f6e178]: Runtime executes the capability graph.
+                    - listitem [ref=f6e179]:
+                        - generic [ref=f6e180]: '6'
+                        - generic [ref=f6e181]: Observe
+                        - paragraph [ref=f6e182]: Every action is traced and written to the observation log.
+                    - listitem [ref=f6e183]:
+                        - generic [ref=f6e184]: '7'
+                        - generic [ref=f6e185]: Remember
+                        - paragraph [ref=f6e186]: Execution results are committed to the memory graph.
+        - region [ref=f6e187]:
+            - generic [ref=f6e188]:
+                - generic [ref=f6e189]:
+                    - heading "Specification Registry" [level=2] [ref=f6e190]
+                    - paragraph [ref=f6e191]: Rohinik is specified before it is built.
+                - generic [ref=f6e192]:
+                    - link "Specification Registry All platform specifications, versioned, classified, and governed." [ref=f6e193] [cursor=pointer]:
+                        - /url: /specifications
+                        - generic [ref=f6e194]:
+                            - generic [ref=f6e195]: Specification Registry
+                            - paragraph [ref=f6e196]: All platform specifications, versioned, classified, and governed.
+                        - generic [ref=f6e197]: →
+                    - link "RS-1 — Runtime Standard 1 The normative runtime specification for the first Rohinik generation." [ref=f6e198] [cursor=pointer]:
+                        - /url: /rs-1
+                        - generic [ref=f6e199]:
+                            - generic [ref=f6e200]: RS-1 — Runtime Standard 1
+                            - paragraph [ref=f6e201]: The normative runtime specification for the first Rohinik generation.
+                        - generic [ref=f6e202]: →
+                    - link "Governance Model How specifications are proposed, reviewed, ratified, and retired." [ref=f6e203] [cursor=pointer]:
+                        - /url: /governance
+                        - generic [ref=f6e204]:
+                            - generic [ref=f6e205]: Governance Model
+                            - paragraph [ref=f6e206]: How specifications are proposed, reviewed, ratified, and retired.
+                        - generic [ref=f6e207]: →
+        - region [ref=f6e208]:
+            - generic [ref=f6e209]:
+                - heading "Open Governance" [level=2] [ref=f6e210]
+                - paragraph [ref=f6e211]: Rohinik is governed by its specification process. Every decision is made in public, recorded in an ADR, and traceable to a ratified specification. No black boxes.
+                - link "READ GOVERNANCE MODEL →" [ref=f6e212] [cursor=pointer]:
+                    - /url: /governance
+        - region [ref=f6e213]:
+            - generic [ref=f6e214]:
+                - heading "Build on Rohinik" [level=2] [ref=f6e215]
+                - generic [ref=f6e216]:
+                    - link "Documentation Platform guides, API references, and integration tutorials." [ref=f6e217] [cursor=pointer]:
+                        - /url: /documentation
+                        - generic [ref=f6e218]:
+                            - generic [ref=f6e219]: Documentation
+                            - paragraph [ref=f6e220]: Platform guides, API references, and integration tutorials.
+                        - generic [ref=f6e221]: →
+                    - link "Ecosystem Capability registry, extensions, packages, skills, and memories." [ref=f6e222] [cursor=pointer]:
+                        - /url: /ecosystem
+                        - generic [ref=f6e223]:
+                            - generic [ref=f6e224]: Ecosystem
+                            - paragraph [ref=f6e225]: Capability registry, extensions, packages, skills, and memories.
+                        - generic [ref=f6e226]: →
+                    - link "Community Contributors, working groups, SIGs, and public discussion." [ref=f6e227] [cursor=pointer]:
+                        - /url: /community
+                        - generic [ref=f6e228]:
+                            - generic [ref=f6e229]: Community
+                            - paragraph [ref=f6e230]: Contributors, working groups, SIGs, and public discussion.
+                        - generic [ref=f6e231]: →
+    - contentinfo [ref=f6e232]:
+        - generic [ref=f6e233]:
+            - generic [ref=f6e234]:
+                - generic [ref=f6e235]:
+                    - generic [ref=f6e236]: Rohinik Foundation
+                    - paragraph [ref=f6e237]: Open intelligent computing platform. Memory First. Capability First. LLM Last.
+                - generic [ref=f6e238]:
+                    - heading "Foundation" [level=3] [ref=f6e239]
+                    - list [ref=f6e240]:
+                        - listitem [ref=f6e241]:
+                            - link "About" [ref=f6e242] [cursor=pointer]:
+                                - /url: /about
+                        - listitem [ref=f6e243]:
+                            - link "Governance" [ref=f6e244] [cursor=pointer]:
+                                - /url: /governance
+                        - listitem [ref=f6e245]:
+                            - link "Community" [ref=f6e246] [cursor=pointer]:
+                                - /url: /community
+                - generic [ref=f6e247]:
+                    - heading "Standards" [level=3] [ref=f6e248]
+                    - list [ref=f6e249]:
+                        - listitem [ref=f6e250]:
+                            - link "Specifications" [ref=f6e251] [cursor=pointer]:
+                                - /url: /specifications
+                        - listitem [ref=f6e252]:
+                            - link "RS-1" [ref=f6e253] [cursor=pointer]:
+                                - /url: /rs-1
+                        - listitem [ref=f6e254]:
+                            - link "Architecture" [ref=f6e255] [cursor=pointer]:
+                                - /url: /architecture
+                - generic [ref=f6e256]:
+                    - heading "Resources" [level=3] [ref=f6e257]
+                    - list [ref=f6e258]:
+                        - listitem [ref=f6e259]:
+                            - link "Documentation" [ref=f6e260] [cursor=pointer]:
+                                - /url: /documentation
+                        - listitem [ref=f6e261]:
+                            - link "Releases" [ref=f6e262] [cursor=pointer]:
+                                - /url: /releases
+                        - listitem [ref=f6e263]:
+                            - link "Ecosystem" [ref=f6e264] [cursor=pointer]:
+                                - /url: /ecosystem
+            - generic [ref=f6e265]:
+                - paragraph [ref=f6e266]: © 2026–Present. All rights reserved.
+                - link "GitHub" [ref=f6e268] [cursor=pointer]:
+                    - /url: https://github.com/rohinik-org/
+    - alert [ref=f6e269]

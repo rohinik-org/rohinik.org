@@ -1,0 +1,79 @@
+- generic [active] [ref=f18e1]:
+    - banner [ref=f18e2]:
+        - link "Skip to main content" [ref=f18e3] [cursor=pointer]:
+            - /url: '#main-content'
+        - generic [ref=f18e4]:
+            - link "ROHINIK" [ref=f18e5] [cursor=pointer]:
+                - /url: /
+            - navigation "Main navigation" [ref=f18e11]:
+                - link "Home" [ref=f18e12] [cursor=pointer]:
+                    - /url: /
+                - link "Architecture" [ref=f18e13] [cursor=pointer]:
+                    - /url: /architecture
+                - link "Specifications" [ref=f18e14] [cursor=pointer]:
+                    - /url: /specifications
+                - link "Governance" [ref=f18e15] [cursor=pointer]:
+                    - /url: /governance
+                - link "RS-1" [ref=f18e16] [cursor=pointer]:
+                    - /url: /rs-1
+                - link "Ecosystem" [ref=f18e17] [cursor=pointer]:
+                    - /url: /ecosystem
+                - link "Documentation" [ref=f18e18] [cursor=pointer]:
+                    - /url: /documentation
+                - link "Releases" [ref=f18e19] [cursor=pointer]:
+                    - /url: /releases
+                - link "Community" [ref=f18e20] [cursor=pointer]:
+                    - /url: /community
+            - 'button "Theme: SYSTEM. Click to switch to LIGHT" [ref=f18e22]': DARK
+    - main [ref=f18e23]:
+        - generic [ref=f18e28]:
+            - generic [ref=f18e29]: ARCHITECTURE / RS-1
+            - heading "Layered Architecture" [level=1] [ref=f18e30]
+            - paragraph [ref=f18e31]: Foundation, Kernel, Runtime, Intelligence, Memory, Compiler, Shell.
+    - contentinfo [ref=f18e32]:
+        - generic [ref=f18e33]:
+            - generic [ref=f18e34]:
+                - generic [ref=f18e35]:
+                    - generic [ref=f18e36]: Rohinik Foundation
+                    - paragraph [ref=f18e37]: Open intelligent computing platform. Memory First. Capability First. LLM Last.
+                - generic [ref=f18e38]:
+                    - heading "Foundation" [level=3] [ref=f18e39]
+                    - list [ref=f18e40]:
+                        - listitem [ref=f18e41]:
+                            - link "About" [ref=f18e42] [cursor=pointer]:
+                                - /url: /about
+                        - listitem [ref=f18e43]:
+                            - link "Governance" [ref=f18e44] [cursor=pointer]:
+                                - /url: /governance
+                        - listitem [ref=f18e45]:
+                            - link "Community" [ref=f18e46] [cursor=pointer]:
+                                - /url: /community
+                - generic [ref=f18e47]:
+                    - heading "Standards" [level=3] [ref=f18e48]
+                    - list [ref=f18e49]:
+                        - listitem [ref=f18e50]:
+                            - link "Specifications" [ref=f18e51] [cursor=pointer]:
+                                - /url: /specifications
+                        - listitem [ref=f18e52]:
+                            - link "RS-1" [ref=f18e53] [cursor=pointer]:
+                                - /url: /rs-1
+                        - listitem [ref=f18e54]:
+                            - link "Architecture" [ref=f18e55] [cursor=pointer]:
+                                - /url: /architecture
+                - generic [ref=f18e56]:
+                    - heading "Resources" [level=3] [ref=f18e57]
+                    - list [ref=f18e58]:
+                        - listitem [ref=f18e59]:
+                            - link "Documentation" [ref=f18e60] [cursor=pointer]:
+                                - /url: /documentation
+                        - listitem [ref=f18e61]:
+                            - link "Releases" [ref=f18e62] [cursor=pointer]:
+                                - /url: /releases
+                        - listitem [ref=f18e63]:
+                            - link "Ecosystem" [ref=f18e64] [cursor=pointer]:
+                                - /url: /ecosystem
+            - generic [ref=f18e65]:
+                - paragraph [ref=f18e66]: © 2026–present. All rights reserved.
+                - link "GitHub" [ref=f18e68] [cursor=pointer]:
+                    - /url: https://github.com/rohinik
+    - alert [ref=f18e69]
