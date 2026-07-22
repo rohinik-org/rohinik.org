@@ -1,0 +1,11 @@
+{
+  "name": "Rohinik Foundation",
+  "short_name": "Rohinik",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f9fb",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}

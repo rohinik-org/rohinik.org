@@ -9,7 +9,9 @@ function block(selector: string): string {
   const escaped = selector.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const match = css.match(new RegExp(`${escaped}\\s*\\{([\\s\\S]*?)\\}`, 'm'));
   if (!match) throw new Error(`CSS block not found: ${selector}`);
-  return match[1];
+  // ponytail: match[1] is always defined when match has 2+ groups; TS can't narrow this
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  return match[1]!;
 }
 
 function declaration(source: string, name: string): string | null {
