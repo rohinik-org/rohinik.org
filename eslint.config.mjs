@@ -7,6 +7,7 @@ export default tseslint.config(
       '**/.next/**',
       '**/dist/**',
       '**/.generated/**',
+      '**/next-env.d.ts',
     ],
   },
   ...tseslint.configs.strictTypeChecked,

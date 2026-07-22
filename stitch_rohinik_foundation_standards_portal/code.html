@@ -1,0 +1,515 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        try {
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        "colors": {
+                            "surface-container-lowest": "#ffffff",
+                            "on-surface-variant": "#4c4546",
+                            "tertiary": "#000000",
+                            "on-surface": "#191c1e",
+                            "surface-dim": "#d8dadc",
+                            "on-surface-subtle": "#45464d",
+                            "error-container": "#ffdad6",
+                            "surface-variant": "#e0e3e5",
+                            "primary-fixed-dim": "#c6c6c6",
+                            "primary": "#000000",
+                            "surface-bright": "#f7f9fb",
+                            "error": "#ba1a1a",
+                            "on-secondary-fixed": "#001e2c",
+                            "on-primary-fixed-variant": "#474747",
+                            "tertiary-fixed-dim": "#b7c7e2",
+                            "inverse-surface": "#2d3133",
+                            "surface-container": "#eceef0",
+                            "on-error": "#ffffff",
+                            "inverse-primary": "#c6c6c6",
+                            "tertiary-fixed": "#d3e3ff",
+                            "surface-container-highest": "#e0e3e5",
+                            "surface-tint": "#5e5e5e",
+                            "secondary-fixed": "#c3e8ff",
+                            "surface": "#f7f9fb",
+                            "surface-container-high": "#e6e8ea",
+                            "secondary": "#00668a",
+                            "on-primary": "#ffffff",
+                            "on-secondary-fixed-variant": "#004c68",
+                            "outline-muted": "#76777d33",
+                            "on-tertiary-fixed-variant": "#38485e",
+                            "on-tertiary": "#ffffff",
+                            "on-secondary": "#ffffff",
+                            "on-primary-container": "#848484",
+                            "secondary-fixed-dim": "#87cff8",
+                            "surface-container-low": "#f2f4f6",
+                            "inverse-on-surface": "#eff1f3",
+                            "background": "#f7f9fb",
+                            "outline": "#7e7576",
+                            "tertiary-container": "#0b1c30",
+                            "on-secondary-container": "#005d7e",
+                            "primary-fixed": "#e2e2e2",
+                            "on-background": "#191c1e",
+                            "outline-variant": "#cfc4c5",
+                            "secondary-container": "#8dd5fe",
+                            "on-error-container": "#93000a",
+                            "primary-container": "#1b1b1b",
+                            "on-tertiary-fixed": "#0b1c30",
+                            "on-primary-fixed": "#1b1b1b",
+                            "on-tertiary-container": "#75859d"
+                        },
+                        "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                        },
+                        "spacing": {
+                            "section-gap-desktop": "96px",
+                            "section-gap-mobile": "64px",
+                            "max-width": "1280px",
+                            "margin-edge": "40px",
+                            "unit": "4px",
+                            "gutter": "24px"
+                        },
+                        "fontFamily": {
+                            "headline-lg-mobile": ["Hanken Grotesk"],
+                            "headline-lg": ["Hanken Grotesk"],
+                            "body-md": ["Inter"],
+                            "technical-code": ["JetBrains Mono"],
+                            "headline-xl": ["Hanken Grotesk"],
+                            "label-caps": ["JetBrains Mono"]
+                        },
+                        "fontSize": {
+                            "headline-lg-mobile": ["28px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                            "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                            "technical-code": ["14px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                            "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "label-caps": ["12px", {"lineHeight": "1.0", "fontWeight": "600"}]
+                        }
+                    },
+                },
+            }
+        } catch (_e) {}
+    }catch(_e){}</script></head><body class="bg-background text-on-background font-body-md selection:bg-secondary/10 selection:text-secondary">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full bg-white/90 backdrop-blur-xl z-50 border-b border-outline-variant">
+    <div class="flex justify-between items-center max-w-[1280px] mx-auto px-margin-edge h-16">
+        <div class="flex items-center gap-12">
+            <a class="flex items-center gap-2" href="#"><img src="https://lh3.googleusercontent.com/aida/AP1WRLvVIHSG-9SpbH8ZLdncAdhJ-FqPg0Hjef49umcVZnV3YLuxvrFu9SbNtlrSI_5b7oJvQUIorW2xmR6KTHetGekceaocEN3nr0reTt4eKXXNpsLcyWlbTTZsasx5dN1fApvDygaY2vh32oGp2hpsaQQtZ771S6uvRoOuL_1oNyqu9ykZjWfH46xuT4tM-bKhNPeyP8OXxv9tc6k2vny-7tl4mMizu8aoP2sjC0jM05fM5KvpAa3iPDrEINY" alt="Rohinik Foundation Logo" class="h-8 w-auto"></a>
+            <nav class="hidden md:flex gap-8 items-center">
+                <a class="font-label-caps text-label-caps text-secondary font-bold uppercase border-b-2 border-secondary py-5 -mb-[1px]" href="#">Standards</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-1 uppercase" href="#">Governance</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-1 uppercase" href="#">Ecosystem</a>
+                <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors py-1 uppercase" href="#">Certification</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="relative hidden lg:block">
+                <input class="bg-surface-container-low border border-outline-variant text-technical-code px-4 py-1.5 w-64 focus:outline-none focus:border-secondary transition-all" placeholder="Search Specifications..." type="text">
+                <span class="material-symbols-outlined absolute right-3 top-2 text-on-surface-variant text-[18px]">search</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="pt-16">
+    <!-- Hero Section -->
+    <section class="bg-white border-b border-outline-variant py-24">
+        <div class="max-w-[1280px] mx-auto px-margin-edge">
+            <div class="max-w-4xl">
+                <h1 class="font-headline-xl text-[64px] leading-tight mb-4 text-primary">The Architecture of Intelligence.</h1>
+                <h2 class="font-headline-lg text-secondary mb-8">Formalizing the vendor-neutral stack for AI Operating Systems.</h2>
+                <p class="text-[20px] text-on-surface-variant leading-relaxed mb-12 max-w-3xl font-light">
+                    The Rohinik Foundation is the global standards body defining interoperable specifications for AI runtime, memory fabrics, and execution kernels.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="font-technical-code bg-primary text-on-primary px-8 py-3.5 hover:bg-on-surface-variant transition-all flex items-center gap-2">
+                        View Specification Catalog <span class="material-symbols-outlined text-[18px]">list_alt</span>
+                    </button>
+                    <button class="font-technical-code border border-primary text-primary px-8 py-3.5 hover:bg-surface-container-low transition-all">
+                        Organization Charter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Centerpiece (Primary Visual Hook) -->
+    <section class="py-section-gap-desktop bg-surface-container-lowest border-b border-outline-variant overflow-hidden">
+        <div class="max-w-[1280px] mx-auto px-margin-edge">
+            <div class="text-center mb-16">
+                <span class="font-label-caps text-secondary mb-4 block uppercase font-bold tracking-widest text-[11px]">Core Architecture</span>
+                <h2 class="font-headline-xl mb-6">The 8-Layer Intelligence Stack</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto">A unified framework for interoperability from hardware drivers to user-facing applications.</p>
+            </div>
+            <div class="relative blueprint-dashed p-1 bg-outline-variant/10 rounded-lg">
+                <div class="bg-white border border-outline-variant p-12">
+                    <img alt="Layered Architecture Diagram" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLvKpukSg2Ba6YSeu99zrzYLKSW6sftCDq9bkZje6J9K9jhXyFWOuLJNNx_2ggud-E-lv_zT970EChtCrAf1Br3kRml35rhv6FIAOWKSl1jstqTNDOb18GqTsy5-sN9xLTqQ6TGQOBq1lSEqd4isIXWPn8LUKP18f1qFYMy80RXDRoWlsNctCzbX2bMTu9XtXhOgW9tqSFDQXvi9NQ90CAZnPAFa6dSuC5EYhTQS1yUQoxGf0-NVxvxQp70">
+                    <div class="mt-8 pt-6 border-t border-outline-variant grid md:grid-cols-3 gap-8">
+                        <div>
+                            <span class="font-technical-code text-[11px] text-secondary font-bold block mb-2 uppercase">Abstract</span>
+                            <p class="text-xs text-on-surface-variant leading-relaxed">Fig 1.0: The hierarchical flow defines the standard interface for modular AI components, ensuring cross-vendor runtime compatibility.</p>
+                        </div>
+                        <div>
+                            <span class="font-technical-code text-[11px] text-secondary font-bold block mb-2 uppercase">Reference ID</span>
+                            <p class="text-xs text-on-surface-variant font-technical-code uppercase">RS-SPEC-ARCH-01_V2</p>
+                        </div>
+                        <div>
+                            <span class="font-technical-code text-[11px] text-secondary font-bold block mb-2 uppercase">Status</span>
+                            <p class="text-xs text-on-surface-variant uppercase flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500"></span> Ratified Foundation Standard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Standards Dashboard -->
+    <section class="py-section-gap-desktop bg-surface-container-low border-b border-outline-variant">
+        <div class="max-w-[1280px] mx-auto px-margin-edge">
+            <div class="mb-12">
+                <span class="font-label-caps text-on-surface-variant mb-4 block uppercase tracking-widest text-[11px]">Registry</span>
+                <h2 class="font-headline-lg">Specification Dashboard</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full border-collapse bg-white border border-outline-variant">
+                    <thead>
+                        <tr class="bg-surface-container border-b border-outline-variant text-left">
+                            <th class="px-6 py-4 font-technical-code text-xs uppercase text-on-surface-variant">Standard</th>
+                            <th class="px-6 py-4 font-technical-code text-xs uppercase text-on-surface-variant">Title</th>
+                            <th class="px-6 py-4 font-technical-code text-xs uppercase text-on-surface-variant">Status</th>
+                            <th class="px-6 py-4 font-technical-code text-xs uppercase text-on-surface-variant">Version</th>
+                            <th class="px-6 py-4 font-technical-code text-xs uppercase text-on-surface-variant">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-outline-variant">
+                        <tr>
+                            <td class="px-6 py-4 font-technical-code font-bold">RS-1</td>
+                            <td class="px-6 py-4 text-sm">Core Intelligence Runtime</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-green-100 text-green-800 text-[10px] font-bold font-technical-code uppercase">Stable</span></td>
+                            <td class="px-6 py-4 font-technical-code text-xs">v1.2.0</td>
+                            <td class="px-6 py-4"><a href="#" class="text-secondary text-sm font-bold hover:underline">DOCS</a></td>
+                        </tr>
+                        <tr class="bg-surface-container-low/30">
+                            <td class="px-6 py-4 font-technical-code font-bold">AFS-0001</td>
+                            <td class="px-6 py-4 text-sm">Architecture Foundation</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-green-100 text-green-800 text-[10px] font-bold font-technical-code uppercase">Stable</span></td>
+                            <td class="px-6 py-4 font-technical-code text-xs">v2.0.4</td>
+                            <td class="px-6 py-4"><a href="#" class="text-secondary text-sm font-bold hover:underline">DOCS</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-technical-code font-bold">R-COMP</td>
+                            <td class="px-6 py-4 text-sm">Universal Intelligence Compiler</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-blue-100 text-blue-800 text-[10px] font-bold font-technical-code uppercase">Beta</span></td>
+                            <td class="px-6 py-4 font-technical-code text-xs">v0.9.8</td>
+                            <td class="px-6 py-4"><a href="#" class="text-secondary text-sm font-bold hover:underline">DOCS</a></td>
+                        </tr>
+                        <tr class="bg-surface-container-low/30">
+                            <td class="px-6 py-4 font-technical-code font-bold">AEP</td>
+                            <td class="px-6 py-4 text-sm">Enhancement Proposal Framework</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-green-100 text-green-800 text-[10px] font-bold font-technical-code uppercase">Active</span></td>
+                            <td class="px-6 py-4 font-technical-code text-xs">-</td>
+                            <td class="px-6 py-4"><a href="#" class="text-secondary text-sm font-bold hover:underline">SUBMIT</a></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-technical-code font-bold">CONF-1</td>
+                            <td class="px-6 py-4 text-sm">Conformance Testing Suite</td>
+                            <td class="px-6 py-4"><span class="px-2 py-0.5 bg-surface-container-high text-[10px] font-bold font-technical-code uppercase">Draft</span></td>
+                            <td class="px-6 py-4 font-technical-code text-xs">v0.1.0</td>
+                            <td class="px-6 py-4"><a href="#" class="text-secondary text-sm font-bold hover:underline">REVIEW</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Rohinik Exists (Comparison Section) -->
+    <section class="py-section-gap-desktop bg-white">
+        <div class="max-w-[1280px] mx-auto px-margin-edge">
+            <div class="grid lg:grid-cols-2 gap-20">
+                <div>
+                    <h2 class="font-headline-lg text-[40px] mb-8">The Case for Formal Standardization</h2>
+                    <p class="text-on-surface-variant text-lg font-light leading-relaxed mb-12">
+                        AI computing is transitioning from experimental prompt-engineering to robust, industrial-scale operating systems. Rohinik provides the necessary technical floor for this evolution.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="p-6 border border-outline-variant bg-surface-container-low border-l-4 border-l-primary">
+                            <h4 class="font-technical-code font-bold mb-2">Today's Fragmented AI</h4>
+                            <ul class="text-sm space-y-2 text-on-surface-variant">
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-error text-[16px]">close</span> Stateless request-response patterns</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-error text-[16px]">close</span> Vendor-locked proprietary runtimes</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-error text-[16px]">close</span> Inconsistent capability discovery</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-error text-[16px]">close</span> Opaque execution and reasoning paths</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <div class="space-y-6">
+                        <div class="p-6 border border-secondary/20 bg-secondary/5 border-l-4 border-l-secondary">
+                            <h4 class="font-technical-code font-bold text-secondary mb-2">Rohinik Standardization</h4>
+                            <ul class="text-sm space-y-2 text-on-surface-variant">
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Persistence-first persistent memory fabrics</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Interchangeable execution kernels (RS-1)</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Formal Capability Schema &amp; Registry</li>
+                                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Auditable, deterministic reasoning flows</li>
+                            </ul>
+                        </div>
+                        <div class="border border-outline-variant p-6">
+                            <img alt="Workflow Diagram" class="w-full h-auto grayscale opacity-80" src="https://lh3.googleusercontent.com/aida/AP1WRLsDL0aNOy9PqXyI_mKT5c94iOxXfKMfVrTv6HQcNqD6Uw0NNw2YpinXlo8_5l4NuYe6YfV1SyMepdARigjtay4FBPrKqZPXu8Hp-qUOO2jif7mCwWkNWLk04ppbqGgDL2-ZyKw9PsUz6GfKXptL8P7XcoxxtDkPMeEJYCf2x0YKfROtWPU6m1y8W9tjA5RAl_FgzIgwhqPSd0iRoYnSVa0wpxFhg9wNv2KoWume7ytHNTCw5mlW60gTVBI">
+                            <p class="text-[10px] font-technical-code text-on-surface-variant mt-4 text-center uppercase tracking-widest">Workflow Reference: Standard Execution Pipeline</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Hierarchy (Blueprint Style) -->
+    <section class="py-section-gap-desktop bg-surface-container-low border-y border-outline-variant">
+        <div class="max-w-[1280px] mx-auto px-margin-edge">
+            <div class="text-center mb-16">
+                <span class="font-label-caps text-secondary mb-4 block uppercase font-bold tracking-widest text-[11px]">Consensus Model</span>
+                <h2 class="font-headline-lg">Governance Hierarchy</h2>
+            </div>
+            <div class="flex flex-col md:flex-row items-stretch justify-center gap-4">
+                <div class="flex-1 p-8 bg-white border border-outline-variant relative group">
+                    <span class="absolute top-4 right-4 font-technical-code text-xs text-outline opacity-40">01</span>
+                    <h3 class="font-technical-code font-bold text-primary mb-4">AFS</h3>
+                    <p class="text-xs text-on-surface-variant mb-6 leading-relaxed">Architecture Foundation Standards: The core constitutional specifications defining the stack.</p>
+                    <div class="h-1 w-full bg-surface-container"></div>
+                </div>
+                <div class="hidden md:flex items-center justify-center">
+                    <span class="material-symbols-outlined text-outline-variant">arrow_forward</span>
+                </div>
+                <div class="flex-1 p-8 bg-white border border-outline-variant relative group">
+                    <span class="absolute top-4 right-4 font-technical-code text-xs text-outline opacity-40">02</span>
+                    <h3 class="font-technical-code font-bold text-primary mb-4">AEP</h3>
+                    <p class="text-xs text-on-surface-variant mb-6 leading-relaxed">Enhancement Proposals: The public mechanism for proposing new features and layers.</p>
+                    <div class="h-1 w-full bg-surface-container"></div>
+                </div>
+                <div class="hidden md:flex items-center justify-center">
+                    <span class="material-symbols-outlined text-outline-variant">arrow_forward</span>
+                </div>
+                <div class="flex-1 p-8 bg-white border border-outline-variant relative group">
+                    <span class="absolute top-4 right-4 font-technical-code text-xs text-outline opacity-40">03</span>
+                    <h3 class="font-technical-code font-bold text-primary mb-4">ADR</h3>
+                    <p class="text-xs text-on-surface-variant mb-6 leading-relaxed">Decision Records: Immutable logs of technical consensus and architectural pivot points.</p>
+                    <div class="h-1 w-full bg-secondary/50"></div>
+                </div>
+                <div class="hidden md:flex items-center justify-center">
+                    <span class="material-symbols-outlined text-outline-variant">arrow_forward</span>
+                </div>
+                <div class="flex-1 p-8 bg-white border border-secondary border-2 relative group shadow-lg">
+                    <span class="absolute top-4 right-4 font-technical-code text-xs text-secondary">RATIFIED</span>
+                    <h3 class="font-technical-code font-bold text-secondary mb-4">RS-REF</h3>
+                    <p class="text-xs text-on-surface-variant mb-6 leading-relaxed">Reference Implementation: The production-grade standard for all conforming systems.</p>
+                    <div class="h-1 w-full bg-secondary"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foundation Workflow -->
+    <section class="py-section-gap-desktop bg-white">
+        <div class="max-w-[1280px] mx-auto px-margin-edge">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-5">
+                    <span class="font-label-caps text-secondary mb-4 block uppercase font-bold tracking-widest text-[11px]">Process</span>
+                    <h2 class="font-headline-lg mb-8">How the Foundation Works</h2>
+                    <p class="text-on-surface-variant font-light mb-10 leading-relaxed">A rigid, multi-phase lifecycle ensures that every line of the specification is vetted by the community before official release.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-6">
+                            <span class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center font-technical-code text-xs shrink-0">1</span>
+                            <div class="">
+                                <h4 class="font-bold text-sm">Exploratory Research</h4>
+                                <p class="text-xs text-on-surface-variant">Active Working Group research into emerging AI primitives.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center font-technical-code text-xs shrink-0">2</span>
+                            <div>
+                                <h4 class="font-bold text-sm">RFC &amp; Proposal (AEP)</h4>
+                                <p class="text-xs text-on-surface-variant">Public request for comments and formal enhancement proposal submission.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="w-8 h-8 rounded-full border border-secondary bg-secondary text-on-secondary flex items-center justify-center font-technical-code text-xs shrink-0">3</span>
+                            <div class="">
+                                <h4 class="font-bold text-sm">Implementation &amp; Conformance</h4>
+                                <p class="text-xs text-on-surface-variant">Proving the spec through reference code and validation tools.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center font-technical-code text-xs shrink-0">4</span>
+                            <div>
+                                <h4 class="font-bold text-sm">Formal Release</h4>
+                                <p class="text-xs text-on-surface-variant">Final ratification and inclusion in the Foundation registry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="border border-outline-variant p-8 bg-surface-container-low">
+                        <img alt="Ecosystem Diagram" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida/AP1WRLsNxyFnvZ3KTuwIKaktHIa8SsPIN_wrsZ7F-1kYLxFWsl-xoddFkEIMT1am2owKA_LnhccEdrtXKDbJmEBVrUjArxykAJl_1XCwpNUF24SUE5DU_PTCtjWUanEJyEZj9CoJCxeTLbEIxeYhv7B9FiwoZEU5dHaE4JaFnt0VAH-N5FhUZkBU2KpxSIW85m3nZgX8pHWm3EY3tXEfzHEuqi54wnwXIfOfekUwfChb7oBnrsDwmuoFSvLZM5E">
+                        <p class="text-[10px] font-technical-code text-on-surface-variant mt-6 text-center uppercase tracking-widest">Fig 2.1: Deployment Conformance Across Nodes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorized Repositories -->
+    <section class="py-section-gap-desktop bg-surface-container-low border-y border-outline-variant">
+        <div class="max-w-[1280px] mx-auto px-margin-edge">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="font-label-caps text-secondary mb-4 block uppercase font-bold tracking-widest text-[11px]">Source Control</span>
+                    <h2 class="font-headline-lg">Public Repository Index</h2>
+                </div>
+                <a class="font-technical-code text-sm text-secondary hover:underline flex items-center gap-2 mb-2" href="#">
+                    GitHub Org <span class="material-symbols-outlined text-[16px]">terminal</span>
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Standards Category -->
+                <div>
+                    <h4 class="font-label-caps text-[10px] text-on-surface-variant mb-4 uppercase tracking-[0.2em] border-b border-outline-variant pb-2">Standards</h4>
+                    <div class="space-y-4">
+                        <a href="#" class="block p-4 bg-white border border-outline-variant hover:border-secondary transition-all">
+                            <span class="text-xs font-technical-code font-bold block mb-1">rohinik-org/rs-1</span>
+                            <span class="text-[10px] text-on-surface-variant">Core Runtime Specification</span>
+                        </a>
+                        <a href="#" class="block p-4 bg-white border border-outline-variant hover:border-secondary transition-all">
+                            <span class="text-xs font-technical-code font-bold block mb-1">rohinik-org/specs</span>
+                            <span class="text-[10px] text-on-surface-variant">Master Specification Registry</span>
+                        </a>
+                        <a href="#" class="block p-4 bg-white border border-outline-variant hover:border-secondary transition-all">
+                            <span class="text-xs font-technical-code font-bold block mb-1">rohinik-org/governance</span>
+                            <span class="text-[10px] text-on-surface-variant">Bylaws and AEP process</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Development Category -->
+                <div>
+                    <h4 class="font-label-caps text-[10px] text-on-surface-variant mb-4 uppercase tracking-[0.2em] border-b border-outline-variant pb-2">Development</h4>
+                    <div class="space-y-4">
+                        <a href="#" class="block p-4 bg-white border border-outline-variant hover:border-secondary transition-all">
+                            <span class="text-xs font-technical-code font-bold block mb-1">rohinik-org/sdk-ts</span>
+                            <span class="text-[10px] text-on-surface-variant">TypeScript Reference SDK</span>
+                        </a>
+                        <a href="#" class="block p-4 bg-white border border-outline-variant hover:border-secondary transition-all">
+                            <span class="text-xs font-technical-code font-bold block mb-1">rohinik-org/cli</span>
+                            <span class="text-[10px] text-on-surface-variant">Command Line Tools</span>
+                        </a>
+                        <a href="#" class="block p-4 bg-white border border-outline-variant hover:border-secondary transition-all">
+                            <span class="text-xs font-technical-code font-bold block mb-1">rohinik-org/registry</span>
+                            <span class="text-[10px] text-on-surface-variant">Package Management API</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Research Category -->
+                <div>
+                    <h4 class="font-label-caps text-[10px] text-on-surface-variant mb-4 uppercase tracking-[0.2em] border-b border-outline-variant pb-2">Research</h4>
+                    <div class="space-y-4">
+                        <a href="#" class="block p-4 bg-white border border-outline-variant hover:border-secondary transition-all">
+                            <span class="text-xs font-technical-code font-bold block mb-1">rohinik-org/design</span>
+                            <span class="text-[10px] text-on-surface-variant">Design Language &amp; UX Refs</span>
+                        </a>
+                        <a href="#" class="block p-4 bg-white border border-outline-variant hover:border-secondary transition-all">
+                            <span class="text-xs font-technical-code font-bold block mb-1">rohinik-org/labs</span>
+                            <span class="text-[10px] text-on-surface-variant">Experimental Primitives</span>
+                        </a>
+                        <a href="#" class="block p-4 bg-surface-container-high border border-outline-variant border-dashed flex items-center justify-center">
+                            <span class="text-[10px] font-technical-code uppercase">+ View All Projects</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neutrality Statement (Separation Block) -->
+    <section class="py-16 bg-white border-t border-outline-variant">
+        <div class="max-w-[1280px] mx-auto px-margin-edge">
+            <div class="max-w-3xl mx-auto border border-outline-variant p-8 bg-surface-container-low/50">
+                <div class="flex items-start gap-6">
+                    <span class="material-symbols-outlined text-secondary text-3xl">account_balance</span>
+                    <div>
+                        <h4 class="font-technical-code font-bold text-primary mb-2 uppercase text-xs tracking-widest">Neutrality Declaration</h4>
+                        <p class="text-sm text-on-surface-variant font-light italic leading-relaxed">
+                            The Rohinik Foundation is a 501(c)(6) non-profit organization dedicated exclusively to open standard development. We do not offer commercial products, cloud services, or consulting. All intellectual property contributed to the foundation is licensed under the Rohinik Public Patent License (RPPL).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Enhanced Footer -->
+<footer class="bg-primary text-on-primary py-24 border-t border-outline-variant">
+    <div class="max-w-[1280px] mx-auto px-margin-edge">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-12">
+            <div class="col-span-2">
+                <a class="flex items-center gap-2 mb-8" href="#"><img src="https://lh3.googleusercontent.com/aida/AP1WRLvVIHSG-9SpbH8ZLdncAdhJ-FqPg0Hjef49umcVZnV3YLuxvrFu9SbNtlrSI_5b7oJvQUIorW2xmR6KTHetGekceaocEN3nr0reTt4eKXXNpsLcyWlbTTZsasx5dN1fApvDygaY2vh32oGp2hpsaQQtZ771S6uvRoOuL_1oNyqu9ykZjWfH46xuT4tM-bKhNPeyP8OXxv9tc6k2vny-7tl4mMizu8aoP2sjC0jM05fM5KvpAa3iPDrEINY" alt="Rohinik Foundation Logo" class="h-8 w-auto brightness-0 invert"></a>
+                <p class="text-xs opacity-60 leading-relaxed max-w-[280px] mb-8">
+                    Establishing the structural foundation for the next generation of intelligent systems. Non-profit, vendor-neutral, and community-led.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="opacity-60 hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-xl">share</span></a>
+                    <a href="#" class="opacity-60 hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-xl">terminal</span></a>
+                    <a href="#" class="opacity-60 hover:opacity-100 transition-opacity"><span class="material-symbols-outlined text-xl">mail</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-label-caps text-white font-bold mb-8 uppercase text-[10px] tracking-[0.2em]">Standards</h4>
+                <ul class="space-y-4 text-xs opacity-70 font-technical-code">
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">RS-1 Runtime</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Memory Fabric</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Capability Schemas</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Driver Interface</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Compiler IR</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label-caps text-white font-bold mb-8 uppercase text-[10px] tracking-[0.2em]">Governance</h4>
+                <ul class="space-y-4 text-xs opacity-70 font-technical-code">
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Charter &amp; Bylaws</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Technical Oversight</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Working Groups</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">AEP Index</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">ADR Records</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <h4 class="font-label-caps text-white font-bold mb-8 uppercase text-[10px] tracking-[0.2em]">Policies</h4>
+                <ul class="space-y-4 text-xs opacity-70 font-technical-code">
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Trademark Policy</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Patent Policy</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Code of Conduct</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">IP Policy</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="">
+                <h4 class="font-label-caps text-white font-bold mb-8 uppercase text-[10px] tracking-[0.2em]">Community</h4>
+                <ul class="space-y-4 text-xs opacity-70 font-technical-code">
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">GitHub</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Mailing Lists</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Discord</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Events</a></li>
+                    <li class=""><a class="hover:opacity-100 transition-all" href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-24 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+            <span class="text-[11px] opacity-40 font-technical-code uppercase tracking-widest">
+                Copyright © 2026 Rohinik Foundation. Distributed under CC-BY 4.0.
+            </span>
+            </div></div></footer>
+
+</body></html>
