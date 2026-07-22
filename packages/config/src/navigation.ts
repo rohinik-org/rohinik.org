@@ -3,7 +3,7 @@ export interface NavItem {
   readonly href: string;
 }
 
-export const NAV_ITEMS: readonly NavItem[] = [
+export const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   { label: 'Architecture', href: '/architecture' },
   { label: 'Specifications', href: '/specifications' },
@@ -13,4 +13,4 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { label: 'Documentation', href: '/documentation' },
   { label: 'Releases', href: '/releases' },
   { label: 'Community', href: '/community' },
-] as const;
+] as const satisfies readonly NavItem[];
