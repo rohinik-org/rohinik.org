@@ -1,0 +1,356 @@
+@import "tailwindcss";
+
+/*
+ * next-themes applies .dark to the document element.
+ * Tailwind v4 class-controlled dark mode is defined in CSS.
+ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * DESIGN-0001 reference tokens.
+ *
+ * These values are immutable design references. Components should not use
+ * --ref-* variables directly. Semantic tokens below choose the correct
+ * reference values for the active theme.
+ */
+@theme static {
+  /* Surfaces */
+  --ref-color-surface: #f7f9fb;
+  --ref-color-surface-dim: #d8dadc;
+  --ref-color-surface-bright: #f7f9fb;
+  --ref-color-surface-container-lowest: #ffffff;
+  --ref-color-surface-container-low: #f2f4f6;
+  --ref-color-surface-container: #eceef0;
+  --ref-color-surface-container-high: #e6e8ea;
+  --ref-color-surface-container-highest: #e0e3e5;
+
+  /* On-surface */
+  --ref-color-on-surface: #191c1e;
+  --ref-color-on-surface-variant: #4c4546;
+  --ref-color-on-surface-subtle: #45464d;
+
+  /* Inverse */
+  --ref-color-inverse-surface: #2d3133;
+  --ref-color-inverse-on-surface: #eff1f3;
+  --ref-color-inverse-primary: #c6c6c6;
+
+  /* Outline */
+  --ref-color-outline: #7e7576;
+  --ref-color-outline-variant: #cfc4c5;
+  --ref-color-outline-muted: #76777d33;
+
+  /* Tint */
+  --ref-color-surface-tint: #5e5e5e;
+
+  /* Primary */
+  --ref-color-primary: #000000;
+  --ref-color-on-primary: #ffffff;
+  --ref-color-primary-container: #1b1b1b;
+  --ref-color-on-primary-container: #848484;
+  --ref-color-primary-fixed: #e2e2e2;
+  --ref-color-primary-fixed-dim: #c6c6c6;
+  --ref-color-on-primary-fixed: #1b1b1b;
+  --ref-color-on-primary-fixed-variant: #474747;
+
+  /* Secondary */
+  --ref-color-secondary: #00668a;
+  --ref-color-on-secondary: #ffffff;
+  --ref-color-secondary-container: #8dd5fe;
+  --ref-color-on-secondary-container: #005d7e;
+  --ref-color-secondary-fixed: #c3e8ff;
+  --ref-color-secondary-fixed-dim: #87cff8;
+  --ref-color-on-secondary-fixed: #001e2c;
+  --ref-color-on-secondary-fixed-variant: #004c68;
+
+  /* Tertiary */
+  --ref-color-tertiary: #000000;
+  --ref-color-on-tertiary: #ffffff;
+  --ref-color-tertiary-container: #0b1c30;
+  --ref-color-on-tertiary-container: #75859d;
+  --ref-color-tertiary-fixed: #d3e3ff;
+  --ref-color-tertiary-fixed-dim: #b7c7e2;
+  --ref-color-on-tertiary-fixed: #0b1c30;
+  --ref-color-on-tertiary-fixed-variant: #38485e;
+
+  /* Error */
+  --ref-color-error: #ba1a1a;
+  --ref-color-on-error: #ffffff;
+  --ref-color-error-container: #ffdad6;
+  --ref-color-on-error-container: #93000a;
+
+  /* Typography */
+  --font-headline: var(--font-hanken), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 1.1;
+  --text-headline-xl--font-weight: 700;
+  --text-headline-xl--letter-spacing: -0.02em;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--font-weight: 600;
+  --text-headline-lg--letter-spacing: -0.01em;
+
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 1.2;
+  --text-headline-lg-mobile--font-weight: 600;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-technical-code: 14px;
+  --text-technical-code--line-height: 1.5;
+  --text-technical-code--font-weight: 500;
+
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 1;
+  --text-label-caps--font-weight: 600;
+
+  /* Spacing */
+  --spacing-margin-edge: 40px;
+  --spacing-margin-edge-mobile: 16px;
+  --spacing-gutter: 24px;
+  --spacing-unit: 4px;
+  --spacing-section-gap: 96px;
+  --spacing-section-gap-mobile: 64px;
+  --spacing-nav-height: 64px;
+
+  /*
+   * --container-* generates max-w-* utilities.
+   * Therefore this produces max-w-site.
+   */
+  --container-site: 1280px;
+
+  /* Structural radius — DESIGN-0001: 0px on all structural UI */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+
+  /* Exception: status dots and indicators only */
+  --radius-full: 9999px;
+}
+
+/*
+ * Semantic theme values.
+ *
+ * These are the values applications consume. Dark mode switches these
+ * references without changing component class names.
+ */
+:root {
+  color-scheme: light;
+
+  --sem-background: var(--ref-color-surface);
+  --sem-on-background: var(--ref-color-on-surface);
+
+  --sem-surface: var(--ref-color-surface);
+  --sem-surface-dim: var(--ref-color-surface-dim);
+  --sem-surface-bright: var(--ref-color-surface-bright);
+  --sem-surface-container-lowest: var(--ref-color-surface-container-lowest);
+  --sem-surface-container-low: var(--ref-color-surface-container-low);
+  --sem-surface-container: var(--ref-color-surface-container);
+  --sem-surface-container-high: var(--ref-color-surface-container-high);
+  --sem-surface-container-highest: var(--ref-color-surface-container-highest);
+
+  --sem-on-surface: var(--ref-color-on-surface);
+  --sem-on-surface-variant: var(--ref-color-on-surface-variant);
+  --sem-on-surface-subtle: var(--ref-color-on-surface-subtle);
+
+  --sem-primary: var(--ref-color-primary);
+  --sem-on-primary: var(--ref-color-on-primary);
+  --sem-primary-container: var(--ref-color-primary-container);
+  --sem-on-primary-container: var(--ref-color-on-primary-container);
+
+  --sem-secondary: var(--ref-color-secondary);
+  --sem-on-secondary: var(--ref-color-on-secondary);
+  --sem-secondary-container: var(--ref-color-secondary-container);
+  --sem-on-secondary-container: var(--ref-color-on-secondary-container);
+
+  --sem-tertiary: var(--ref-color-tertiary);
+  --sem-on-tertiary: var(--ref-color-on-tertiary);
+  --sem-tertiary-container: var(--ref-color-tertiary-container);
+  --sem-on-tertiary-container: var(--ref-color-on-tertiary-container);
+
+  --sem-outline: var(--ref-color-outline);
+  --sem-outline-variant: var(--ref-color-outline-variant);
+  --sem-outline-muted: var(--ref-color-outline-muted);
+
+  --sem-error: var(--ref-color-error);
+  --sem-on-error: var(--ref-color-on-error);
+  --sem-error-container: var(--ref-color-error-container);
+  --sem-on-error-container: var(--ref-color-on-error-container);
+
+  --logo-base: #102a43;
+  --logo-accent: #10b981;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --sem-background: var(--ref-color-inverse-surface);
+  --sem-on-background: var(--ref-color-inverse-on-surface);
+
+  --sem-surface: var(--ref-color-inverse-surface);
+  --sem-surface-dim: var(--ref-color-primary-container);
+  --sem-surface-bright: var(--ref-color-on-surface-subtle);
+  --sem-surface-container-lowest: var(--ref-color-primary-container);
+  --sem-surface-container-low: var(--ref-color-inverse-surface);
+  --sem-surface-container: var(--ref-color-on-surface-subtle);
+  --sem-surface-container-high: var(--ref-color-on-surface-variant);
+  --sem-surface-container-highest: var(--ref-color-on-primary-fixed-variant);
+
+  --sem-on-surface: var(--ref-color-inverse-on-surface);
+  --sem-on-surface-variant: var(--ref-color-inverse-primary);
+  --sem-on-surface-subtle: var(--ref-color-on-primary-container);
+
+  --sem-primary: var(--ref-color-inverse-primary);
+  --sem-on-primary: var(--ref-color-primary-container);
+  --sem-primary-container: var(--ref-color-inverse-primary);
+  --sem-on-primary-container: var(--ref-color-primary-container);
+
+  --sem-secondary: var(--ref-color-secondary-fixed-dim);
+  --sem-on-secondary: var(--ref-color-on-secondary-fixed);
+  --sem-secondary-container: var(--ref-color-on-secondary-fixed-variant);
+  --sem-on-secondary-container: var(--ref-color-secondary-fixed);
+
+  --sem-tertiary: var(--ref-color-tertiary-fixed-dim);
+  --sem-on-tertiary: var(--ref-color-on-tertiary-fixed);
+  --sem-tertiary-container: var(--ref-color-tertiary-container);
+  --sem-on-tertiary-container: var(--ref-color-tertiary-fixed);
+
+  --sem-outline: var(--ref-color-outline-variant);
+  --sem-outline-variant: var(--ref-color-on-surface-variant);
+  --sem-outline-muted: var(--ref-color-outline-muted);
+
+  --sem-error: var(--ref-color-error-container);
+  --sem-on-error: var(--ref-color-on-error-container);
+  --sem-error-container: var(--ref-color-on-error-container);
+  --sem-on-error-container: var(--ref-color-error-container);
+}
+
+/*
+ * Tailwind utility namespace.
+ *
+ * `inline` ensures generated utilities reference the semantic variables
+ * directly rather than capturing their initial values.
+ */
+@theme inline {
+  --color-background: var(--sem-background);
+  --color-on-background: var(--sem-on-background);
+
+  --color-surface: var(--sem-surface);
+  --color-surface-dim: var(--sem-surface-dim);
+  --color-surface-bright: var(--sem-surface-bright);
+  --color-surface-container-lowest: var(--sem-surface-container-lowest);
+  --color-surface-container-low: var(--sem-surface-container-low);
+  --color-surface-container: var(--sem-surface-container);
+  --color-surface-container-high: var(--sem-surface-container-high);
+  --color-surface-container-highest: var(--sem-surface-container-highest);
+
+  --color-on-surface: var(--sem-on-surface);
+  --color-on-surface-variant: var(--sem-on-surface-variant);
+  --color-on-surface-subtle: var(--sem-on-surface-subtle);
+
+  --color-primary: var(--sem-primary);
+  --color-on-primary: var(--sem-on-primary);
+  --color-primary-container: var(--sem-primary-container);
+  --color-on-primary-container: var(--sem-on-primary-container);
+
+  --color-secondary: var(--sem-secondary);
+  --color-on-secondary: var(--sem-on-secondary);
+  --color-secondary-container: var(--sem-secondary-container);
+  --color-on-secondary-container: var(--sem-on-secondary-container);
+
+  --color-tertiary: var(--sem-tertiary);
+  --color-on-tertiary: var(--sem-on-tertiary);
+  --color-tertiary-container: var(--sem-tertiary-container);
+  --color-on-tertiary-container: var(--sem-on-tertiary-container);
+
+  --color-outline: var(--sem-outline);
+  --color-outline-variant: var(--sem-outline-variant);
+  --color-outline-muted: var(--sem-outline-muted);
+
+  --color-error: var(--sem-error);
+  --color-on-error: var(--sem-on-error);
+  --color-error-container: var(--sem-error-container);
+  --color-on-error-container: var(--sem-on-error-container);
+}
+
+/* Base normalization */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  border-radius: 0;
+  font: inherit;
+}
+
+button {
+  appearance: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  color: var(--sem-secondary);
+  background-color: color-mix(in srgb, var(--sem-secondary) 10%, transparent);
+}
+
+/* Blueprint dot-grid utility */
+
+@utility dot-grid {
+  background-image: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--sem-on-surface) 7%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}
+
+/* Accessibility */
+
+@utility skip-to-content {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 1rem;
+  z-index: 9999;
+  translate: 0 -150%;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--sem-outline);
+  background-color: var(--sem-primary);
+  color: var(--sem-on-primary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: translate 100ms ease;
+}
+
+.skip-to-content:focus-visible {
+  translate: 0 1rem;
+}
