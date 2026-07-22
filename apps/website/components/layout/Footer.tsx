@@ -45,10 +45,10 @@ export function Footer() {
 
         <div className="border-t border-outline-variant pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p
-            className="font-mono text-label-caps text-on-surface-variant uppercase tracking-widest"
+            className="font-mono text-label-caps text-on-surface-variant tracking-widest"
             aria-label={`© ${String(FOUNDATION_YEAR)}–present ${FOUNDATION_NAME}. All rights reserved.`}
           >
-            © <span>{FOUNDATION_YEAR}</span>–present. All rights reserved.
+            © <span>{FOUNDATION_YEAR}</span>–Present. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {FOOTER_EXTERNAL_LINKS.map((link) => (

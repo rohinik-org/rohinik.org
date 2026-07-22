@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { PageShell } from '@/components/layout/PageShell';
-import { SITE_TAGLINE, SITE_NAME } from '@/constants/site';
+import { SITE_TAGLINE } from '@/constants/site';
 
 export const metadata: Metadata = { title: 'Home' };
 
@@ -9,7 +9,8 @@ export default function HomePage() {
     <PageShell
       label="ROHINIK FOUNDATION"
       title={SITE_TAGLINE}
-      description={`${SITE_NAME}. Memory First. Capability First. LLM Last.`}
+      description="An open intelligent computing platform built on deterministic memory, composable capabilities, and specification-driven execution."
+      tagline="Memory First · Capability First · LLM Last"
     />
   );
 }

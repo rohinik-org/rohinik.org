@@ -167,13 +167,13 @@ exports[`component snapshots > Footer matches snapshot 1`] = `
       >
         <p
           aria-label="© 2026–present Rohinik Foundation. All rights reserved."
-          class="font-mono text-label-caps text-on-surface-variant uppercase tracking-widest"
+          class="font-mono text-label-caps text-on-surface-variant tracking-widest"
         >
           © 
           <span>
             2026
           </span>
-          –present. All rights reserved.
+          –Present. All rights reserved.
         </p>
         <div
           class="flex items-center gap-6"

@@ -9,6 +9,7 @@ interface PageShellProps {
   label?: string;
   title: string;
   description?: string;
+  tagline?: string;
   breadcrumbs?: Breadcrumb[];
   actions?: React.ReactNode;
   aside?: React.ReactNode;
@@ -20,6 +21,7 @@ export function PageShell({
   label,
   title,
   description,
+  tagline,
   breadcrumbs,
   actions,
   aside,
@@ -29,7 +31,7 @@ export function PageShell({
   return (
     <div className={cn('min-h-screen', className)}>
       <div className="dot-grid border-b border-outline-muted">
-        <div className="max-w-site mx-auto px-[var(--spacing-margin-edge)] py-16 md:py-24">
+        <div className="max-w-site mx-auto px-[var(--spacing-margin-edge)] py-24 md:py-32">
           {breadcrumbs && breadcrumbs.length > 0 && (
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 mb-4">
               {breadcrumbs.map((crumb, i) => (
@@ -61,8 +63,13 @@ export function PageShell({
                 {title}
               </h1>
               {description && (
-                <p className="font-body text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+                <p className="font-body text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
                   {description}
+                </p>
+              )}
+              {tagline && (
+                <p className="font-mono text-label-caps uppercase tracking-widest text-secondary mt-6">
+                  {tagline}
                 </p>
               )}
             </div>
