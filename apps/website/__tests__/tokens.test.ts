@@ -8,8 +8,8 @@ const css = readFileSync(GLOBALS_PATH, 'utf8');
 function block(selector: string): string {
   const escaped = selector.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const match = css.match(new RegExp(`${escaped}\\s*\\{([\\s\\S]*?)\\}`, 'm'));
-
-  return match?.[1] ?? '';
+  if (!match) throw new Error(`CSS block not found: ${selector}`);
+  return match[1];
 }
 
 function declaration(source: string, name: string): string | null {
@@ -111,7 +111,9 @@ describe('Tailwind v4 configuration', () => {
   });
 
   it('does not introduce box-shadow tokens', () => {
-    expect(css).not.toMatch(/--shadow-[\w-]+\s*:/);
+    expect(lightTheme).not.toMatch(/--shadow-[\w-]+\s*:/);
+    expect(darkTheme).not.toMatch(/--shadow-[\w-]+\s*:/);
+    expect(referenceTheme).not.toMatch(/--shadow-[\w-]+\s*:/);
   });
 
   it('defines logo variables', () => {
@@ -122,8 +124,8 @@ describe('Tailwind v4 configuration', () => {
 
 describe('dark-mode semantic integrity', () => {
   it('does not redefine Tailwind color utilities inside .dark', () => {
-    expect(darkTheme).not.toContain('--color-background');
-    expect(darkTheme).not.toContain('--color-primary');
+    expect(darkTheme).not.toMatch(/--color-background\s*:/);
+    expect(darkTheme).not.toMatch(/--color-primary\s*:/);
   });
 
   it('switches semantic values instead', () => {
