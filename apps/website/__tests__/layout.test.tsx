@@ -16,6 +16,6 @@ describe('RootLayout', () => {
   it('wraps content in Providers', async () => {
     const { default: RootLayout } = await import('@/app/layout');
     const { container } = render(<RootLayout>{[<span key="x">x</span>]}</RootLayout>);
-    expect(container.querySelector('span')?.textContent).toBe('x');
+    expect(container.querySelector('#main-content span')?.textContent).toBe('x');
   });
 });

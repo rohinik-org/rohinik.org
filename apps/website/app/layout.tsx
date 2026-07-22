@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Hanken_Grotesk, Inter, JetBrains_Mono } from 'next/font/google';
 
 import { Providers } from './providers';
+import { TopNav } from '@/components/layout/TopNav';
 import '../styles/globals.css';
 
 import {
@@ -72,6 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body>
         <Providers>
+          <TopNav />
           <main id="main-content">{children}</main>
         </Providers>
       </body>
