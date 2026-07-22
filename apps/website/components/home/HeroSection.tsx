@@ -29,7 +29,7 @@ export function HeroSection() {
                   href={cta.href as Route}
                   className={
                     i === 0
-                      ? 'font-mono text-label-caps uppercase tracking-widest border border-primary bg-primary text-[var(--color-on-primary)] px-5 py-2.5 hover:opacity-90 transition-opacity'
+                      ? 'font-mono text-label-caps uppercase tracking-widest border border-primary bg-primary text-white dark:text-black px-5 py-2.5 hover:opacity-90 transition-opacity'
                       : 'font-mono text-label-caps uppercase tracking-widest border border-outline px-5 py-2.5 text-on-surface hover:border-primary transition-colors'
                   }
                 >
