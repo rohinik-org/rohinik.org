@@ -1,16 +1,30 @@
 import type { Metadata } from 'next';
-import { PageShell } from '@/components/layout/PageShell';
-import { SITE_TAGLINE } from '@/constants/site';
+import { HeroSection } from '@/components/home/HeroSection';
+import { WhyRohinikSection } from '@/components/home/WhyRohinikSection';
+import { ArchitecturePreview } from '@/components/home/ArchitecturePreview';
+import { CorePrinciplesSection } from '@/components/home/CorePrinciplesSection';
+import { ExecutionFlowSection } from '@/components/home/ExecutionFlowSection';
+import { SpecificationPreview } from '@/components/home/SpecificationPreview';
+import { GovernanceSection } from '@/components/home/GovernanceSection';
+import { CommunitySection } from '@/components/home/CommunitySection';
 
-export const metadata: Metadata = { title: 'Home' };
+export const metadata: Metadata = {
+  title: 'The Intelligent Computing Platform',
+  description:
+    'Rohinik is an open computing architecture built on deterministic memory, composable capabilities, and specification-driven execution.',
+};
 
 export default function HomePage() {
   return (
-    <PageShell
-      label="ROHINIK FOUNDATION"
-      title={SITE_TAGLINE}
-      description="An open intelligent computing platform built on deterministic memory, composable capabilities, and specification-driven execution."
-      tagline="Memory First · Capability First · LLM Last"
-    />
+    <>
+      <HeroSection />
+      <WhyRohinikSection />
+      <ArchitecturePreview />
+      <CorePrinciplesSection />
+      <ExecutionFlowSection />
+      <SpecificationPreview />
+      <GovernanceSection />
+      <CommunitySection />
+    </>
   );
 }
