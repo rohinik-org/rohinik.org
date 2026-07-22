@@ -3,6 +3,7 @@ import { Hanken_Grotesk, Inter, JetBrains_Mono } from 'next/font/google';
 
 import { Providers } from './providers';
 import { TopNav } from '@/components/layout/TopNav';
+import { Footer } from '@/components/layout/Footer';
 import '../styles/globals.css';
 
 import {
@@ -75,6 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>
           <TopNav />
           <main id="main-content">{children}</main>
+          <Footer />
         </Providers>
       </body>
     </html>
