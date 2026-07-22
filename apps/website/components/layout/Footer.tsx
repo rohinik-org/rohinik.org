@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { Route } from 'next';
 import {
   FOOTER_SECTIONS,
   FOOTER_EXTERNAL_LINKS,
@@ -30,7 +31,7 @@ export function Footer() {
                 {section.links.map((link) => (
                   <li key={link.href}>
                     <Link
-                      href={link.href}
+                      href={link.href as Route}
                       className="text-body-md text-on-surface-variant hover:text-on-surface transition-colors font-body"
                     >
                       {link.label}

@@ -1,4 +1,4 @@
-export { NAV_ITEMS, type NavItem } from './navigation.js';
+export { NAV_ITEMS, type NavItem } from './navigation';
 export {
   FOOTER_SECTIONS,
   FOOTER_EXTERNAL_LINKS,
@@ -7,4 +7,4 @@ export {
   FOUNDATION_YEAR,
   type FooterLink,
   type FooterSection,
-} from './footer.js';
+} from './footer';
