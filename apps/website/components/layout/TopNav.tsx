@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { NAV_ITEMS } from '@rohinik/config';
+import { NavLinks } from './NavLinks';
 import { ThemeToggle } from './ThemeToggle';
 
 export function TopNav() {
@@ -10,7 +10,7 @@ export function TopNav() {
       </a>
 
       <div className="max-w-site mx-auto px-[var(--spacing-margin-edge)] h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 shrink-0">
+        <Link href="/" className="flex items-center gap-4 shrink-0">
           <svg width="24" height="24" viewBox="0 0 128 128" fill="none" aria-hidden="true">
             <path d="M64,96 L108,74 L64,52 L20,74 Z" fill="var(--logo-base)" fillOpacity="0.4" />
             <path d="M64,74 L108,52 L64,30 L20,52 Z" fill="var(--logo-base)" fillOpacity="0.7" />
@@ -30,17 +30,7 @@ export function TopNav() {
           </span>
         </Link>
 
-        <nav aria-label="Main navigation" className="hidden md:flex items-center gap-6">
-          {NAV_ITEMS.map(({ label, href }) => (
-            <Link
-              key={href}
-              href={href}
-              className="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
+        <NavLinks />
 
         <div className="flex items-center gap-3">
           <ThemeToggle />

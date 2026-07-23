@@ -302,7 +302,7 @@ exports[`component snapshots > TopNav matches snapshot 1`] = `
       class="max-w-site mx-auto px-[var(--spacing-margin-edge)] h-16 flex items-center justify-between"
     >
       <a
-        class="flex items-center gap-3 shrink-0"
+        class="flex items-center gap-4 shrink-0"
         href="/"
       >
         <svg
@@ -347,55 +347,56 @@ exports[`component snapshots > TopNav matches snapshot 1`] = `
         class="hidden md:flex items-center gap-6"
       >
         <a
-          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          aria-current="page"
+          class="font-mono uppercase tracking-widest transition-colors py-5 border-b-2 text-secondary border-secondary"
           href="/"
         >
           Home
         </a>
         <a
-          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          class="font-mono uppercase tracking-widest transition-colors py-5 border-b-2 text-on-surface-variant border-transparent hover:text-on-surface"
           href="/architecture"
         >
           Architecture
         </a>
         <a
-          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          class="font-mono uppercase tracking-widest transition-colors py-5 border-b-2 text-on-surface-variant border-transparent hover:text-on-surface"
           href="/specifications"
         >
           Specifications
         </a>
         <a
-          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          class="font-mono uppercase tracking-widest transition-colors py-5 border-b-2 text-on-surface-variant border-transparent hover:text-on-surface"
           href="/governance"
         >
           Governance
         </a>
         <a
-          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          class="font-mono uppercase tracking-widest transition-colors py-5 border-b-2 text-on-surface-variant border-transparent hover:text-on-surface"
           href="/rs-1"
         >
           RS-1
         </a>
         <a
-          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          class="font-mono uppercase tracking-widest transition-colors py-5 border-b-2 text-on-surface-variant border-transparent hover:text-on-surface"
           href="/ecosystem"
         >
           Ecosystem
         </a>
         <a
-          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          class="font-mono uppercase tracking-widest transition-colors py-5 border-b-2 text-on-surface-variant border-transparent hover:text-on-surface"
           href="/documentation"
         >
           Documentation
         </a>
         <a
-          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          class="font-mono uppercase tracking-widest transition-colors py-5 border-b-2 text-on-surface-variant border-transparent hover:text-on-surface"
           href="/releases"
         >
           Releases
         </a>
         <a
-          class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
+          class="font-mono uppercase tracking-widest transition-colors py-5 border-b-2 text-on-surface-variant border-transparent hover:text-on-surface"
           href="/community"
         >
           Community

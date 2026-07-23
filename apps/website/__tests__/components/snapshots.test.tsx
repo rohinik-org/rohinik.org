@@ -11,6 +11,10 @@ vi.mock('next-themes', () => ({
   ThemeProvider: ({ children }: { children: React.ReactNode }) => <>{children}</>,
 }));
 
+vi.mock('next/navigation', () => ({
+  usePathname: () => '/',
+}));
+
 const timelineItems: TimelineItem[] = [
   { label: 'Foundation', status: 'complete' },
   { label: 'Kernel', status: 'active' },
