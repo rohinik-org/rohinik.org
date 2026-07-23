@@ -1,0 +1,374 @@
+- generic [active] [ref=f4e1]:
+    - banner [ref=f4e2]:
+        - link "Skip to main content" [ref=f4e3] [cursor=pointer]:
+            - /url: '#main-content'
+        - generic [ref=f4e4]:
+            - link "ROHINIK" [ref=f4e5] [cursor=pointer]:
+                - /url: /
+            - navigation "Main navigation" [ref=f4e11]:
+                - link "Home" [ref=f4e12] [cursor=pointer]:
+                    - /url: /
+                - link "Architecture" [ref=f4e13] [cursor=pointer]:
+                    - /url: /architecture
+                - link "Specifications" [ref=f4e14] [cursor=pointer]:
+                    - /url: /specifications
+                - link "Governance" [ref=f4e15] [cursor=pointer]:
+                    - /url: /governance
+                - link "RS-1" [ref=f4e16] [cursor=pointer]:
+                    - /url: /rs-1
+                - link "Ecosystem" [ref=f4e17] [cursor=pointer]:
+                    - /url: /ecosystem
+                - link "Documentation" [ref=f4e18] [cursor=pointer]:
+                    - /url: /documentation
+                - link "Releases" [ref=f4e19] [cursor=pointer]:
+                    - /url: /releases
+                - link "Community" [ref=f4e20] [cursor=pointer]:
+                    - /url: /community
+            - 'button "Theme: SYSTEM. Click to switch to LIGHT" [ref=f4e22]': SYSTEM
+    - main [ref=f4e23]:
+        - region [ref=f4e24]:
+            - generic [ref=f4e25]:
+                - paragraph [ref=f4e26]: Architecture
+                - heading "A layered intelligent computing system." [level=1] [ref=f4e27]
+                - paragraph [ref=f4e28]: Rohinik separates durable state, governed execution, intelligence providers, capabilities, interfaces, and constitutional rules into explicit architectural layers.
+                - paragraph [ref=f4e29]: Each layer has bounded responsibility. Cross-layer communication occurs through defined contracts rather than hidden implementation coupling.
+                - generic [ref=f4e30]:
+                    - generic [ref=f4e31]:
+                        - term [ref=f4e32]: Architecture Layers
+                        - definition [ref=f4e33]: '07'
+                    - generic [ref=f4e34]:
+                        - term [ref=f4e35]: Cross-Cutting Systems
+                        - definition [ref=f4e36]: '05'
+                    - generic [ref=f4e37]:
+                        - term [ref=f4e38]: Contract Boundaries
+                        - definition [ref=f4e39]: Explicit
+        - navigation "Architecture page sections" [ref=f4e40]:
+            - list [ref=f4e42]:
+                - listitem [ref=f4e43]:
+                    - link "Overview" [ref=f4e44] [cursor=pointer]:
+                        - /url: '#overview'
+                - listitem [ref=f4e45]:
+                    - link "Properties" [ref=f4e46] [cursor=pointer]:
+                        - /url: '#properties'
+                - listitem [ref=f4e47]:
+                    - link "Layers" [ref=f4e48] [cursor=pointer]:
+                        - /url: '#layers'
+                - listitem [ref=f4e49]:
+                    - link "Cross-Cutting" [ref=f4e50] [cursor=pointer]:
+                        - /url: '#cross-cutting'
+                - listitem [ref=f4e51]:
+                    - link "Execution" [ref=f4e52] [cursor=pointer]:
+                        - /url: '#execution'
+                - listitem [ref=f4e53]:
+                    - link "Boundaries" [ref=f4e54] [cursor=pointer]:
+                        - /url: '#boundaries'
+                - listitem [ref=f4e55]:
+                    - link "References" [ref=f4e56] [cursor=pointer]:
+                        - /url: '#references'
+        - region [ref=f4e57]:
+            - generic [ref=f4e58]:
+                - heading "System Properties" [level=2] [ref=f4e59]
+                - generic [ref=f4e60]:
+                    - generic [ref=f4e61]:
+                        - generic [ref=f4e62]: '01'
+                        - generic [ref=f4e63]: Layered
+                        - paragraph [ref=f4e64]: Each subsystem owns a defined class of responsibility and depends only on approved contracts.
+                    - generic [ref=f4e65]:
+                        - generic [ref=f4e66]: '02'
+                        - generic [ref=f4e67]: Capability Driven
+                        - paragraph [ref=f4e68]: External action enters the runtime through registered, typed, observable capability boundaries.
+                    - generic [ref=f4e69]:
+                        - generic [ref=f4e70]: '03'
+                        - generic [ref=f4e71]: Memory First
+                        - paragraph [ref=f4e72]: Durable context, observations, decisions, and execution history are managed as system resources.
+                    - generic [ref=f4e73]:
+                        - generic [ref=f4e74]: '04'
+                        - generic [ref=f4e75]: Model Independent
+                        - paragraph [ref=f4e76]: Models act as replaceable intelligence providers rather than owning orchestration or system state.
+                    - generic [ref=f4e77]:
+                        - generic [ref=f4e78]: '05'
+                        - generic [ref=f4e79]: Specification Driven
+                        - paragraph [ref=f4e80]: Constitutional laws, lifecycle behavior, interfaces, and compatibility rules are publicly specified.
+        - region [ref=f4e81]:
+            - generic [ref=f4e82]:
+                - heading "Architectural Layers" [level=2] [ref=f4e83]
+                - generic [ref=f4e84]:
+                    - list "System stack" [ref=f4e85]:
+                        - listitem [ref=f4e86]:
+                            - button "07 Shell Human, application, and machine interfaces into Rohinik." [pressed] [ref=f4e87]:
+                                - generic [ref=f4e88]: '07'
+                                - generic [ref=f4e89]:
+                                    - generic [ref=f4e90]: Shell
+                                    - paragraph [ref=f4e91]: Human, application, and machine interfaces into Rohinik.
+                        - listitem [ref=f4e92]:
+                            - button "06 Compiler Transforms intent and declarations into inspectable execution structures." [ref=f4e93]:
+                                - generic [ref=f4e94]: '06'
+                                - generic [ref=f4e95]:
+                                    - generic [ref=f4e96]: Compiler
+                                    - paragraph [ref=f4e97]: Transforms intent and declarations into inspectable execution structures.
+                        - listitem [ref=f4e98]:
+                            - button "05 Memory Durable state, context, observations, and retained knowledge." [ref=f4e99]:
+                                - generic [ref=f4e100]: '05'
+                                - generic [ref=f4e101]:
+                                    - generic [ref=f4e102]: Memory
+                                    - paragraph [ref=f4e103]: Durable state, context, observations, and retained knowledge.
+                        - listitem [ref=f4e104]:
+                            - button "04 Intelligence Reasoning providers, models, evaluation, and selection policy." [ref=f4e105]:
+                                - generic [ref=f4e106]: '04'
+                                - generic [ref=f4e107]:
+                                    - generic [ref=f4e108]: Intelligence
+                                    - paragraph [ref=f4e109]: Reasoning providers, models, evaluation, and selection policy.
+                        - listitem [ref=f4e110]:
+                            - button "03 Runtime Governed execution, lifecycle, scheduling, recovery, and observation." [ref=f4e111]:
+                                - generic [ref=f4e112]: '03'
+                                - generic [ref=f4e113]:
+                                    - generic [ref=f4e114]: Runtime
+                                    - paragraph [ref=f4e115]: Governed execution, lifecycle, scheduling, recovery, and observation.
+                        - listitem [ref=f4e116]:
+                            - button "02 Kernel Registries, contracts, identity, isolation, policy, and observation primitives." [ref=f4e117]:
+                                - generic [ref=f4e118]: '02'
+                                - generic [ref=f4e119]:
+                                    - generic [ref=f4e120]: Kernel
+                                    - paragraph [ref=f4e121]: Registries, contracts, identity, isolation, policy, and observation primitives.
+                        - listitem [ref=f4e122]:
+                            - button "01 Foundation Constitutional laws, invariants, taxonomy, specifications, and governance." [ref=f4e123]:
+                                - generic [ref=f4e124]: '01'
+                                - generic [ref=f4e125]:
+                                    - generic [ref=f4e126]: Foundation
+                                    - paragraph [ref=f4e127]: Constitutional laws, invariants, taxonomy, specifications, and governance.
+                    - article [ref=f4e128]:
+                        - paragraph [ref=f4e129]: Layer 07
+                        - heading "Shell" [level=3] [ref=f4e130]
+                        - paragraph [ref=f4e131]: The Shell accepts requests, exposes system state, presents results, and adapts external protocols into Rohinik-native interactions.
+                        - region [ref=f4e132]:
+                            - heading "Owns" [level=4] [ref=f4e133]
+                            - list [ref=f4e134]:
+                                - listitem [ref=f4e135]:
+                                    - generic [ref=f4e136]: —
+                                    - text: Human and application interfaces
+                                - listitem [ref=f4e137]:
+                                    - generic [ref=f4e138]: —
+                                    - text: CLI, API, SDK, and studio surfaces
+                                - listitem [ref=f4e139]:
+                                    - generic [ref=f4e140]: —
+                                    - text: Input adaptation
+                                - listitem [ref=f4e141]:
+                                    - generic [ref=f4e142]: —
+                                    - text: Presentation of system output
+                        - region [ref=f4e143]:
+                            - heading "Does Not Own" [level=4] [ref=f4e144]
+                            - list [ref=f4e145]:
+                                - listitem [ref=f4e146]:
+                                    - generic [ref=f4e147]: —
+                                    - text: Execution planning
+                                - listitem [ref=f4e148]:
+                                    - generic [ref=f4e149]: —
+                                    - text: Capability authorization
+                                - listitem [ref=f4e150]:
+                                    - generic [ref=f4e151]: —
+                                    - text: Memory governance
+                                - listitem [ref=f4e152]:
+                                    - generic [ref=f4e153]: —
+                                    - text: Model selection policy
+                        - region [ref=f4e154]:
+                            - heading "Communicates With" [level=4] [ref=f4e155]
+                            - list [ref=f4e156]:
+                                - listitem [ref=f4e157]: compiler
+                                - listitem [ref=f4e158]: runtime
+                                - listitem [ref=f4e159]: memory
+        - region [ref=f4e160]:
+            - generic [ref=f4e161]:
+                - heading "Cross-Cutting Systems" [level=2] [ref=f4e162]
+                - paragraph [ref=f4e163]: Some responsibilities span every architectural layer rather than belonging to one. These systems define rules, identifiers, observability, security, and lifecycle semantics across the entire platform.
+                - generic [ref=f4e164]:
+                    - generic [ref=f4e165]:
+                        - generic [ref=f4e166]: Governance
+                        - paragraph [ref=f4e167]: Defines authority, approval, compatibility, and evolution across every layer.
+                    - generic [ref=f4e168]:
+                        - generic [ref=f4e169]: Identity
+                        - paragraph [ref=f4e170]: Provides stable identifiers for specifications, capabilities, providers, executions, and system entities.
+                    - generic [ref=f4e171]:
+                        - generic [ref=f4e172]: Observation
+                        - paragraph [ref=f4e173]: Records state transitions, execution events, failures, decisions, and provider behavior.
+                    - generic [ref=f4e174]:
+                        - generic [ref=f4e175]: Security and Policy
+                        - paragraph [ref=f4e176]: Constrains which actors and components may invoke capabilities or access state.
+                    - generic [ref=f4e177]:
+                        - generic [ref=f4e178]: Lifecycle
+                        - paragraph [ref=f4e179]: Defines initialization, readiness, degradation, shutdown, and failure semantics.
+        - region [ref=f4e180]:
+            - generic [ref=f4e181]:
+                - heading "Execution Path" [level=2] [ref=f4e182]
+                - paragraph [ref=f4e183]: How a request moves through the architecture from interface to result. Intelligence providers are invoked only where deterministic mechanisms are insufficient.
+                - table "Rohinik execution path" [ref=f4e185]:
+                    - caption [ref=f4e186]: Rohinik execution path — nine stages from Accept to Present
+                    - rowgroup [ref=f4e187]:
+                        - row [ref=f4e188]:
+                            - columnheader "#" [ref=f4e189]
+                            - columnheader "Stage" [ref=f4e190]
+                            - columnheader "Layer" [ref=f4e191]
+                            - columnheader "Description" [ref=f4e192]
+                    - rowgroup [ref=f4e193]:
+                        - row [ref=f4e194]:
+                            - cell "01" [ref=f4e195]
+                            - cell "Accept" [ref=f4e196]
+                            - cell "Shell" [ref=f4e197]
+                            - cell "Receive a request from a human, application, or machine interface." [ref=f4e198]
+                        - row [ref=f4e199]:
+                            - cell "02" [ref=f4e200]
+                            - cell "Resolve" [ref=f4e201]
+                            - cell "Memory" [ref=f4e202]
+                            - cell "Load relevant context, identity, policy, and retained system state." [ref=f4e203]
+                        - row [ref=f4e204]:
+                            - cell "03" [ref=f4e205]
+                            - cell "Compile" [ref=f4e206]
+                            - cell "Compiler" [ref=f4e207]
+                            - cell "Transform intent into a typed, inspectable execution plan." [ref=f4e208]
+                        - row [ref=f4e209]:
+                            - cell "04" [ref=f4e210]
+                            - cell "Validate" [ref=f4e211]
+                            - cell "Kernel" [ref=f4e212]
+                            - cell "Resolve contracts, capabilities, permissions, and invariants." [ref=f4e213]
+                        - row [ref=f4e214]:
+                            - cell "05" [ref=f4e215]
+                            - cell "Reason" [ref=f4e216]
+                            - cell "Intelligence" [ref=f4e217]
+                            - cell "Invoke reasoning providers only where deterministic mechanisms are insufficient." [ref=f4e218]
+                        - row [ref=f4e219]:
+                            - cell "06" [ref=f4e220]
+                            - cell "Execute" [ref=f4e221]
+                            - cell "Runtime" [ref=f4e222]
+                            - cell "Invoke approved capabilities under lifecycle and recovery controls." [ref=f4e223]
+                        - row [ref=f4e224]:
+                            - cell "07" [ref=f4e225]
+                            - cell "Observe" [ref=f4e226]
+                            - cell "Kernel" [ref=f4e227]
+                            - cell "Record execution events, decisions, failures, and state transitions." [ref=f4e228]
+                        - row [ref=f4e229]:
+                            - cell "08" [ref=f4e230]
+                            - cell "Retain" [ref=f4e231]
+                            - cell "Memory" [ref=f4e232]
+                            - cell "Persist validated outcomes according to scope and retention policy." [ref=f4e233]
+                        - row [ref=f4e234]:
+                            - cell "09" [ref=f4e235]
+                            - cell "Present" [ref=f4e236]
+                            - cell "Shell" [ref=f4e237]
+                            - cell "Return the result and relevant execution state to the caller." [ref=f4e238]
+        - region [ref=f4e239]:
+            - generic [ref=f4e240]:
+                - heading "Architectural Boundaries" [level=2] [ref=f4e241]
+                - paragraph [ref=f4e242]: Architecture is defined as much by prohibited coupling as by components. Each boundary specifies what a layer may and may not do at the contract level.
+                - table "Rohinik architectural boundaries" [ref=f4e244]:
+                    - caption [ref=f4e245]: Rohinik architectural boundaries register
+                    - rowgroup [ref=f4e246]:
+                        - row [ref=f4e247]:
+                            - columnheader "From" [ref=f4e248]
+                            - columnheader "To" [ref=f4e249]
+                            - columnheader "Contract" [ref=f4e250]
+                            - columnheader "Rule" [ref=f4e251]
+                    - rowgroup [ref=f4e252]:
+                        - row [ref=f4e253]:
+                            - cell "Shell" [ref=f4e254]
+                            - cell "Compiler" [ref=f4e255]
+                            - cell "Intent and declaration boundary" [ref=f4e256]
+                            - cell "The Shell may submit accepted input but may not construct executable runtime state directly." [ref=f4e257]
+                        - row [ref=f4e258]:
+                            - cell "Compiler" [ref=f4e259]
+                            - cell "Runtime" [ref=f4e260]
+                            - cell "Plan boundary" [ref=f4e261]
+                            - cell "The Runtime accepts validated executable structures rather than untyped prompts or arbitrary instructions." [ref=f4e262]
+                        - row [ref=f4e263]:
+                            - cell "Runtime" [ref=f4e264]
+                            - cell "Kernel" [ref=f4e265]
+                            - cell "Execution mechanism boundary" [ref=f4e266]
+                            - cell "Runtime behavior must use kernel registries, lifecycle mechanisms, and observation primitives." [ref=f4e267]
+                        - row [ref=f4e268]:
+                            - cell "Runtime" [ref=f4e269]
+                            - cell "Intelligence" [ref=f4e270]
+                            - cell "Provider invocation boundary" [ref=f4e271]
+                            - cell "Models and reasoning providers are invoked through governed provider contracts." [ref=f4e272]
+                        - row [ref=f4e273]:
+                            - cell "All layers" [ref=f4e274]
+                            - cell "Memory" [ref=f4e275]
+                            - cell "State boundary" [ref=f4e276]
+                            - cell "Durable information enters memory through explicit scope, provenance, and retention rules." [ref=f4e277]
+                        - row [ref=f4e278]:
+                            - cell "Kernel" [ref=f4e279]
+                            - cell "Foundation" [ref=f4e280]
+                            - cell "Constitutional compliance boundary" [ref=f4e281]
+                            - cell "Kernel mechanisms must implement the laws, invariants, and contracts defined by authoritative specifications." [ref=f4e282]
+        - region [ref=f4e283]:
+            - generic [ref=f4e284]:
+                - heading "Continue into the architecture." [level=2] [ref=f4e285]
+                - generic [ref=f4e286]:
+                    - link "Specifications Read the authoritative laws, contracts, and lifecycle requirements." [ref=f4e287] [cursor=pointer]:
+                        - /url: /specifications
+                        - generic [ref=f4e288]:
+                            - generic [ref=f4e289]: Specifications
+                            - paragraph [ref=f4e290]: Read the authoritative laws, contracts, and lifecycle requirements.
+                        - generic [ref=f4e291]: →
+                    - link "RS-1 Review the Rohinik reference-system architecture." [ref=f4e292] [cursor=pointer]:
+                        - /url: /rs-1
+                        - generic [ref=f4e293]:
+                            - generic [ref=f4e294]: RS-1
+                            - paragraph [ref=f4e295]: Review the Rohinik reference-system architecture.
+                        - generic [ref=f4e296]: →
+                    - link "Governance Understand how architectural decisions become authoritative." [ref=f4e297] [cursor=pointer]:
+                        - /url: /governance
+                        - generic [ref=f4e298]:
+                            - generic [ref=f4e299]: Governance
+                            - paragraph [ref=f4e300]: Understand how architectural decisions become authoritative.
+                        - generic [ref=f4e301]: →
+                    - link "Documentation Move from architectural concepts to implementation guidance." [ref=f4e302] [cursor=pointer]:
+                        - /url: /documentation
+                        - generic [ref=f4e303]:
+                            - generic [ref=f4e304]: Documentation
+                            - paragraph [ref=f4e305]: Move from architectural concepts to implementation guidance.
+                        - generic [ref=f4e306]: →
+    - contentinfo [ref=f4e307]:
+        - generic [ref=f4e308]:
+            - generic [ref=f4e309]:
+                - generic [ref=f4e310]:
+                    - generic [ref=f4e311]: Rohinik Foundation
+                    - paragraph [ref=f4e312]: Open intelligent computing platform. Memory First. Capability First. LLM Last.
+                - generic [ref=f4e313]:
+                    - heading "Foundation" [level=3] [ref=f4e314]
+                    - list [ref=f4e315]:
+                        - listitem [ref=f4e316]:
+                            - link "About" [ref=f4e317] [cursor=pointer]:
+                                - /url: /about
+                        - listitem [ref=f4e318]:
+                            - link "Governance" [ref=f4e319] [cursor=pointer]:
+                                - /url: /governance
+                        - listitem [ref=f4e320]:
+                            - link "Community" [ref=f4e321] [cursor=pointer]:
+                                - /url: /community
+                - generic [ref=f4e322]:
+                    - heading "Standards" [level=3] [ref=f4e323]
+                    - list [ref=f4e324]:
+                        - listitem [ref=f4e325]:
+                            - link "Specifications" [ref=f4e326] [cursor=pointer]:
+                                - /url: /specifications
+                        - listitem [ref=f4e327]:
+                            - link "RS-1" [ref=f4e328] [cursor=pointer]:
+                                - /url: /rs-1
+                        - listitem [ref=f4e329]:
+                            - link "Architecture" [ref=f4e330] [cursor=pointer]:
+                                - /url: /architecture
+                - generic [ref=f4e331]:
+                    - heading "Resources" [level=3] [ref=f4e332]
+                    - list [ref=f4e333]:
+                        - listitem [ref=f4e334]:
+                            - link "Documentation" [ref=f4e335] [cursor=pointer]:
+                                - /url: /documentation
+                        - listitem [ref=f4e336]:
+                            - link "Releases" [ref=f4e337] [cursor=pointer]:
+                                - /url: /releases
+                        - listitem [ref=f4e338]:
+                            - link "Ecosystem" [ref=f4e339] [cursor=pointer]:
+                                - /url: /ecosystem
+            - generic [ref=f4e340]:
+                - paragraph [ref=f4e341]: © 2026–Present. All rights reserved.
+                - link "GitHub" [ref=f4e343] [cursor=pointer]:
+                    - /url: https://github.com/rohinik-org/
+    - alert [ref=f4e344]

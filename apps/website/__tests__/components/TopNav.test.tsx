@@ -7,10 +7,6 @@ vi.mock('next-themes', () => ({
   ThemeProvider: ({ children }: { children: React.ReactNode }) => <>{children}</>,
 }));
 
-vi.mock('next/navigation', () => ({
-  usePathname: () => '/',
-}));
-
 describe('TopNav', () => {
   it('renders all 9 navigation items', () => {
     act(() => {

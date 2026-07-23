@@ -1,0 +1,378 @@
+- generic [ref=e1]:
+    - banner [ref=e2]:
+        - link "Skip to main content" [ref=e3] [cursor=pointer]:
+            - /url: '#main-content'
+        - generic [ref=e4]:
+            - link "ROHINIK" [ref=e5] [cursor=pointer]:
+                - /url: /
+            - navigation "Main navigation" [ref=e11]:
+                - link "Home" [ref=e12] [cursor=pointer]:
+                    - /url: /
+                - link "Architecture" [ref=e13] [cursor=pointer]:
+                    - /url: /architecture
+                - link "Specifications" [ref=e14] [cursor=pointer]:
+                    - /url: /specifications
+                - link "Governance" [ref=e15] [cursor=pointer]:
+                    - /url: /governance
+                - link "RS-1" [ref=e16] [cursor=pointer]:
+                    - /url: /rs-1
+                - link "Ecosystem" [ref=e17] [cursor=pointer]:
+                    - /url: /ecosystem
+                - link "Documentation" [ref=e18] [cursor=pointer]:
+                    - /url: /documentation
+                - link "Releases" [ref=e19] [cursor=pointer]:
+                    - /url: /releases
+                - link "Community" [ref=e20] [cursor=pointer]:
+                    - /url: /community
+            - 'button "Theme: SYSTEM. Click to switch to LIGHT" [ref=e344]': SYSTEM
+    - main [ref=e23]:
+        - region [ref=e24]:
+            - generic [ref=e25]:
+                - paragraph [ref=e26]: Architecture
+                - heading "A layered intelligent computing system." [level=1] [ref=e27]
+                - paragraph [ref=e28]: Rohinik separates durable state, governed execution, intelligence providers, capabilities, interfaces, and constitutional rules into explicit architectural layers.
+                - paragraph [ref=e29]: Each layer has bounded responsibility. Cross-layer communication occurs through defined contracts rather than hidden implementation coupling.
+                - generic [ref=e30]:
+                    - generic [ref=e31]:
+                        - term [ref=e32]: Architecture Layers
+                        - definition [ref=e33]: '07'
+                    - generic [ref=e34]:
+                        - term [ref=e35]: Cross-Cutting Systems
+                        - definition [ref=e36]: '05'
+                    - generic [ref=e37]:
+                        - term [ref=e38]: Contract Boundaries
+                        - definition [ref=e39]: Explicit
+        - navigation "Architecture page sections" [ref=e40]:
+            - list [ref=e42]:
+                - listitem [ref=e43]:
+                    - link "Overview" [ref=e44] [cursor=pointer]:
+                        - /url: '#overview'
+                - listitem [ref=e45]:
+                    - link "Properties" [ref=e46] [cursor=pointer]:
+                        - /url: '#properties'
+                - listitem [ref=e47]:
+                    - link "Layers" [ref=e48] [cursor=pointer]:
+                        - /url: '#layers'
+                - listitem [ref=e49]:
+                    - link "Cross-Cutting" [ref=e50] [cursor=pointer]:
+                        - /url: '#cross-cutting'
+                - listitem [ref=e51]:
+                    - link "Execution" [ref=e52] [cursor=pointer]:
+                        - /url: '#execution'
+                - listitem [ref=e53]:
+                    - link "Boundaries" [ref=e54] [cursor=pointer]:
+                        - /url: '#boundaries'
+                - listitem [ref=e55]:
+                    - link "References" [ref=e56] [cursor=pointer]:
+                        - /url: '#references'
+        - region [ref=e57]:
+            - generic [ref=e58]:
+                - heading "System Properties" [level=2] [ref=e59]
+                - generic [ref=e60]:
+                    - generic [ref=e61]:
+                        - generic [ref=e62]: '01'
+                        - generic [ref=e63]: Layered
+                        - paragraph [ref=e64]: Each subsystem owns a defined class of responsibility and depends only on approved contracts.
+                    - generic [ref=e65]:
+                        - generic [ref=e66]: '02'
+                        - generic [ref=e67]: Capability Driven
+                        - paragraph [ref=e68]: External action enters the runtime through registered, typed, observable capability boundaries.
+                    - generic [ref=e69]:
+                        - generic [ref=e70]: '03'
+                        - generic [ref=e71]: Memory First
+                        - paragraph [ref=e72]: Durable context, observations, decisions, and execution history are managed as system resources.
+                    - generic [ref=e73]:
+                        - generic [ref=e74]: '04'
+                        - generic [ref=e75]: Model Independent
+                        - paragraph [ref=e76]: Models act as replaceable intelligence providers rather than owning orchestration or system state.
+                    - generic [ref=e77]:
+                        - generic [ref=e78]: '05'
+                        - generic [ref=e79]: Specification Driven
+                        - paragraph [ref=e80]: Constitutional laws, lifecycle behavior, interfaces, and compatibility rules are publicly specified.
+        - region [ref=e81]:
+            - generic [ref=e82]:
+                - heading "Architectural Layers" [level=2] [ref=e83]
+                - generic [ref=e84]:
+                    - list "System stack" [ref=e85]:
+                        - listitem [ref=e86]:
+                            - button "07 Shell Human, application, and machine interfaces into Rohinik." [ref=e87]:
+                                - generic [ref=e88]: '07'
+                                - generic [ref=e89]:
+                                    - generic [ref=e90]: Shell
+                                    - paragraph [ref=e91]: Human, application, and machine interfaces into Rohinik.
+                        - listitem [ref=e92]:
+                            - button "06 Compiler Transforms intent and declarations into inspectable execution structures." [ref=e93]:
+                                - generic [ref=e94]: '06'
+                                - generic [ref=e95]:
+                                    - generic [ref=e96]: Compiler
+                                    - paragraph [ref=e97]: Transforms intent and declarations into inspectable execution structures.
+                        - listitem [ref=e98]:
+                            - button "05 Memory Durable state, context, observations, and retained knowledge." [ref=e99]:
+                                - generic [ref=e100]: '05'
+                                - generic [ref=e101]:
+                                    - generic [ref=e102]: Memory
+                                    - paragraph [ref=e103]: Durable state, context, observations, and retained knowledge.
+                        - listitem [ref=e104]:
+                            - button "04 Intelligence Reasoning providers, models, evaluation, and selection policy." [ref=e105]:
+                                - generic [ref=e106]: '04'
+                                - generic [ref=e107]:
+                                    - generic [ref=e108]: Intelligence
+                                    - paragraph [ref=e109]: Reasoning providers, models, evaluation, and selection policy.
+                        - listitem [ref=e110]:
+                            - button "03 Runtime Governed execution, lifecycle, scheduling, recovery, and observation." [active] [pressed] [ref=e111]:
+                                - generic [ref=e112]: '03'
+                                - generic [ref=e113]:
+                                    - generic [ref=e114]: Runtime
+                                    - paragraph [ref=e115]: Governed execution, lifecycle, scheduling, recovery, and observation.
+                        - listitem [ref=e116]:
+                            - button "02 Kernel Registries, contracts, identity, isolation, policy, and observation primitives." [ref=e117]:
+                                - generic [ref=e118]: '02'
+                                - generic [ref=e119]:
+                                    - generic [ref=e120]: Kernel
+                                    - paragraph [ref=e121]: Registries, contracts, identity, isolation, policy, and observation primitives.
+                        - listitem [ref=e122]:
+                            - button "01 Foundation Constitutional laws, invariants, taxonomy, specifications, and governance." [ref=e123]:
+                                - generic [ref=e124]: '01'
+                                - generic [ref=e125]:
+                                    - generic [ref=e126]: Foundation
+                                    - paragraph [ref=e127]: Constitutional laws, invariants, taxonomy, specifications, and governance.
+                    - article [ref=e346]:
+                        - paragraph [ref=e129]: Layer 03
+                        - heading "Runtime" [level=3] [ref=e347]
+                        - paragraph [ref=e131]: The Runtime executes approved plans and capabilities while enforcing lifecycle, recovery, observation, and failure semantics.
+                        - region [ref=e132]:
+                            - heading "Owns" [level=4] [ref=e133]
+                            - list [ref=e134]:
+                                - listitem [ref=e348]:
+                                    - generic [ref=e349]: —
+                                    - text: Execution coordination
+                                - listitem [ref=e350]:
+                                    - generic [ref=e351]: —
+                                    - text: Runtime lifecycle
+                                - listitem [ref=e352]:
+                                    - generic [ref=e353]: —
+                                    - text: Capability invocation
+                                - listitem [ref=e354]:
+                                    - generic [ref=e355]: —
+                                    - text: Failure and recovery procedures
+                                - listitem [ref=e356]:
+                                    - generic [ref=e357]: —
+                                    - text: Execution observation
+                        - region [ref=e143]:
+                            - heading "Does Not Own" [level=4] [ref=e144]
+                            - list [ref=e145]:
+                                - listitem [ref=e358]:
+                                    - generic [ref=e359]: —
+                                    - text: Constitutional definition
+                                - listitem [ref=e360]:
+                                    - generic [ref=e361]: —
+                                    - text: Persistent content authorship
+                                - listitem [ref=e362]:
+                                    - generic [ref=e363]: —
+                                    - text: User-interface composition
+                                - listitem [ref=e364]:
+                                    - generic [ref=e365]: —
+                                    - text: Model-specific business logic
+                        - region [ref=e154]:
+                            - heading "Communicates With" [level=4] [ref=e155]
+                            - list [ref=e156]:
+                                - listitem [ref=e157]: compiler
+                                - listitem [ref=e159]: memory
+                                - listitem [ref=e366]: intelligence
+                                - listitem [ref=e367]: kernel
+        - region [ref=e160]:
+            - generic [ref=e161]:
+                - heading "Cross-Cutting Systems" [level=2] [ref=e162]
+                - paragraph [ref=e163]: Some responsibilities span every architectural layer rather than belonging to one. These systems define rules, identifiers, observability, security, and lifecycle semantics across the entire platform.
+                - generic [ref=e164]:
+                    - generic [ref=e165]:
+                        - generic [ref=e166]: Governance
+                        - paragraph [ref=e167]: Defines authority, approval, compatibility, and evolution across every layer.
+                    - generic [ref=e168]:
+                        - generic [ref=e169]: Identity
+                        - paragraph [ref=e170]: Provides stable identifiers for specifications, capabilities, providers, executions, and system entities.
+                    - generic [ref=e171]:
+                        - generic [ref=e172]: Observation
+                        - paragraph [ref=e173]: Records state transitions, execution events, failures, decisions, and provider behavior.
+                    - generic [ref=e174]:
+                        - generic [ref=e175]: Security and Policy
+                        - paragraph [ref=e176]: Constrains which actors and components may invoke capabilities or access state.
+                    - generic [ref=e177]:
+                        - generic [ref=e178]: Lifecycle
+                        - paragraph [ref=e179]: Defines initialization, readiness, degradation, shutdown, and failure semantics.
+        - region [ref=e180]:
+            - generic [ref=e181]:
+                - heading "Execution Path" [level=2] [ref=e182]
+                - paragraph [ref=e183]: How a request moves through the architecture from interface to result. Intelligence providers are invoked only where deterministic mechanisms are insufficient.
+                - table "Rohinik execution path" [ref=e185]:
+                    - caption [ref=e186]: Rohinik execution path — nine stages from Accept to Present
+                    - rowgroup [ref=e187]:
+                        - row [ref=e188]:
+                            - columnheader "#" [ref=e189]
+                            - columnheader "Stage" [ref=e190]
+                            - columnheader "Layer" [ref=e191]
+                            - columnheader "Description" [ref=e192]
+                    - rowgroup [ref=e193]:
+                        - row [ref=e194]:
+                            - cell "01" [ref=e195]
+                            - cell "Accept" [ref=e196]
+                            - cell "Shell" [ref=e197]
+                            - cell "Receive a request from a human, application, or machine interface." [ref=e198]
+                        - row [ref=e199]:
+                            - cell "02" [ref=e200]
+                            - cell "Resolve" [ref=e201]
+                            - cell "Memory" [ref=e202]
+                            - cell "Load relevant context, identity, policy, and retained system state." [ref=e203]
+                        - row [ref=e204]:
+                            - cell "03" [ref=e205]
+                            - cell "Compile" [ref=e206]
+                            - cell "Compiler" [ref=e207]
+                            - cell "Transform intent into a typed, inspectable execution plan." [ref=e208]
+                        - row [ref=e209]:
+                            - cell "04" [ref=e210]
+                            - cell "Validate" [ref=e211]
+                            - cell "Kernel" [ref=e212]
+                            - cell "Resolve contracts, capabilities, permissions, and invariants." [ref=e213]
+                        - row [ref=e214]:
+                            - cell "05" [ref=e215]
+                            - cell "Reason" [ref=e216]
+                            - cell "Intelligence" [ref=e217]
+                            - cell "Invoke reasoning providers only where deterministic mechanisms are insufficient." [ref=e218]
+                        - row [ref=e219]:
+                            - cell "06" [ref=e220]
+                            - cell "Execute" [ref=e221]
+                            - cell "Runtime" [ref=e222]
+                            - cell "Invoke approved capabilities under lifecycle and recovery controls." [ref=e223]
+                        - row [ref=e224]:
+                            - cell "07" [ref=e225]
+                            - cell "Observe" [ref=e226]
+                            - cell "Kernel" [ref=e227]
+                            - cell "Record execution events, decisions, failures, and state transitions." [ref=e228]
+                        - row [ref=e229]:
+                            - cell "08" [ref=e230]
+                            - cell "Retain" [ref=e231]
+                            - cell "Memory" [ref=e232]
+                            - cell "Persist validated outcomes according to scope and retention policy." [ref=e233]
+                        - row [ref=e234]:
+                            - cell "09" [ref=e235]
+                            - cell "Present" [ref=e236]
+                            - cell "Shell" [ref=e237]
+                            - cell "Return the result and relevant execution state to the caller." [ref=e238]
+        - region [ref=e239]:
+            - generic [ref=e240]:
+                - heading "Architectural Boundaries" [level=2] [ref=e241]
+                - paragraph [ref=e242]: Architecture is defined as much by prohibited coupling as by components. Each boundary specifies what a layer may and may not do at the contract level.
+                - table "Rohinik architectural boundaries" [ref=e244]:
+                    - caption [ref=e245]: Rohinik architectural boundaries register
+                    - rowgroup [ref=e246]:
+                        - row [ref=e247]:
+                            - columnheader "From" [ref=e248]
+                            - columnheader "To" [ref=e249]
+                            - columnheader "Contract" [ref=e250]
+                            - columnheader "Rule" [ref=e251]
+                    - rowgroup [ref=e252]:
+                        - row [ref=e253]:
+                            - cell "Shell" [ref=e254]
+                            - cell "Compiler" [ref=e255]
+                            - cell "Intent and declaration boundary" [ref=e256]
+                            - cell "The Shell may submit accepted input but may not construct executable runtime state directly." [ref=e257]
+                        - row [ref=e258]:
+                            - cell "Compiler" [ref=e259]
+                            - cell "Runtime" [ref=e260]
+                            - cell "Plan boundary" [ref=e261]
+                            - cell "The Runtime accepts validated executable structures rather than untyped prompts or arbitrary instructions." [ref=e262]
+                        - row [ref=e263]:
+                            - cell "Runtime" [ref=e264]
+                            - cell "Kernel" [ref=e265]
+                            - cell "Execution mechanism boundary" [ref=e266]
+                            - cell "Runtime behavior must use kernel registries, lifecycle mechanisms, and observation primitives." [ref=e267]
+                        - row [ref=e268]:
+                            - cell "Runtime" [ref=e269]
+                            - cell "Intelligence" [ref=e270]
+                            - cell "Provider invocation boundary" [ref=e271]
+                            - cell "Models and reasoning providers are invoked through governed provider contracts." [ref=e272]
+                        - row [ref=e273]:
+                            - cell "All layers" [ref=e274]
+                            - cell "Memory" [ref=e275]
+                            - cell "State boundary" [ref=e276]
+                            - cell "Durable information enters memory through explicit scope, provenance, and retention rules." [ref=e277]
+                        - row [ref=e278]:
+                            - cell "Kernel" [ref=e279]
+                            - cell "Foundation" [ref=e280]
+                            - cell "Constitutional compliance boundary" [ref=e281]
+                            - cell "Kernel mechanisms must implement the laws, invariants, and contracts defined by authoritative specifications." [ref=e282]
+        - region [ref=e283]:
+            - generic [ref=e284]:
+                - heading "Continue into the architecture." [level=2] [ref=e285]
+                - generic [ref=e286]:
+                    - link "Specifications Read the authoritative laws, contracts, and lifecycle requirements." [ref=e287] [cursor=pointer]:
+                        - /url: /specifications
+                        - generic [ref=e288]:
+                            - generic [ref=e289]: Specifications
+                            - paragraph [ref=e290]: Read the authoritative laws, contracts, and lifecycle requirements.
+                        - generic [ref=e291]: →
+                    - link "RS-1 Review the Rohinik reference-system architecture." [ref=e292] [cursor=pointer]:
+                        - /url: /rs-1
+                        - generic [ref=e293]:
+                            - generic [ref=e294]: RS-1
+                            - paragraph [ref=e295]: Review the Rohinik reference-system architecture.
+                        - generic [ref=e296]: →
+                    - link "Governance Understand how architectural decisions become authoritative." [ref=e297] [cursor=pointer]:
+                        - /url: /governance
+                        - generic [ref=e298]:
+                            - generic [ref=e299]: Governance
+                            - paragraph [ref=e300]: Understand how architectural decisions become authoritative.
+                        - generic [ref=e301]: →
+                    - link "Documentation Move from architectural concepts to implementation guidance." [ref=e302] [cursor=pointer]:
+                        - /url: /documentation
+                        - generic [ref=e303]:
+                            - generic [ref=e304]: Documentation
+                            - paragraph [ref=e305]: Move from architectural concepts to implementation guidance.
+                        - generic [ref=e306]: →
+    - contentinfo [ref=e307]:
+        - generic [ref=e308]:
+            - generic [ref=e309]:
+                - generic [ref=e310]:
+                    - generic [ref=e311]: Rohinik Foundation
+                    - paragraph [ref=e312]: Open intelligent computing platform. Memory First. Capability First. LLM Last.
+                - generic [ref=e313]:
+                    - heading "Foundation" [level=3] [ref=e314]
+                    - list [ref=e315]:
+                        - listitem [ref=e316]:
+                            - link "About" [ref=e317] [cursor=pointer]:
+                                - /url: /about
+                        - listitem [ref=e318]:
+                            - link "Governance" [ref=e319] [cursor=pointer]:
+                                - /url: /governance
+                        - listitem [ref=e320]:
+                            - link "Community" [ref=e321] [cursor=pointer]:
+                                - /url: /community
+                - generic [ref=e322]:
+                    - heading "Standards" [level=3] [ref=e323]
+                    - list [ref=e324]:
+                        - listitem [ref=e325]:
+                            - link "Specifications" [ref=e326] [cursor=pointer]:
+                                - /url: /specifications
+                        - listitem [ref=e327]:
+                            - link "RS-1" [ref=e328] [cursor=pointer]:
+                                - /url: /rs-1
+                        - listitem [ref=e329]:
+                            - link "Architecture" [ref=e330] [cursor=pointer]:
+                                - /url: /architecture
+                - generic [ref=e331]:
+                    - heading "Resources" [level=3] [ref=e332]
+                    - list [ref=e333]:
+                        - listitem [ref=e334]:
+                            - link "Documentation" [ref=e335] [cursor=pointer]:
+                                - /url: /documentation
+                        - listitem [ref=e336]:
+                            - link "Releases" [ref=e337] [cursor=pointer]:
+                                - /url: /releases
+                        - listitem [ref=e338]:
+                            - link "Ecosystem" [ref=e339] [cursor=pointer]:
+                                - /url: /ecosystem
+            - generic [ref=e340]:
+                - paragraph [ref=e341]: © 2026–Present. All rights reserved.
+                - link "GitHub" [ref=e343] [cursor=pointer]:
+                    - /url: https://github.com/rohinik-org/
+    - alert [ref=e345]

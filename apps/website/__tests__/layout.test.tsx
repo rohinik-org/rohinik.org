@@ -1,9 +1,5 @@
 import { render } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
-
-vi.mock('next/navigation', () => ({
-  usePathname: () => '/',
-}));
+import { describe, expect, it } from 'vitest';
 
 describe('RootLayout', () => {
   it('renders children inside main with id main-content', async () => {

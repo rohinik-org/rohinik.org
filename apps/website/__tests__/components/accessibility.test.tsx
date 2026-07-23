@@ -13,10 +13,6 @@ vi.mock('next-themes', () => ({
   ThemeProvider: ({ children }: { children: React.ReactNode }) => <>{children}</>,
 }));
 
-vi.mock('next/navigation', () => ({
-  usePathname: () => '/',
-}));
-
 describe('accessibility', () => {
   it('TopNav has no axe violations', async () => {
     const { container } = render(<TopNav />);
