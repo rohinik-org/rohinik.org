@@ -30,11 +30,11 @@ describe('ChangeProcess', () => {
     }
   });
 
-  it('governance callout aside contains the specifications-first message', () => {
+  it('governance callout contains the specifications-first message', () => {
     render(<ChangeProcess />);
-    const aside = document.querySelector('aside');
-    expect(aside).toBeInTheDocument();
-    expect(aside?.textContent).toMatch(/specifications do/i);
+    const callout = document.querySelector('[role="note"]');
+    expect(callout).toBeInTheDocument();
+    expect(callout?.textContent).toMatch(/specifications do/i);
   });
 
   it('uses a semantic ol element', () => {

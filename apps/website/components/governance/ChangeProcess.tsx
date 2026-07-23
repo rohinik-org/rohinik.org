@@ -38,7 +38,8 @@ export function ChangeProcess() {
             </li>
           ))}
         </ol>
-        <aside
+        <div
+          role="note"
           aria-labelledby="governance-callout-heading"
           className="mt-8 border border-outline-variant p-6"
         >
@@ -48,7 +49,7 @@ export function ChangeProcess() {
           >
             Code never becomes authoritative first. Specifications do.
           </p>
-        </aside>
+        </div>
       </div>
     </section>
   );

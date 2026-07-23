@@ -32,7 +32,7 @@ describe('GovernancePage', () => {
       /roles and responsibilities/i,
       /compatibility rules/i,
       /conformance/i,
-      /contribute/i,
+      /^contribute$/i,
       /continue through the foundation/i,
     ];
     for (const pattern of headings) {
