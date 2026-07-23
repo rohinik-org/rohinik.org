@@ -39,6 +39,11 @@ const FIXTURE: readonly SpecificationRecord[] = [
   },
 ];
 
+// ponytail: sync accessor for RSC page composition and tests; async wrapper retained for future pipeline
+export function getSpecificationRegistrySync(): readonly SpecificationRecord[] {
+  return FIXTURE;
+}
+
 // eslint-disable-next-line @typescript-eslint/require-await
 export async function getSpecificationRegistry(): Promise<readonly SpecificationRecord[]> {
   return FIXTURE;

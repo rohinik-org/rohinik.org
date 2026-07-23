@@ -1,14 +1,35 @@
 import type { Metadata } from 'next';
-import { PageShell } from '@/components/layout/PageShell';
+import { AuthorityHierarchy } from '@/components/specifications/AuthorityHierarchy';
+import { CorpusSummary } from '@/components/specifications/CorpusSummary';
+import { DecisionRecordPreview } from '@/components/specifications/DecisionRecordPreview';
+import { IdentifierTaxonomy } from '@/components/specifications/IdentifierTaxonomy';
+import { SpecificationFamilies } from '@/components/specifications/SpecificationFamilies';
+import { SpecificationLifecycle } from '@/components/specifications/SpecificationLifecycle';
+import { SpecificationReferences } from '@/components/specifications/SpecificationReferences';
+import { SpecificationRegistry } from '@/components/specifications/SpecificationRegistry';
+import { SpecificationsHero } from '@/components/specifications/SpecificationsHero';
+import { getSpecificationRegistrySync } from '@/lib/specifications/registry';
 
-export const metadata: Metadata = { title: 'Specifications' };
+export const metadata: Metadata = {
+  title: 'Specifications',
+  description:
+    'Browse the authoritative Rohinik specification corpus, identifier taxonomy, authority hierarchy, and architectural decision records.',
+};
 
 export default function SpecificationsPage() {
+  const specifications = getSpecificationRegistrySync();
+
   return (
-    <PageShell
-      label="SPECIFICATIONS / RS-1"
-      title="Specification Corpus"
-      description="AFS, ADR, LAW, REQ, INV, OBS, SEC, AX."
-    />
+    <>
+      <SpecificationsHero specifications={specifications} />
+      <CorpusSummary />
+      <SpecificationRegistry specifications={specifications} />
+      <SpecificationFamilies />
+      <AuthorityHierarchy />
+      <IdentifierTaxonomy />
+      <DecisionRecordPreview />
+      <SpecificationLifecycle />
+      <SpecificationReferences />
+    </>
   );
 }
