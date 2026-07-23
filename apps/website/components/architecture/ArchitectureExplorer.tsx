@@ -55,7 +55,7 @@ export function ArchitectureExplorer() {
                       >
                         {layer.label}
                       </div>
-                      <p className="font-body text-body-md text-on-surface-variant leading-snug text-[0.8125rem]">
+                      <p className="font-body text-technical-code text-on-surface-variant leading-snug">
                         {layer.shortDescription}
                       </p>
                     </div>
