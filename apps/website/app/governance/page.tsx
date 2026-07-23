@@ -11,7 +11,11 @@ import { ConformanceSection } from '@/components/governance/ConformanceSection';
 import { ContributionWorkflow } from '@/components/governance/ContributionWorkflow';
 import { GovernanceReferences } from '@/components/governance/GovernanceReferences';
 
-export const metadata: Metadata = { title: 'Governance' };
+export const metadata: Metadata = {
+  title: 'Governance',
+  description:
+    'How Rohinik separates constitutional rules, architectural specifications, runtime implementations, and conformance so innovation never silently redefines the platform.',
+};
 
 export default function GovernancePage() {
   return (

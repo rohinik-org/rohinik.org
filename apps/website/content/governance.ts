@@ -4,7 +4,12 @@ export const governanceContent = {
     title: 'Architecture evolves through explicit decisions.',
     description:
       'Rohinik separates constitutional rules, architectural specifications, runtime implementations, and experiments so innovation never silently redefines the platform.',
-    register: ['Constitution', 'Specifications', 'Governance', 'Conformance'],
+    register: [
+      { term: 'Constitution', description: 'Immutable architectural laws.' },
+      { term: 'Specifications', description: 'Authoritative public contracts.' },
+      { term: 'Governance', description: 'Oversight and change control.' },
+      { term: 'Conformance', description: 'Verification against specifications.' },
+    ],
   },
 
   atAGlance: {

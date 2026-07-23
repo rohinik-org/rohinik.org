@@ -51,7 +51,9 @@ describe('AuthorityModel', () => {
   });
 
   it('no cycles in parent chain', () => {
-    const parentMap = new Map(governanceContent.authorityModel.map((r) => [r.id, r.parent]));
+    const parentMap = new Map<string, string | null>(
+      governanceContent.authorityModel.map((r) => [r.id, r.parent]),
+    );
     for (const record of governanceContent.authorityModel) {
       const visited = new Set<string>();
       let current: string | null = record.id;
