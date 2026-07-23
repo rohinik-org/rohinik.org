@@ -11,27 +11,28 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@rohinik/config": "workspace:*",
+    "clsx": "^2.0.0",
     "next": "^15.0.0",
+    "next-themes": "^0.4.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next-themes": "^0.4.0",
-    "clsx": "^2.0.0",
-    "tailwind-merge": "^2.0.0",
-    "@rohinik/config": "workspace:*"
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest-axe": "^3.5.9",
     "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "typescript": "^5.0.0",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/postcss": "^4.0.0",
-    "vitest": "^2.0.0",
     "@vitejs/plugin-react": "^4.0.0",
-    "@testing-library/react": "^16.0.0",
-    "@testing-library/jest-dom": "^6.0.0",
-    "jsdom": "^24.0.0",
     "jest-axe": "^8.0.0",
-    "@types/jest-axe": "^3.5.9"
+    "jsdom": "^24.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
   }
 }
