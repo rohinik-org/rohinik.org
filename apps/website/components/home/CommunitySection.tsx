@@ -29,7 +29,7 @@ export function CommunitySection() {
                 </p>
               </div>
               <span
-                className="font-mono text-headline-sm text-on-surface-variant group-hover:text-secondary transition-colors shrink-0"
+                className="font-mono text-label-caps text-on-surface-variant group-hover:text-secondary transition-colors shrink-0"
                 aria-hidden="true"
               >
                 →
