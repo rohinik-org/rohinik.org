@@ -9,6 +9,8 @@ import { ImplementedSpecifications } from '@/components/reference-standard/Imple
 import { CapabilityCoverage } from '@/components/reference-standard/CapabilityCoverage';
 import { ConformanceModel } from '@/components/reference-standard/ConformanceModel';
 import { DesignPrinciples } from '@/components/reference-standard/DesignPrinciples';
+import { RepositoryStructure } from '@/components/reference-standard/RepositoryStructure';
+import { DevelopmentLifecycle } from '@/components/reference-standard/DevelopmentLifecycle';
 
 expect.extend(toHaveNoViolations);
 
@@ -280,6 +282,62 @@ describe('DesignPrinciples', () => {
 
   it('has no axe violations', async () => {
     const { container } = render(<DesignPrinciples />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
+  });
+});
+
+describe('RepositoryStructure', () => {
+  it('renders all domain entries', () => {
+    render(<RepositoryStructure />);
+    for (const domain of rs1Content.repository.domains) {
+      expect(screen.getByText(domain.label)).toBeInTheDocument();
+    }
+  });
+
+  it('has no axe violations', async () => {
+    const { container } = render(<RepositoryStructure />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
+  });
+});
+
+describe('DevelopmentLifecycle', () => {
+  it('renders 5 lifecycle steps', () => {
+    render(<DevelopmentLifecycle />);
+    const items = screen.getAllByRole('listitem');
+    expect(items).toHaveLength(5);
+  });
+
+  it('Specification Published step precedes Release step in DOM', () => {
+    render(<DevelopmentLifecycle />);
+    const spec = screen.getByText('Specification Published').closest('li');
+    const release = screen.getByText('Release').closest('li');
+    expect(spec).toBeInTheDocument();
+    expect(release).toBeInTheDocument();
+    if (spec && release) {
+      expect(spec.compareDocumentPosition(release) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    }
+  });
+
+  it('callout contains specifications-follow message', () => {
+    render(<DevelopmentLifecycle />);
+    const callout = document.querySelector('[role="note"]');
+    expect(callout).toBeInTheDocument();
+    expect(callout?.textContent).toMatch(/specifications never follow/i);
+  });
+
+  it('does not contain text arrow characters as structural connectors', () => {
+    render(<DevelopmentLifecycle />);
+    // The lifecycle pipeline uses CSS borders, not → text characters
+    const visibleArrows = Array.from(document.querySelectorAll('li')).filter((li) =>
+      li.textContent.includes('→'),
+    );
+    expect(visibleArrows).toHaveLength(0);
+  });
+
+  it('has no axe violations', async () => {
+    const { container } = render(<DevelopmentLifecycle />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
