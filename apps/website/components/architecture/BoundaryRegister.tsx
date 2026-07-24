@@ -56,13 +56,13 @@ export function BoundaryRegister() {
             <tbody className="divide-y divide-outline-variant">
               {boundaries.map((boundary) => (
                 <tr key={boundary.id} className="hover:bg-surface-container transition-colors">
-                  <td className="font-mono text-label-caps uppercase tracking-widest text-on-surface px-4 py-4 align-top">
+                  <td className="font-mono text-label-caps uppercase tracking-widest text-on-surface px-4 py-4 align-baseline">
                     {boundary.from}
                   </td>
-                  <td className="font-mono text-label-caps uppercase tracking-widest text-secondary px-4 py-4 align-top">
+                  <td className="font-mono text-label-caps uppercase tracking-widest text-secondary px-4 py-4 align-baseline">
                     {boundary.to}
                   </td>
-                  <td className="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant px-4 py-4 align-top">
+                  <td className="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant px-4 py-4 align-baseline">
                     {boundary.contract}
                   </td>
                   <td className="font-body text-body-md text-on-surface-variant px-4 py-4 align-top leading-relaxed">

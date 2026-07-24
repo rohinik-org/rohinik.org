@@ -22,7 +22,7 @@ export function SpecificationFamilies() {
           {families.map((family) => (
             <div
               key={family.id}
-              className="grid grid-cols-1 md:grid-cols-[6rem_1fr] gap-4 md:gap-8 py-6"
+              className="grid grid-cols-1 md:grid-cols-[6rem_1fr] gap-4 md:gap-8 py-6 md:items-baseline"
             >
               <div className="font-mono text-label-caps uppercase tracking-widest text-on-surface">
                 {family.id}

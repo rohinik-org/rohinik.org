@@ -47,7 +47,7 @@ export function SpecificationLifecycle() {
           {versioningRules.map((v) => (
             <div
               key={v.level}
-              className="grid grid-cols-1 md:grid-cols-[6rem_1fr] gap-2 md:gap-8 py-5"
+              className="grid grid-cols-1 md:grid-cols-[6rem_1fr] gap-2 md:gap-8 py-5 md:items-baseline"
             >
               <span className="font-mono text-label-caps uppercase tracking-widest text-on-surface">
                 {v.level}

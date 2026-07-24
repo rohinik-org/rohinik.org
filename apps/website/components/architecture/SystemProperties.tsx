@@ -19,7 +19,7 @@ export function SystemProperties() {
           {properties.map((prop) => (
             <div
               key={prop.id}
-              className="grid grid-cols-1 md:grid-cols-[64px_280px_1fr] gap-4 md:gap-8 py-6"
+              className="grid grid-cols-1 md:grid-cols-[64px_280px_1fr] gap-4 md:gap-8 py-6 md:items-baseline"
             >
               <div className="font-mono text-label-caps text-on-surface-variant">{prop.index}</div>
               <div className="font-mono text-label-caps uppercase tracking-widest text-on-surface">

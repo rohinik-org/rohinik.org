@@ -22,7 +22,7 @@ export function ChangeProcess() {
           {changeProcess.map((item) => (
             <li
               key={item.id}
-              className="grid grid-cols-1 md:grid-cols-[10rem_1fr] gap-2 md:gap-8 py-5"
+              className="grid grid-cols-1 md:grid-cols-[10rem_1fr] gap-2 md:gap-8 py-5 md:items-baseline"
             >
               <div className="flex items-baseline gap-3">
                 <span className="font-mono text-label-caps text-on-surface-variant">

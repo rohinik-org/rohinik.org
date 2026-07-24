@@ -24,7 +24,7 @@ export function CrossCuttingSystems() {
           {crossCuttingSystems.map((system) => (
             <div
               key={system.id}
-              className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-4 md:gap-12 py-6 items-start"
+              className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-4 md:gap-12 py-6 md:items-baseline"
             >
               <div className="font-mono text-label-caps uppercase tracking-widest text-on-surface">
                 {system.title}

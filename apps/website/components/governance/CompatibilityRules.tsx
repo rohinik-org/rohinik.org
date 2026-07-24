@@ -35,7 +35,7 @@ export function CompatibilityRules() {
             <tbody className="divide-y divide-outline-variant">
               {versioning.map((v) => (
                 <tr key={v.id}>
-                  <td className="font-mono text-label-caps uppercase tracking-widest text-on-surface p-4 align-top">
+                  <td className="font-mono text-label-caps uppercase tracking-widest text-on-surface p-4 align-baseline">
                     {v.level}
                   </td>
                   <td className="font-body text-body-md text-on-surface-variant p-4 leading-relaxed align-top">
@@ -54,7 +54,7 @@ export function CompatibilityRules() {
           {evolution.map((e) => (
             <div
               key={e.id}
-              className="grid grid-cols-1 md:grid-cols-[8rem_1fr] gap-2 md:gap-8 py-5"
+              className="grid grid-cols-1 md:grid-cols-[8rem_1fr] gap-2 md:gap-8 py-5 md:items-baseline"
             >
               <span className="font-mono text-label-caps uppercase tracking-widest text-on-surface">
                 {e.level}
