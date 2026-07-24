@@ -12,6 +12,7 @@ import { DesignPrinciples } from '@/components/reference-standard/DesignPrincipl
 import { RepositoryStructure } from '@/components/reference-standard/RepositoryStructure';
 import { DevelopmentLifecycle } from '@/components/reference-standard/DevelopmentLifecycle';
 import { RSReferences } from '@/components/reference-standard/RSReferences';
+import RSOnePage from '@/app/reference-standards/rs-1/page';
 
 expect.extend(toHaveNoViolations);
 
@@ -358,6 +359,84 @@ describe('RSReferences', () => {
 
   it('has no axe violations', async () => {
     const { container } = render(<RSReferences />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
+  });
+});
+
+describe('RSOnePage', () => {
+  it('has exactly one H1', () => {
+    render(<RSOnePage />);
+    expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1);
+  });
+
+  it('H1 is RS-1', () => {
+    render(<RSOnePage />);
+    expect(screen.getByRole('heading', { level: 1, name: /^rs-1$/i })).toBeInTheDocument();
+  });
+
+  it('renders all section headings', () => {
+    render(<RSOnePage />);
+    const headings = [
+      /^what is rs-1\?$/i,
+      /^scope and authority$/i,
+      /^implemented specifications$/i,
+      /^capability coverage$/i,
+      /^architecture mapping$/i,
+      /^conformance model$/i,
+      /^engineering principles$/i,
+      /^architectural domains$/i,
+      /^development lifecycle$/i,
+      /^continue through the foundation\.$/i,
+    ];
+    for (const pattern of headings) {
+      expect(screen.getByRole('heading', { name: pattern })).toBeInTheDocument();
+    }
+  });
+
+  it('sections are in canonical DOM order', () => {
+    render(<RSOnePage />);
+    const sectionIds = [
+      'overview',
+      'what-is-rs1',
+      'scope',
+      'implemented-specs',
+      'coverage',
+      'architecture-mapping',
+      'conformance',
+      'principles',
+      'repository',
+      'lifecycle',
+      'related',
+    ];
+    const sections = sectionIds.map((id) => document.getElementById(id));
+    for (const section of sections) {
+      expect(section).toBeTruthy();
+    }
+    for (let i = 0; i < sections.length - 1; i++) {
+      const a = sections[i];
+      const b = sections[i + 1];
+      if (a && b) {
+        expect(a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+      }
+    }
+  });
+
+  it('every section has aria-labelledby', () => {
+    render(<RSOnePage />);
+    const sections = document.querySelectorAll('section');
+    for (const section of sections) {
+      expect(section.getAttribute('aria-labelledby')).toBeTruthy();
+    }
+  });
+
+  it('no dead href="#" links', () => {
+    render(<RSOnePage />);
+    expect(document.querySelectorAll('a[href="#"]')).toHaveLength(0);
+  });
+
+  it('has no axe violations', async () => {
+    const { container } = render(<RSOnePage />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
