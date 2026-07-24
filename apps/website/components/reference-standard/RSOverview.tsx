@@ -23,10 +23,7 @@ export function RSOverview() {
             <ul className="space-y-3 list-none">
               {overview.purpose.map((item) => (
                 <li key={item} className="flex items-baseline gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="w-1.5 h-1.5 rounded-full bg-secondary shrink-0 mt-2"
-                  />
+                  <span aria-hidden="true" className="w-1.5 h-1.5 bg-secondary shrink-0 mt-2" />
                   <span className="font-body text-body-md text-on-surface-variant leading-relaxed">
                     {item}
                   </span>
@@ -41,10 +38,7 @@ export function RSOverview() {
             <ul className="space-y-3 list-none">
               {overview.notIntendedTo.map((item) => (
                 <li key={item} className="flex items-baseline gap-3">
-                  <span
-                    aria-hidden="true"
-                    className="w-1.5 h-1.5 rounded-full bg-outline shrink-0 mt-2"
-                  />
+                  <span aria-hidden="true" className="w-1.5 h-1.5 bg-outline shrink-0 mt-2" />
                   <span className="font-body text-body-md text-on-surface-variant leading-relaxed">
                     {item}
                   </span>

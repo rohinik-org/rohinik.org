@@ -35,7 +35,7 @@ export function ConformanceModel() {
             </li>
           ))}
         </ol>
-        <p className="font-body text-technical-code text-on-surface-variant leading-relaxed max-w-2xl">
+        <p className="font-mono text-technical-code text-on-surface-variant leading-relaxed max-w-2xl">
           {conformance.chainNote}
         </p>
       </div>

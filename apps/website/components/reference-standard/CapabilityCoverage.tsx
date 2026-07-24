@@ -34,7 +34,7 @@ export function CapabilityCoverage() {
                 'p-6 flex flex-col gap-2',
                 i % 4 !== 3 ? 'md:border-r border-outline-variant' : '',
                 i < 4 ? 'md:border-b border-outline-variant' : '',
-                i % 2 === 0 ? 'border-r border-outline-variant md:border-r-0' : '',
+                i % 2 === 0 ? 'border-r border-outline-variant' : '',
               ]
                 .filter(Boolean)
                 .join(' ')}
