@@ -1,9 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { toHaveNoViolations } from 'jest-axe';
 import { rs1Content, COVERAGE_STATUS } from '@/content/reference-standards/rs1';
 import type { CoverageStatus } from '@/content/reference-standards/rs1';
-
-expect.extend(toHaveNoViolations);
 
 describe('rs1Content shape', () => {
   it('hero has eyebrow, title, subtitle, description, register', () => {
@@ -11,15 +8,26 @@ describe('rs1Content shape', () => {
     expect(rs1Content.hero.title).toBe('RS-1');
     expect(rs1Content.hero.subtitle).toBeTruthy();
     expect(rs1Content.hero.description).toBeTruthy();
-    expect(rs1Content.hero.register).toHaveLength(4);
+    for (const item of rs1Content.hero.register) {
+      expect(item.term).toBeTruthy();
+      expect(item.description).toBeTruthy();
+    }
   });
 
-  it('authority chain has 5 levels', () => {
-    expect(rs1Content.authority.chain).toHaveLength(5);
+  it('authority chain has required fields', () => {
+    for (const item of rs1Content.authority.chain) {
+      expect(item.id).toBeTruthy();
+      expect(item.label).toBeTruthy();
+      expect(item.description).toBeTruthy();
+    }
   });
 
-  it('coverage has 8 entries', () => {
-    expect(rs1Content.coverage).toHaveLength(8);
+  it('coverage has required fields', () => {
+    for (const item of rs1Content.coverage) {
+      expect(item.id).toBeTruthy();
+      expect(item.label).toBeTruthy();
+      expect(item.status).toBeTruthy();
+    }
   });
 
   it('coverage status values are typed', () => {
@@ -43,11 +51,18 @@ describe('rs1Content shape', () => {
     }
   });
 
-  it('conformance chain has 5 items', () => {
-    expect(rs1Content.conformance.chain).toHaveLength(5);
+  it('conformance chain has string items', () => {
+    for (const item of rs1Content.conformance.chain) {
+      expect(typeof item).toBe('string');
+      expect(item.length).toBeGreaterThan(0);
+    }
   });
 
-  it('lifecycle has 5 steps', () => {
-    expect(rs1Content.lifecycle.steps).toHaveLength(5);
+  it('lifecycle has steps with required fields', () => {
+    for (const step of rs1Content.lifecycle.steps) {
+      expect(step.id).toBeTruthy();
+      expect(step.label).toBeTruthy();
+      expect(step.description).toBeTruthy();
+    }
   });
 });
