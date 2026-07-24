@@ -1,0 +1,500 @@
+- generic [active] [ref=f12e1]:
+    - banner [ref=f12e2]:
+        - link "Skip to main content" [ref=f12e3] [cursor=pointer]:
+            - /url: '#main-content'
+        - generic [ref=f12e4]:
+            - link "ROHINIK" [ref=f12e5] [cursor=pointer]:
+                - /url: /
+            - navigation "Main navigation" [ref=f12e11]:
+                - link "Home" [ref=f12e12] [cursor=pointer]:
+                    - /url: /
+                - link "Architecture" [ref=f12e13] [cursor=pointer]:
+                    - /url: /architecture
+                - link "Specifications" [ref=f12e14] [cursor=pointer]:
+                    - /url: /specifications
+                - link "Governance" [ref=f12e15] [cursor=pointer]:
+                    - /url: /governance
+                - link "RS-1" [ref=f12e16] [cursor=pointer]:
+                    - /url: /rs-1
+                - link "Ecosystem" [ref=f12e17] [cursor=pointer]:
+                    - /url: /ecosystem
+                - link "Documentation" [ref=f12e18] [cursor=pointer]:
+                    - /url: /documentation
+                - link "Releases" [ref=f12e19] [cursor=pointer]:
+                    - /url: /releases
+                - link "Community" [ref=f12e20] [cursor=pointer]:
+                    - /url: /community
+            - 'button "Theme: SYSTEM. Click to switch to LIGHT" [ref=f12e22]': SYSTEM
+    - main [ref=f12e23]:
+        - region [ref=f12e24]:
+            - generic [ref=f12e25]:
+                - paragraph [ref=f12e26]: Governance
+                - heading "Architecture evolves through explicit decisions." [level=1] [ref=f12e27]
+                - paragraph [ref=f12e28]: Rohinik separates constitutional rules, architectural specifications, runtime implementations, and experiments so innovation never silently redefines the platform.
+                - generic [ref=f12e29]:
+                    - generic [ref=f12e30]:
+                        - term [ref=f12e31]: Constitution
+                        - definition [ref=f12e32]: Immutable architectural laws.
+                    - generic [ref=f12e33]:
+                        - term [ref=f12e34]: Specifications
+                        - definition [ref=f12e35]: Authoritative public contracts.
+                    - generic [ref=f12e36]:
+                        - term [ref=f12e37]: Governance
+                        - definition [ref=f12e38]: Oversight and change control.
+                    - generic [ref=f12e39]:
+                        - term [ref=f12e40]: Conformance
+                        - definition [ref=f12e41]: Verification against specifications.
+        - region [ref=f12e42]:
+            - generic [ref=f12e43]:
+                - heading "Governance at a Glance" [level=2] [ref=f12e44]
+                - generic [ref=f12e45]:
+                    - generic [ref=f12e46]:
+                        - generic [ref=f12e47]: Constitutional
+                        - generic [ref=f12e48]: Constitution
+                        - paragraph [ref=f12e49]: Defines immutable architectural laws.
+                    - generic [ref=f12e50]:
+                        - generic [ref=f12e51]: Governance
+                        - generic [ref=f12e52]: Architecture Board
+                        - paragraph [ref=f12e53]: Approves constitutional changes.
+                    - generic [ref=f12e54]:
+                        - generic [ref=f12e55]: Normative
+                        - generic [ref=f12e56]: Specifications
+                        - paragraph [ref=f12e57]: Authoritative public contract.
+                    - generic [ref=f12e58]:
+                        - generic [ref=f12e59]: Reference
+                        - generic [ref=f12e60]: Reference Standards
+                        - paragraph [ref=f12e61]: Define canonical reference and conformance profiles.
+                    - generic [ref=f12e62]:
+                        - generic [ref=f12e63]: Operational
+                        - generic [ref=f12e64]: Implementations
+                        - paragraph [ref=f12e65]: Free to implement the contract.
+                    - generic [ref=f12e66]:
+                        - generic [ref=f12e67]: Verification
+                        - generic [ref=f12e68]: Conformance
+                        - paragraph [ref=f12e69]: Determined against specifications.
+        - region [ref=f12e70]:
+            - generic [ref=f12e71]:
+                - heading "Governance Principles" [level=2] [ref=f12e72]
+                - generic [ref=f12e73]:
+                    - generic [ref=f12e74]:
+                        - generic [ref=f12e75]: '01'
+                        - heading "Specifications precede implementations." [level=3] [ref=f12e76]
+                        - paragraph [ref=f12e77]: No implementation is authoritative before its specification is published.
+                    - generic [ref=f12e78]:
+                        - generic [ref=f12e79]: '02'
+                        - heading "Architectural authority is explicit." [level=3] [ref=f12e80]
+                        - paragraph [ref=f12e81]: Authority flows through defined levels. No implicit escalation.
+                    - generic [ref=f12e82]:
+                        - generic [ref=f12e83]: '03'
+                        - heading "Compatibility is preserved deliberately." [level=3] [ref=f12e84]
+                        - paragraph [ref=f12e85]: Every breaking change requires explicit governance approval.
+                    - generic [ref=f12e86]:
+                        - generic [ref=f12e87]: '04'
+                        - heading "No implementation may redefine constitutional rules." [level=3] [ref=f12e88]
+                        - paragraph [ref=f12e89]: Constitutional laws are immutable outside the constitutional change process.
+        - region [ref=f12e90]:
+            - generic [ref=f12e91]:
+                - heading "Authority Model" [level=2] [ref=f12e92]
+                - paragraph [ref=f12e93]: Authority flows downward only. A lower-level record cannot override a higher-level one.
+                - list "Authority levels from highest to lowest" [ref=f12e94]:
+                    - listitem [ref=f12e95]:
+                        - generic [ref=f12e99]:
+                            - generic [ref=f12e100]:
+                                - generic [ref=f12e101]: '01'
+                                - heading "Constitution" [level=3] [ref=f12e102]
+                                - generic [ref=f12e103]: Constitutional
+                            - generic [ref=f12e104]:
+                                - generic [ref=f12e105]:
+                                    - term [ref=f12e106]: Owns
+                                    - definition [ref=f12e107]: Immutable architectural laws
+                                    - definition [ref=f12e108]: Constitutional change process
+                                - generic [ref=f12e109]:
+                                    - term [ref=f12e110]: Cannot
+                                    - definition [ref=f12e111]: Be amended outside the constitutional process
+                                    - definition [ref=f12e112]: Be overridden by any specification
+                    - listitem [ref=f12e113]:
+                        - generic [ref=f12e117]:
+                            - generic [ref=f12e118]:
+                                - generic [ref=f12e119]: '02'
+                                - heading "Architecture Board" [level=3] [ref=f12e120]
+                                - generic [ref=f12e121]: Governance
+                            - generic [ref=f12e122]:
+                                - generic [ref=f12e123]:
+                                    - term [ref=f12e124]: Owns
+                                    - definition [ref=f12e125]: Approval of constitutional changes
+                                    - definition [ref=f12e126]: Interpretation of architectural conflicts
+                                - generic [ref=f12e127]:
+                                    - term [ref=f12e128]: Cannot
+                                    - definition [ref=f12e129]: Override immutable laws without constitutional process
+                                    - definition [ref=f12e130]: Direct implementation-specific design
+                    - listitem [ref=f12e131]:
+                        - generic [ref=f12e135]:
+                            - generic [ref=f12e136]:
+                                - generic [ref=f12e137]: '03'
+                                - heading "Foundation Specification" [level=3] [ref=f12e138]
+                                - generic [ref=f12e139]: Foundational
+                            - generic [ref=f12e140]:
+                                - generic [ref=f12e141]:
+                                    - term [ref=f12e142]: Owns
+                                    - definition [ref=f12e143]: Canonical terminology
+                                    - definition [ref=f12e144]: Architectural foundations
+                                - generic [ref=f12e145]:
+                                    - term [ref=f12e146]: Cannot
+                                    - definition [ref=f12e147]: Contradict constitutional laws
+                                    - definition [ref=f12e148]: Supersede board decisions
+                    - listitem [ref=f12e149]:
+                        - generic [ref=f12e153]:
+                            - generic [ref=f12e154]:
+                                - generic [ref=f12e155]: '04'
+                                - heading "Architectural Specifications" [level=3] [ref=f12e156]
+                                - generic [ref=f12e157]: Architectural
+                            - generic [ref=f12e158]:
+                                - generic [ref=f12e159]:
+                                    - term [ref=f12e160]: Owns
+                                    - definition [ref=f12e161]: Layer definitions
+                                    - definition [ref=f12e162]: Invariants
+                                    - definition [ref=f12e163]: Runtime responsibilities
+                                - generic [ref=f12e164]:
+                                    - term [ref=f12e165]: Cannot
+                                    - definition [ref=f12e166]: Contradict foundational specifications
+                                    - definition [ref=f12e167]: Redefine constitutional terms
+                    - listitem [ref=f12e168]:
+                        - generic [ref=f12e172]:
+                            - generic [ref=f12e173]:
+                                - generic [ref=f12e174]: '05'
+                                - heading "Runtime Specifications" [level=3] [ref=f12e175]
+                                - generic [ref=f12e176]: Runtime
+                            - generic [ref=f12e177]:
+                                - generic [ref=f12e178]:
+                                    - term [ref=f12e179]: Owns
+                                    - definition [ref=f12e180]: Runtime protocol definitions
+                                    - definition [ref=f12e181]: Lifecycle semantics
+                                - generic [ref=f12e182]:
+                                    - term [ref=f12e183]: Cannot
+                                    - definition [ref=f12e184]: Expand architectural boundaries
+                                    - definition [ref=f12e185]: Weaken invariants
+                    - listitem [ref=f12e186]:
+                        - generic [ref=f12e190]:
+                            - generic [ref=f12e191]:
+                                - generic [ref=f12e192]: '06'
+                                - heading "Reference Implementation" [level=3] [ref=f12e193]
+                                - generic [ref=f12e194]: Reference
+                            - generic [ref=f12e195]:
+                                - generic [ref=f12e196]:
+                                    - term [ref=f12e197]: Owns
+                                    - definition [ref=f12e198]: Conformance demonstration
+                                    - definition [ref=f12e199]: Interoperability baseline
+                                - generic [ref=f12e200]:
+                                    - term [ref=f12e201]: Cannot
+                                    - definition [ref=f12e202]: Define new normative requirements
+                                    - definition [ref=f12e203]: Override published specifications
+                    - listitem [ref=f12e204]:
+                        - generic [ref=f12e207]:
+                            - generic [ref=f12e208]:
+                                - generic [ref=f12e209]: '07'
+                                - heading "Third-party Implementations" [level=3] [ref=f12e210]
+                                - generic [ref=f12e211]: Operational
+                            - generic [ref=f12e212]:
+                                - generic [ref=f12e213]:
+                                    - term [ref=f12e214]: Owns
+                                    - definition [ref=f12e215]: Domain-specific behaviour within specification boundaries
+                                - generic [ref=f12e216]:
+                                    - term [ref=f12e217]: Cannot
+                                    - definition [ref=f12e218]: Claim conformance without satisfying mandatory specifications
+                                    - definition [ref=f12e219]: Redefine normative terms
+        - region [ref=f12e220]:
+            - generic [ref=f12e221]:
+                - heading "Governance Lifecycle" [level=2] [ref=f12e222]
+                - paragraph [ref=f12e223]: Governance changes progress through defined stages before becoming authoritative.
+                - list [ref=f12e224]:
+                    - listitem [ref=f12e225]:
+                        - generic [ref=f12e226]: Proposal
+                        - paragraph [ref=f12e227]: A written proposal initiates the governance change.
+                    - listitem [ref=f12e228]:
+                        - generic [ref=f12e229]: Review
+                        - paragraph [ref=f12e230]: Architectural and constitutional impact is assessed.
+                    - listitem [ref=f12e231]:
+                        - generic [ref=f12e232]: Decision
+                        - paragraph [ref=f12e233]: Required authority grants or denies approval.
+                    - listitem [ref=f12e234]:
+                        - generic [ref=f12e235]: Publication
+                        - paragraph [ref=f12e236]: The decision is versioned and publicly recorded.
+                    - listitem [ref=f12e237]:
+                        - generic [ref=f12e238]: Adoption
+                        - paragraph [ref=f12e239]: Specifications and implementations reflect the change.
+                    - listitem [ref=f12e240]:
+                        - generic [ref=f12e241]: Maintenance
+                        - paragraph [ref=f12e242]: The decision is maintained as an authoritative record.
+        - region [ref=f12e243]:
+            - generic [ref=f12e244]:
+                - heading "Change Process" [level=2] [ref=f12e245]
+                - list "Governance change process steps" [ref=f12e246]:
+                    - listitem [ref=f12e247]:
+                        - generic [ref=f12e248]:
+                            - generic [ref=f12e249]: '01'
+                            - generic [ref=f12e250]: Proposal
+                        - paragraph [ref=f12e251]: A change begins as an explicit written proposal.
+                    - listitem [ref=f12e252]:
+                        - generic [ref=f12e253]:
+                            - generic [ref=f12e254]: '02'
+                            - generic [ref=f12e255]: Architecture Review
+                        - paragraph [ref=f12e256]: Compatibility and constitutional impact are assessed.
+                    - listitem [ref=f12e257]:
+                        - generic [ref=f12e258]:
+                            - generic [ref=f12e259]: '03'
+                            - generic [ref=f12e260]: Draft
+                        - paragraph [ref=f12e261]: Normative language is prepared.
+                    - listitem [ref=f12e262]:
+                        - generic [ref=f12e263]:
+                            - generic [ref=f12e264]: '04'
+                            - generic [ref=f12e265]: Approval
+                        - paragraph [ref=f12e266]: Required authority grants approval.
+                    - listitem [ref=f12e267]:
+                        - generic [ref=f12e268]:
+                            - generic [ref=f12e269]: '05'
+                            - generic [ref=f12e270]: Publication
+                        - paragraph [ref=f12e271]: The authoritative document is versioned and released.
+                    - listitem [ref=f12e272]:
+                        - generic [ref=f12e273]:
+                            - generic [ref=f12e274]: '06'
+                            - generic [ref=f12e275]: Implementation
+                        - paragraph [ref=f12e276]: Implementations may adopt the published change.
+                - note [ref=f12e277]:
+                    - paragraph [ref=f12e278]: Code never becomes authoritative first. Specifications do.
+        - region [ref=f12e279]:
+            - generic [ref=f12e280]:
+                - heading "Roles and Responsibilities" [level=2] [ref=f12e281]
+                - generic [ref=f12e282]:
+                    - generic [ref=f12e283]:
+                        - generic [ref=f12e284]:
+                            - generic [ref=f12e285]: Architecture Board
+                            - generic [ref=f12e286]: Governance
+                        - generic [ref=f12e287]:
+                            - generic [ref=f12e288]:
+                                - term [ref=f12e289]: Owns
+                                - definition [ref=f12e290]: Constitutional decisions
+                                - definition [ref=f12e291]: Architectural conflict resolution
+                            - generic [ref=f12e292]:
+                                - term [ref=f12e293]: Supports
+                                - definition [ref=f12e294]: Specification editorial process
+                    - generic [ref=f12e295]:
+                        - generic [ref=f12e296]:
+                            - generic [ref=f12e297]: Editors
+                            - generic [ref=f12e298]: Editorial
+                        - generic [ref=f12e299]:
+                            - generic [ref=f12e300]:
+                                - term [ref=f12e301]: Owns
+                                - definition [ref=f12e302]: Specification maintenance
+                                - definition [ref=f12e303]: Publication process
+                            - generic [ref=f12e304]:
+                                - term [ref=f12e305]: Supports
+                                - definition [ref=f12e306]: Editorial consistency
+                                - definition [ref=f12e307]: Contributor onboarding
+                    - generic [ref=f12e308]:
+                        - generic [ref=f12e309]:
+                            - generic [ref=f12e310]: Maintainers
+                            - generic [ref=f12e311]: Operational
+                        - generic [ref=f12e312]:
+                            - generic [ref=f12e313]:
+                                - term [ref=f12e314]: Owns
+                                - definition [ref=f12e315]: Specification implementation
+                                - definition [ref=f12e316]: Reference conformance
+                            - generic [ref=f12e317]:
+                                - term [ref=f12e318]: Supports
+                                - definition [ref=f12e319]: Contributor guidance
+                                - definition [ref=f12e320]: Issue triage
+                    - generic [ref=f12e321]:
+                        - generic [ref=f12e322]:
+                            - generic [ref=f12e323]: Contributors
+                            - generic [ref=f12e324]: Operational
+                        - generic [ref=f12e325]:
+                            - generic [ref=f12e326]:
+                                - term [ref=f12e327]: Owns
+                                - definition [ref=f12e328]: Proposals
+                                - definition [ref=f12e329]: Draft improvements
+                            - generic [ref=f12e330]:
+                                - term [ref=f12e331]: Supports
+                                - definition [ref=f12e332]: Discussion
+                                - definition [ref=f12e333]: Review participation
+                    - generic [ref=f12e334]:
+                        - generic [ref=f12e335]:
+                            - generic [ref=f12e336]: Reviewers
+                            - generic [ref=f12e337]: Review
+                        - generic [ref=f12e338]:
+                            - generic [ref=f12e339]:
+                                - term [ref=f12e340]: Owns
+                                - definition [ref=f12e341]: Correctness evaluation
+                                - definition [ref=f12e342]: Compatibility assessment
+                            - generic [ref=f12e343]:
+                                - term [ref=f12e344]: Supports
+                                - definition [ref=f12e345]: Editorial feedback
+                                - definition [ref=f12e346]: Conformance verification
+        - region [ref=f12e347]:
+            - generic [ref=f12e348]:
+                - heading "Compatibility Rules" [level=2] [ref=f12e349]
+                - heading "Version Semantics" [level=3] [ref=f12e350]
+                - table [ref=f12e352]:
+                    - caption [ref=f12e353]: Version semantics for governance changes
+                    - rowgroup [ref=f12e354]:
+                        - row [ref=f12e355]:
+                            - columnheader "Level" [ref=f12e356]
+                            - columnheader "Rule" [ref=f12e357]
+                    - rowgroup [ref=f12e358]:
+                        - row [ref=f12e359]:
+                            - cell "Major" [ref=f12e360]
+                            - cell "Breaking changes to constitutional, invariant, or mandatory content." [ref=f12e361]
+                        - row [ref=f12e362]:
+                            - cell "Minor" [ref=f12e363]
+                            - cell "Compatible additions that do not weaken existing requirements." [ref=f12e364]
+                - heading "Specification Evolution" [level=3] [ref=f12e365]
+                - generic [ref=f12e366]:
+                    - generic [ref=f12e367]:
+                        - generic [ref=f12e368]: Deprecated
+                        - paragraph [ref=f12e369]: Retained for reference; supersession path defined.
+                    - generic [ref=f12e370]:
+                        - generic [ref=f12e371]: Superseded
+                        - paragraph [ref=f12e372]: Replaced by a newer authoritative document.
+        - region [ref=f12e373]:
+            - generic [ref=f12e374]:
+                - heading "Conformance" [level=2] [ref=f12e375]
+                - paragraph [ref=f12e377]: Passing tests alone does not make an implementation conformant. Architectural conformance is determined against authoritative specifications.
+                - list "Conformance chain requirements" [ref=f12e378]:
+                    - listitem [ref=f12e379]:
+                        - generic [ref=f12e383]: Requirements satisfied
+                    - listitem [ref=f12e384]:
+                        - generic [ref=f12e388]: Architectural invariants preserved
+                    - listitem [ref=f12e389]:
+                        - generic [ref=f12e393]: Mandatory specifications implemented
+                    - listitem [ref=f12e394]:
+                        - generic [ref=f12e397]: Compatibility maintained
+                - paragraph [ref=f12e398]: Every item in the chain must hold for an implementation to claim architectural conformance.
+        - region [ref=f12e399]:
+            - generic [ref=f12e400]:
+                - heading "Contribute" [level=2] [ref=f12e401]
+                - generic [ref=f12e402]:
+                    - generic [ref=f12e403]:
+                        - heading "Contribute to Specifications" [level=3] [ref=f12e404]
+                        - list [ref=f12e405]:
+                            - listitem [ref=f12e406]:
+                                - generic [ref=f12e407]: '01'
+                                - generic [ref=f12e408]: Open Discussion
+                            - listitem [ref=f12e409]:
+                                - generic [ref=f12e410]: '02'
+                                - generic [ref=f12e411]: Proposal
+                            - listitem [ref=f12e412]:
+                                - generic [ref=f12e413]: '03'
+                                - generic [ref=f12e414]: Specification
+                            - listitem [ref=f12e415]:
+                                - generic [ref=f12e416]: '04'
+                                - generic [ref=f12e417]: Review
+                            - listitem [ref=f12e418]:
+                                - generic [ref=f12e419]: '05'
+                                - generic [ref=f12e420]: Approval
+                            - listitem [ref=f12e421]:
+                                - generic [ref=f12e422]: '06'
+                                - generic [ref=f12e423]: Implementation
+                            - listitem [ref=f12e424]:
+                                - generic [ref=f12e425]: '07'
+                                - generic [ref=f12e426]: Release
+                    - generic [ref=f12e427]:
+                        - heading "Resources" [level=3] [ref=f12e428]
+                        - generic [ref=f12e429]:
+                            - link "Contribution Guide How to submit proposals and improvements. →" [ref=f12e430] [cursor=pointer]:
+                                - /url: /documentation
+                                - generic [ref=f12e431]:
+                                    - generic [ref=f12e432]: Contribution Guide
+                                    - paragraph [ref=f12e433]: How to submit proposals and improvements.
+                                - generic [ref=f12e434]: →
+                            - link "Architecture Understand the system you are contributing to. →" [ref=f12e435] [cursor=pointer]:
+                                - /url: /architecture
+                                - generic [ref=f12e436]:
+                                    - generic [ref=f12e437]: Architecture
+                                    - paragraph [ref=f12e438]: Understand the system you are contributing to.
+                                - generic [ref=f12e439]: →
+                            - link "Specifications Read the authoritative requirements. →" [ref=f12e440] [cursor=pointer]:
+                                - /url: /specifications
+                                - generic [ref=f12e441]:
+                                    - generic [ref=f12e442]: Specifications
+                                    - paragraph [ref=f12e443]: Read the authoritative requirements.
+                                - generic [ref=f12e444]: →
+                            - link "GitHub Source, issues, and pull requests. →" [ref=f12e445] [cursor=pointer]:
+                                - /url: https://github.com/rohinik-org
+                                - generic [ref=f12e446]:
+                                    - generic [ref=f12e447]: GitHub
+                                    - paragraph [ref=f12e448]: Source, issues, and pull requests.
+                                - generic [ref=f12e449]: →
+        - region [ref=f12e450]:
+            - generic [ref=f12e451]:
+                - heading "Continue through the foundation." [level=2] [ref=f12e452]
+                - generic [ref=f12e453]:
+                    - link "Architecture Understand the layered system. →" [ref=f12e454] [cursor=pointer]:
+                        - /url: /architecture
+                        - generic [ref=f12e455]:
+                            - generic [ref=f12e456]: Architecture
+                            - paragraph [ref=f12e457]: Understand the layered system.
+                        - generic [ref=f12e458]: →
+                    - link "Specifications Read authoritative documents. →" [ref=f12e459] [cursor=pointer]:
+                        - /url: /specifications
+                        - generic [ref=f12e460]:
+                            - generic [ref=f12e461]: Specifications
+                            - paragraph [ref=f12e462]: Read authoritative documents.
+                        - generic [ref=f12e463]: →
+                    - link "RS-1 Reference implementation. →" [ref=f12e464] [cursor=pointer]:
+                        - /url: /rs-1
+                        - generic [ref=f12e465]:
+                            - generic [ref=f12e466]: RS-1
+                            - paragraph [ref=f12e467]: Reference implementation.
+                        - generic [ref=f12e468]: →
+                    - link "Documentation Implementation guides. →" [ref=f12e469] [cursor=pointer]:
+                        - /url: /documentation
+                        - generic [ref=f12e470]:
+                            - generic [ref=f12e471]: Documentation
+                            - paragraph [ref=f12e472]: Implementation guides.
+                        - generic [ref=f12e473]: →
+    - contentinfo [ref=f12e474]:
+        - generic [ref=f12e475]:
+            - generic [ref=f12e476]:
+                - generic [ref=f12e477]:
+                    - generic [ref=f12e478]: Rohinik Foundation
+                    - paragraph [ref=f12e479]: Open intelligent computing platform. Memory First. Capability First. LLM Last.
+                - generic [ref=f12e480]:
+                    - heading "Foundation" [level=3] [ref=f12e481]
+                    - list [ref=f12e482]:
+                        - listitem [ref=f12e483]:
+                            - link "About" [ref=f12e484] [cursor=pointer]:
+                                - /url: /about
+                        - listitem [ref=f12e485]:
+                            - link "Governance" [ref=f12e486] [cursor=pointer]:
+                                - /url: /governance
+                        - listitem [ref=f12e487]:
+                            - link "Community" [ref=f12e488] [cursor=pointer]:
+                                - /url: /community
+                - generic [ref=f12e489]:
+                    - heading "Standards" [level=3] [ref=f12e490]
+                    - list [ref=f12e491]:
+                        - listitem [ref=f12e492]:
+                            - link "Specifications" [ref=f12e493] [cursor=pointer]:
+                                - /url: /specifications
+                        - listitem [ref=f12e494]:
+                            - link "RS-1" [ref=f12e495] [cursor=pointer]:
+                                - /url: /rs-1
+                        - listitem [ref=f12e496]:
+                            - link "Architecture" [ref=f12e497] [cursor=pointer]:
+                                - /url: /architecture
+                - generic [ref=f12e498]:
+                    - heading "Resources" [level=3] [ref=f12e499]
+                    - list [ref=f12e500]:
+                        - listitem [ref=f12e501]:
+                            - link "Documentation" [ref=f12e502] [cursor=pointer]:
+                                - /url: /documentation
+                        - listitem [ref=f12e503]:
+                            - link "Releases" [ref=f12e504] [cursor=pointer]:
+                                - /url: /releases
+                        - listitem [ref=f12e505]:
+                            - link "Ecosystem" [ref=f12e506] [cursor=pointer]:
+                                - /url: /ecosystem
+            - generic [ref=f12e507]:
+                - paragraph [ref=f12e508]: © 2026–Present. All rights reserved.
+                - link "GitHub" [ref=f12e510] [cursor=pointer]:
+                    - /url: https://github.com/rohinik-org/
+    - alert [ref=f12e511]

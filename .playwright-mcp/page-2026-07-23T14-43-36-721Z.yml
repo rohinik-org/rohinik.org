@@ -1,0 +1,426 @@
+- generic [active] [ref=f5e1]:
+    - banner [ref=f5e2]:
+        - link "Skip to main content" [ref=f5e3] [cursor=pointer]:
+            - /url: '#main-content'
+        - generic [ref=f5e4]:
+            - link "ROHINIK" [ref=f5e5] [cursor=pointer]:
+                - /url: /
+            - navigation "Main navigation" [ref=f5e11]:
+                - link "Home" [ref=f5e12] [cursor=pointer]:
+                    - /url: /
+                - link "Architecture" [ref=f5e13] [cursor=pointer]:
+                    - /url: /architecture
+                - link "Specifications" [ref=f5e14] [cursor=pointer]:
+                    - /url: /specifications
+                - link "Governance" [ref=f5e15] [cursor=pointer]:
+                    - /url: /governance
+                - link "RS-1" [ref=f5e16] [cursor=pointer]:
+                    - /url: /rs-1
+                - link "Ecosystem" [ref=f5e17] [cursor=pointer]:
+                    - /url: /ecosystem
+                - link "Documentation" [ref=f5e18] [cursor=pointer]:
+                    - /url: /documentation
+                - link "Releases" [ref=f5e19] [cursor=pointer]:
+                    - /url: /releases
+                - link "Community" [ref=f5e20] [cursor=pointer]:
+                    - /url: /community
+            - 'button "Theme: SYSTEM. Click to switch to LIGHT" [ref=f5e22]': SYSTEM
+    - main [ref=f5e23]:
+        - region [ref=f5e24]:
+            - generic [ref=f5e25]:
+                - paragraph [ref=f5e26]: Specifications
+                - heading "The public contract of the Rohinik platform." [level=1] [ref=f5e27]
+                - paragraph [ref=f5e28]: Rohinik specifications define architectural authority, canonical terminology, invariants, lifecycle semantics, runtime responsibilities, normative requirements, security constraints, and governance rules.
+                - generic [ref=f5e29]:
+                    - generic [ref=f5e30]:
+                        - term [ref=f5e31]: Frozen Documents
+                        - definition [ref=f5e32]: '01'
+                    - generic [ref=f5e33]:
+                        - term [ref=f5e34]: Active Families
+                        - definition [ref=f5e35]: '01'
+                    - generic [ref=f5e36]:
+                        - term [ref=f5e37]: Identifier Classes
+                        - definition [ref=f5e38]: '14'
+        - region [ref=f5e39]:
+            - generic [ref=f5e40]:
+                - heading "Specification Corpus" [level=2] [ref=f5e41]
+                - generic [ref=f5e42]:
+                    - generic [ref=f5e43]:
+                        - term [ref=f5e44]: Documents
+                        - definition [ref=f5e45]: Versioned publications that define bounded areas of the platform.
+                    - generic [ref=f5e46]:
+                        - term [ref=f5e47]: Identifiers
+                        - definition [ref=f5e48]: Permanent references to laws, definitions, requirements, and other specification statements.
+                    - generic [ref=f5e49]:
+                        - term [ref=f5e50]: Decisions
+                        - definition [ref=f5e51]: Records explaining significant architectural choices and their rationale.
+                    - generic [ref=f5e52]:
+                        - term [ref=f5e53]: Conformance
+                        - definition [ref=f5e54]: The requirements an implementation must satisfy to claim compatibility.
+        - region [ref=f5e55]:
+            - generic [ref=f5e56]:
+                - heading "Specification Registry" [level=2] [ref=f5e57]
+                - paragraph [ref=f5e58]: The authoritative list of published specification documents.
+                - table "Specification registry" [ref=f5e60]:
+                    - caption [ref=f5e61]: Published Rohinik specifications
+                    - rowgroup [ref=f5e62]:
+                        - row [ref=f5e63]:
+                            - columnheader "ID" [ref=f5e64]
+                            - columnheader "Specification" [ref=f5e65]
+                            - columnheader "Version" [ref=f5e66]
+                            - columnheader "Status" [ref=f5e67]
+                            - columnheader "Authority" [ref=f5e68]
+                    - rowgroup [ref=f5e69]:
+                        - row [ref=f5e70]:
+                            - cell "AFS-0001" [ref=f5e71]
+                            - cell [ref=f5e72]:
+                                - link "Rohinik Foundation Specification" [ref=f5e74] [cursor=pointer]:
+                                    - /url: /specifications/afs-0001
+                                - paragraph [ref=f5e75]: Defines the constitutional laws, architectural foundations, canonical terminology, runtime responsibilities, requirements, lifecycle rules, security constraints, and governance model of Rohinik.
+                            - cell "1.0" [ref=f5e76]
+                            - cell "frozen" [ref=f5e77]
+                            - cell "constitutional" [ref=f5e79]
+        - region [ref=f5e80]:
+            - generic [ref=f5e81]:
+                - heading "Specification Families" [level=2] [ref=f5e82]
+                - paragraph [ref=f5e83]: Document families group related specifications by scope and purpose.
+                - generic [ref=f5e84]:
+                    - generic [ref=f5e85]:
+                        - generic [ref=f5e86]: AFS
+                        - generic [ref=f5e87]:
+                            - generic [ref=f5e88]: Architecture Foundation Specification
+                            - paragraph [ref=f5e89]: Constitutional and architectural specifications for the Rohinik platform.
+                    - generic [ref=f5e90]:
+                        - generic [ref=f5e91]: ADR
+                        - generic [ref=f5e92]:
+                            - generic [ref=f5e93]: Architectural Decision Record
+                            - paragraph [ref=f5e94]: Focused records explaining the rationale behind significant design decisions.
+                    - generic [ref=f5e95]:
+                        - generic [ref=f5e96]: RS
+                        - generic [ref=f5e97]:
+                            - generic [ref=f5e98]: Rohinik Standard
+                            - paragraph [ref=f5e99]: Published standards and reference-system definitions.
+        - region [ref=f5e100]:
+            - generic [ref=f5e101]:
+                - heading "Authority Hierarchy" [level=2] [ref=f5e102]
+                - paragraph [ref=f5e103]: Identifier precedence flows downward only. A lower-authority requirement cannot override a constitutional law.
+                - generic [ref=f5e104]:
+                    - generic [ref=f5e105]:
+                        - paragraph [ref=f5e106]: Highest Authority
+                        - list "Authority hierarchy from highest to lowest" [ref=f5e107]:
+                            - listitem [ref=f5e108]:
+                                - generic [ref=f5e112]:
+                                    - generic [ref=f5e113]:
+                                        - generic [ref=f5e114]: LAW
+                                        - generic [ref=f5e115]: Constitutional laws
+                                    - paragraph [ref=f5e116]: Fundamental, immutable platform laws.
+                            - listitem [ref=f5e117]:
+                                - generic [ref=f5e121]:
+                                    - generic [ref=f5e122]:
+                                        - generic [ref=f5e123]: AX
+                                        - generic [ref=f5e124]: Architectural axioms
+                                    - paragraph [ref=f5e125]: Near-immutable foundational truths.
+                            - listitem [ref=f5e126]:
+                                - generic [ref=f5e130]:
+                                    - generic [ref=f5e131]:
+                                        - generic [ref=f5e132]: P
+                                        - generic [ref=f5e133]: Architectural principles
+                                    - paragraph [ref=f5e134]: Near-immutable design principles.
+                            - listitem [ref=f5e135]:
+                                - generic [ref=f5e139]:
+                                    - generic [ref=f5e140]:
+                                        - generic [ref=f5e141]: INV
+                                        - generic [ref=f5e142]: Conformance invariants
+                                    - paragraph [ref=f5e143]: Near-immutable conformance rules.
+                            - listitem [ref=f5e144]:
+                                - generic [ref=f5e148]:
+                                    - generic [ref=f5e149]:
+                                        - generic [ref=f5e150]: R
+                                        - generic [ref=f5e151]: Runtime responsibilities
+                                    - paragraph [ref=f5e152]: Stable layer ownership definitions.
+                            - listitem [ref=f5e153]:
+                                - generic [ref=f5e157]:
+                                    - generic [ref=f5e158]:
+                                        - generic [ref=f5e159]: DEF
+                                        - generic [ref=f5e160]: Canonical definitions
+                                    - paragraph [ref=f5e161]: Stable canonical terminology.
+                            - listitem [ref=f5e162]:
+                                - generic [ref=f5e166]:
+                                    - generic [ref=f5e167]:
+                                        - generic [ref=f5e168]: REQ
+                                        - generic [ref=f5e169]: Normative requirements
+                                    - paragraph [ref=f5e170]: Evolving normative obligations.
+                            - listitem [ref=f5e171]:
+                                - generic [ref=f5e175]:
+                                    - generic [ref=f5e176]:
+                                        - generic [ref=f5e177]: SEC
+                                        - generic [ref=f5e178]: Security constraints
+                                    - paragraph [ref=f5e179]: Evolving security requirements.
+                            - listitem [ref=f5e180]:
+                                - generic [ref=f5e184]:
+                                    - generic [ref=f5e185]:
+                                        - generic [ref=f5e186]: L
+                                        - generic [ref=f5e187]: Lifecycle definitions
+                                    - paragraph [ref=f5e188]: Stable lifecycle semantics.
+                            - listitem [ref=f5e189]:
+                                - generic [ref=f5e193]:
+                                    - generic [ref=f5e194]:
+                                        - generic [ref=f5e195]: OBS
+                                        - generic [ref=f5e196]: Observations
+                                    - paragraph [ref=f5e197]: Informative; not requirements.
+                            - listitem [ref=f5e198]:
+                                - generic [ref=f5e202]:
+                                    - generic [ref=f5e203]:
+                                        - generic [ref=f5e204]: NOTE
+                                        - generic [ref=f5e205]: Notes
+                                    - paragraph [ref=f5e206]: Clarifies normative content; adds no requirements.
+                            - listitem [ref=f5e207]:
+                                - generic [ref=f5e211]:
+                                    - generic [ref=f5e212]:
+                                        - generic [ref=f5e213]: BP
+                                        - generic [ref=f5e214]: Best practices
+                                    - paragraph [ref=f5e215]: Guidance; not requirements.
+                            - listitem [ref=f5e216]:
+                                - generic [ref=f5e220]:
+                                    - generic [ref=f5e221]:
+                                        - generic [ref=f5e222]: EX
+                                        - generic [ref=f5e223]: Examples
+                                    - paragraph [ref=f5e224]: Illustrative; not normative.
+                            - listitem [ref=f5e225]:
+                                - generic [ref=f5e228]:
+                                    - generic [ref=f5e229]:
+                                        - generic [ref=f5e230]: ERR
+                                        - generic [ref=f5e231]: Error definitions
+                                    - paragraph [ref=f5e232]: Operational error classifications.
+                        - paragraph [ref=f5e233]: Lowest Architectural Precedence
+                    - generic [ref=f5e234]:
+                        - heading "Normative versus Informative" [level=3] [ref=f5e235]
+                        - generic [ref=f5e236]:
+                            - generic [ref=f5e237]:
+                                - paragraph [ref=f5e238]: Normative
+                                - paragraph [ref=f5e239]: Defines obligations, invariants, requirements, lifecycle semantics, or security constraints that affect conformance.
+                            - generic [ref=f5e240]:
+                                - paragraph [ref=f5e241]: Informative
+                                - paragraph [ref=f5e242]: Provides observation, explanation, guidance, examples, or implementation context without adding requirements. OBS must not be interpreted as a requirement.
+        - region [ref=f5e243]:
+            - generic [ref=f5e244]:
+                - heading "Identifier Taxonomy" [level=2] [ref=f5e245]
+                - paragraph [ref=f5e246]: Each identifier prefix denotes a distinct class of specification statement. Prefixes are stable references — not document section labels.
+                - generic [ref=f5e247]:
+                    - paragraph [ref=f5e248]: Identifier Stability
+                    - paragraph [ref=f5e249]: Published identifiers are permanent references. Deprecation does not delete or renumber them. Frozen identifiers remain resolvable indefinitely.
+                - table "Identifier taxonomy" [ref=f5e251]:
+                    - caption [ref=f5e252]: Rohinik identifier prefix taxonomy — 14 classes from LAW to ERR
+                    - rowgroup [ref=f5e253]:
+                        - row [ref=f5e254]:
+                            - columnheader "Prefix" [ref=f5e255]
+                            - columnheader "Meaning" [ref=f5e256]
+                            - columnheader "Authority" [ref=f5e257]
+                            - columnheader "Stability" [ref=f5e258]
+                    - rowgroup [ref=f5e259]:
+                        - row [ref=f5e260]:
+                            - cell "LAW" [ref=f5e261]
+                            - cell "Fundamental laws" [ref=f5e262]
+                            - cell "Constitutional" [ref=f5e263]
+                            - cell "Immutable" [ref=f5e264]
+                        - row [ref=f5e265]:
+                            - cell "AX" [ref=f5e266]
+                            - cell "Architectural axioms" [ref=f5e267]
+                            - cell "Foundational" [ref=f5e268]
+                            - cell "Near-immutable" [ref=f5e269]
+                        - row [ref=f5e270]:
+                            - cell "P" [ref=f5e271]
+                            - cell "Architectural principles" [ref=f5e272]
+                            - cell "Architectural" [ref=f5e273]
+                            - cell "Near-immutable" [ref=f5e274]
+                        - row [ref=f5e275]:
+                            - cell "DEF" [ref=f5e276]
+                            - cell "Canonical definitions" [ref=f5e277]
+                            - cell "Canonical" [ref=f5e278]
+                            - cell "Stable" [ref=f5e279]
+                        - row [ref=f5e280]:
+                            - cell "INV" [ref=f5e281]
+                            - cell "Conformance invariants" [ref=f5e282]
+                            - cell "Conformance" [ref=f5e283]
+                            - cell "Near-immutable" [ref=f5e284]
+                        - row [ref=f5e285]:
+                            - cell "L" [ref=f5e286]
+                            - cell "Lifecycle definitions" [ref=f5e287]
+                            - cell "Lifecycle" [ref=f5e288]
+                            - cell "Stable" [ref=f5e289]
+                        - row [ref=f5e290]:
+                            - cell "R" [ref=f5e291]
+                            - cell "Runtime responsibilities" [ref=f5e292]
+                            - cell "Definitional" [ref=f5e293]
+                            - cell "Stable" [ref=f5e294]
+                        - row [ref=f5e295]:
+                            - cell "REQ" [ref=f5e296]
+                            - cell "Normative requirements" [ref=f5e297]
+                            - cell "Normative" [ref=f5e298]
+                            - cell "Evolves" [ref=f5e299]
+                        - row [ref=f5e300]:
+                            - cell "SEC" [ref=f5e301]
+                            - cell "Security constraints" [ref=f5e302]
+                            - cell "Security" [ref=f5e303]
+                            - cell "Evolves" [ref=f5e304]
+                        - row [ref=f5e305]:
+                            - cell "OBS" [ref=f5e306]
+                            - cell "Observations" [ref=f5e307]
+                            - cell "Informative" [ref=f5e308]
+                            - cell "Evolves" [ref=f5e309]
+                        - row [ref=f5e310]:
+                            - cell "NOTE" [ref=f5e311]
+                            - cell "Normative clarification notes" [ref=f5e312]
+                            - cell "Informative" [ref=f5e313]
+                            - cell "Evolves" [ref=f5e314]
+                        - row [ref=f5e315]:
+                            - cell "BP" [ref=f5e316]
+                            - cell "Best practices" [ref=f5e317]
+                            - cell "Informative" [ref=f5e318]
+                            - cell "Evolves" [ref=f5e319]
+                        - row [ref=f5e320]:
+                            - cell "EX" [ref=f5e321]
+                            - cell "Examples" [ref=f5e322]
+                            - cell "Informative" [ref=f5e323]
+                            - cell "Evolves" [ref=f5e324]
+                        - row [ref=f5e325]:
+                            - cell "ERR" [ref=f5e326]
+                            - cell "Error definitions" [ref=f5e327]
+                            - cell "Operational" [ref=f5e328]
+                            - cell "Evolves" [ref=f5e329]
+        - region [ref=f5e330]:
+            - generic [ref=f5e331]:
+                - heading "Architectural Decision Records" [level=2] [ref=f5e332]
+                - paragraph [ref=f5e333]: ADRs explain why significant architectural decisions were made. They are distinct from normative specifications — an ADR records rationale, not obligations.
+                - generic [ref=f5e334]:
+                    - generic [ref=f5e335]:
+                        - generic [ref=f5e336]: ADR-0005
+                        - generic [ref=f5e337]: LLM as Last Tier
+                    - generic [ref=f5e338]:
+                        - generic [ref=f5e339]: ADR-0008
+                        - generic [ref=f5e340]: Clean Architecture
+                    - generic [ref=f5e341]:
+                        - generic [ref=f5e342]: ADR-0012
+                        - generic [ref=f5e343]: Runtime Protocol Stability
+                    - generic [ref=f5e344]:
+                        - generic [ref=f5e345]: ADR-0013
+                        - generic [ref=f5e346]: Everything Is an Extension
+                    - generic [ref=f5e347]:
+                        - generic [ref=f5e348]: ADR-0017
+                        - generic [ref=f5e349]: Kernel Dependency Direction
+        - region [ref=f5e350]:
+            - generic [ref=f5e351]:
+                - heading "Specification Lifecycle" [level=2] [ref=f5e352]
+                - paragraph [ref=f5e353]: Specification maturity progresses through defined stages. Document lifecycle status is independent of runtime lifecycle semantics.
+                - generic [ref=f5e354]:
+                    - generic [ref=f5e355]:
+                        - generic [ref=f5e356]:
+                            - generic [ref=f5e357]: draft
+                            - generic [ref=f5e358]: →
+                        - paragraph [ref=f5e359]: Working document; subject to change.
+                    - generic [ref=f5e360]:
+                        - generic [ref=f5e361]:
+                            - generic [ref=f5e362]: review
+                            - generic [ref=f5e363]: →
+                        - paragraph [ref=f5e364]: Open for community and editorial review.
+                    - generic [ref=f5e365]:
+                        - generic [ref=f5e366]:
+                            - generic [ref=f5e367]: candidate
+                            - generic [ref=f5e368]: →
+                        - paragraph [ref=f5e369]: Feature-complete; undergoing final review.
+                    - generic [ref=f5e370]:
+                        - generic [ref=f5e371]:
+                            - generic [ref=f5e372]: frozen
+                            - generic [ref=f5e373]: →
+                        - paragraph [ref=f5e374]: Published and authoritative; no breaking changes.
+                    - generic [ref=f5e375]:
+                        - generic [ref=f5e376]:
+                            - generic [ref=f5e377]: deprecated
+                            - generic [ref=f5e378]: →
+                        - paragraph [ref=f5e379]: Superseded or retired; retained for reference.
+                    - generic [ref=f5e380]:
+                        - generic [ref=f5e381]: superseded
+                        - paragraph [ref=f5e383]: Replaced by a newer document.
+                - heading "Versioning Rules" [level=3] [ref=f5e384]
+                - generic [ref=f5e385]:
+                    - generic [ref=f5e386]:
+                        - generic [ref=f5e387]: Major
+                        - paragraph [ref=f5e388]: Breaking changes to constitutional, invariant, canonical, or mandatory content.
+                    - generic [ref=f5e389]:
+                        - generic [ref=f5e390]: Minor
+                        - paragraph [ref=f5e391]: Compatible additions that do not weaken existing requirements.
+        - region [ref=f5e392]:
+            - generic [ref=f5e393]:
+                - heading "Continue through the foundation." [level=2] [ref=f5e394]
+                - generic [ref=f5e395]:
+                    - link "Architecture See how specification responsibilities map to system layers. →" [ref=f5e396] [cursor=pointer]:
+                        - /url: /architecture
+                        - generic [ref=f5e397]:
+                            - generic [ref=f5e398]: Architecture
+                            - paragraph [ref=f5e399]: See how specification responsibilities map to system layers.
+                        - generic [ref=f5e400]: →
+                    - link "RS-1 Review implementation and conformance status. →" [ref=f5e401] [cursor=pointer]:
+                        - /url: /rs-1
+                        - generic [ref=f5e402]:
+                            - generic [ref=f5e403]: RS-1
+                            - paragraph [ref=f5e404]: Review implementation and conformance status.
+                        - generic [ref=f5e405]: →
+                    - link "Governance Understand authority, versioning, and change control. →" [ref=f5e406] [cursor=pointer]:
+                        - /url: /governance
+                        - generic [ref=f5e407]:
+                            - generic [ref=f5e408]: Governance
+                            - paragraph [ref=f5e409]: Understand authority, versioning, and change control.
+                        - generic [ref=f5e410]: →
+                    - link "Documentation Move from authoritative requirements to implementation guidance. →" [ref=f5e411] [cursor=pointer]:
+                        - /url: /documentation
+                        - generic [ref=f5e412]:
+                            - generic [ref=f5e413]: Documentation
+                            - paragraph [ref=f5e414]: Move from authoritative requirements to implementation guidance.
+                        - generic [ref=f5e415]: →
+    - contentinfo [ref=f5e416]:
+        - generic [ref=f5e417]:
+            - generic [ref=f5e418]:
+                - generic [ref=f5e419]:
+                    - generic [ref=f5e420]: Rohinik Foundation
+                    - paragraph [ref=f5e421]: Open intelligent computing platform. Memory First. Capability First. LLM Last.
+                - generic [ref=f5e422]:
+                    - heading "Foundation" [level=3] [ref=f5e423]
+                    - list [ref=f5e424]:
+                        - listitem [ref=f5e425]:
+                            - link "About" [ref=f5e426] [cursor=pointer]:
+                                - /url: /about
+                        - listitem [ref=f5e427]:
+                            - link "Governance" [ref=f5e428] [cursor=pointer]:
+                                - /url: /governance
+                        - listitem [ref=f5e429]:
+                            - link "Community" [ref=f5e430] [cursor=pointer]:
+                                - /url: /community
+                - generic [ref=f5e431]:
+                    - heading "Standards" [level=3] [ref=f5e432]
+                    - list [ref=f5e433]:
+                        - listitem [ref=f5e434]:
+                            - link "Specifications" [ref=f5e435] [cursor=pointer]:
+                                - /url: /specifications
+                        - listitem [ref=f5e436]:
+                            - link "RS-1" [ref=f5e437] [cursor=pointer]:
+                                - /url: /rs-1
+                        - listitem [ref=f5e438]:
+                            - link "Architecture" [ref=f5e439] [cursor=pointer]:
+                                - /url: /architecture
+                - generic [ref=f5e440]:
+                    - heading "Resources" [level=3] [ref=f5e441]
+                    - list [ref=f5e442]:
+                        - listitem [ref=f5e443]:
+                            - link "Documentation" [ref=f5e444] [cursor=pointer]:
+                                - /url: /documentation
+                        - listitem [ref=f5e445]:
+                            - link "Releases" [ref=f5e446] [cursor=pointer]:
+                                - /url: /releases
+                        - listitem [ref=f5e447]:
+                            - link "Ecosystem" [ref=f5e448] [cursor=pointer]:
+                                - /url: /ecosystem
+            - generic [ref=f5e449]:
+                - paragraph [ref=f5e450]: © 2026–Present. All rights reserved.
+                - link "GitHub" [ref=f5e452] [cursor=pointer]:
+                    - /url: https://github.com/rohinik-org/
+    - alert [ref=f5e453]
