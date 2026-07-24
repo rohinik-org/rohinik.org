@@ -8,6 +8,7 @@ import { RSOverview } from '@/components/reference-standard/RSOverview';
 import { ImplementedSpecifications } from '@/components/reference-standard/ImplementedSpecifications';
 import { CapabilityCoverage } from '@/components/reference-standard/CapabilityCoverage';
 import { ConformanceModel } from '@/components/reference-standard/ConformanceModel';
+import { DesignPrinciples } from '@/components/reference-standard/DesignPrinciples';
 
 expect.extend(toHaveNoViolations);
 
@@ -258,6 +259,27 @@ describe('ConformanceModel', () => {
 
   it('has no axe violations', async () => {
     const { container } = render(<ConformanceModel />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
+  });
+});
+
+describe('DesignPrinciples', () => {
+  it('renders exactly 6 principle cards', () => {
+    render(<DesignPrinciples />);
+    const headings = screen.getAllByRole('heading', { level: 3 });
+    expect(headings).toHaveLength(6);
+  });
+
+  it('principle indices are 01-06', () => {
+    render(<DesignPrinciples />);
+    for (const p of rs1Content.principles) {
+      expect(screen.getByText(p.index)).toBeInTheDocument();
+    }
+  });
+
+  it('has no axe violations', async () => {
+    const { container } = render(<DesignPrinciples />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
