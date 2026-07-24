@@ -15,7 +15,7 @@ describe('navigation config', () => {
     expect(hrefs).toContain('/architecture');
     expect(hrefs).toContain('/specifications');
     expect(hrefs).toContain('/governance');
-    expect(hrefs).toContain('/rs-1');
+    expect(hrefs).toContain('/reference-standards/rs-1');
     expect(hrefs).toContain('/ecosystem');
     expect(hrefs).toContain('/documentation');
     expect(hrefs).toContain('/releases');

@@ -372,7 +372,7 @@ exports[`component snapshots > TopNav matches snapshot 1`] = `
         </a>
         <a
           class="font-mono text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors py-5"
-          href="/rs-1"
+          href="/reference-standards/rs-1"
         >
           RS-1
         </a>
