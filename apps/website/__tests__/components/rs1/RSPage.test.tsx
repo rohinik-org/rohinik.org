@@ -5,6 +5,7 @@ import { render, screen } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
 import { RSHero } from '@/components/reference-standard/RSHero';
 import { RSOverview } from '@/components/reference-standard/RSOverview';
+import { ImplementedSpecifications } from '@/components/reference-standard/ImplementedSpecifications';
 
 expect.extend(toHaveNoViolations);
 
@@ -149,6 +150,47 @@ describe('RSOverview', () => {
 
   it('has no axe violations', async () => {
     const { container } = render(<RSOverview />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
+  });
+});
+
+describe('ImplementedSpecifications', () => {
+  it('renders section with id="implemented-specs"', () => {
+    render(<ImplementedSpecifications />);
+    expect(document.getElementById('implemented-specs')).toBeInTheDocument();
+  });
+
+  it('renders h2 "Implemented Specifications"', () => {
+    render(<ImplementedSpecifications />);
+    expect(
+      screen.getByRole('heading', { level: 2, name: /^implemented specifications$/i }),
+    ).toBeInTheDocument();
+  });
+
+  it('table has correct column headers including "Implementation Status"', () => {
+    render(<ImplementedSpecifications />);
+    expect(screen.getByRole('columnheader', { name: /^id$/i })).toBeInTheDocument();
+    expect(screen.getByRole('columnheader', { name: /^specification$/i })).toBeInTheDocument();
+    expect(screen.getByRole('columnheader', { name: /^version$/i })).toBeInTheDocument();
+    expect(screen.getByRole('columnheader', { name: /^status$/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('columnheader', { name: /^implementation status$/i }),
+    ).toBeInTheDocument();
+  });
+
+  it('renders AFS-0001 row', () => {
+    render(<ImplementedSpecifications />);
+    expect(screen.getByText('AFS-0001')).toBeInTheDocument();
+  });
+
+  it('renders pending notice below table', () => {
+    render(<ImplementedSpecifications />);
+    expect(document.querySelector('[role="note"]')).toBeInTheDocument();
+  });
+
+  it('has no axe violations', async () => {
+    const { container } = render(<ImplementedSpecifications />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
