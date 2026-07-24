@@ -7,6 +7,7 @@ import { RSHero } from '@/components/reference-standard/RSHero';
 import { RSOverview } from '@/components/reference-standard/RSOverview';
 import { ImplementedSpecifications } from '@/components/reference-standard/ImplementedSpecifications';
 import { CapabilityCoverage } from '@/components/reference-standard/CapabilityCoverage';
+import { ConformanceModel } from '@/components/reference-standard/ConformanceModel';
 
 expect.extend(toHaveNoViolations);
 
@@ -228,6 +229,35 @@ describe('CapabilityCoverage', () => {
 
   it('has no axe violations', async () => {
     const { container } = render(<CapabilityCoverage />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
+  });
+});
+
+describe('ConformanceModel', () => {
+  it('renders conformance statement', () => {
+    render(<ConformanceModel />);
+    expect(screen.getByText(rs1Content.conformance.statement)).toBeInTheDocument();
+  });
+
+  it('renders all chain items', () => {
+    render(<ConformanceModel />);
+    for (const item of rs1Content.conformance.chain) {
+      expect(screen.getByText(item)).toBeInTheDocument();
+    }
+  });
+
+  it('chain contains Architectural compatibility maintained', () => {
+    expect(rs1Content.conformance.chain).toContain('Architectural compatibility maintained');
+  });
+
+  it('chain items are in an ordered list', () => {
+    render(<ConformanceModel />);
+    expect(document.querySelector('ol')).toBeInTheDocument();
+  });
+
+  it('has no axe violations', async () => {
+    const { container } = render(<ConformanceModel />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
