@@ -6,6 +6,7 @@ import { axe, toHaveNoViolations } from 'jest-axe';
 import { RSHero } from '@/components/reference-standard/RSHero';
 import { RSOverview } from '@/components/reference-standard/RSOverview';
 import { ImplementedSpecifications } from '@/components/reference-standard/ImplementedSpecifications';
+import { CapabilityCoverage } from '@/components/reference-standard/CapabilityCoverage';
 
 expect.extend(toHaveNoViolations);
 
@@ -191,6 +192,42 @@ describe('ImplementedSpecifications', () => {
 
   it('has no axe violations', async () => {
     const { container } = render(<ImplementedSpecifications />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
+  });
+});
+
+describe('CapabilityCoverage', () => {
+  it('renders section with id="coverage"', () => {
+    render(<CapabilityCoverage />);
+    expect(document.getElementById('coverage')).toBeInTheDocument();
+  });
+
+  it('renders h2 "Capability Coverage"', () => {
+    render(<CapabilityCoverage />);
+    expect(
+      screen.getByRole('heading', { level: 2, name: /^capability coverage$/i }),
+    ).toBeInTheDocument();
+  });
+
+  it('renders all coverage labels', () => {
+    render(<CapabilityCoverage />);
+    for (const item of rs1Content.coverage) {
+      expect(screen.getByText(item.label)).toBeInTheDocument();
+    }
+  });
+
+  it('renders text status labels not symbols', () => {
+    render(<CapabilityCoverage />);
+    // Status must be text, not ✓ or ~ or ○
+    const dds = document.querySelectorAll('dd');
+    for (const dd of dds) {
+      expect(dd.textContent).not.toMatch(/[✓~○]/);
+    }
+  });
+
+  it('has no axe violations', async () => {
+    const { container } = render(<CapabilityCoverage />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
