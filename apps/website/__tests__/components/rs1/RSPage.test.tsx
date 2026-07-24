@@ -11,6 +11,7 @@ import { ConformanceModel } from '@/components/reference-standard/ConformanceMod
 import { DesignPrinciples } from '@/components/reference-standard/DesignPrinciples';
 import { RepositoryStructure } from '@/components/reference-standard/RepositoryStructure';
 import { DevelopmentLifecycle } from '@/components/reference-standard/DevelopmentLifecycle';
+import { RSReferences } from '@/components/reference-standard/RSReferences';
 
 expect.extend(toHaveNoViolations);
 
@@ -338,6 +339,25 @@ describe('DevelopmentLifecycle', () => {
 
   it('has no axe violations', async () => {
     const { container } = render(<DevelopmentLifecycle />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
+  });
+});
+
+describe('RSReferences', () => {
+  it('renders a link for every reference', () => {
+    render(<RSReferences />);
+    const links = screen.getAllByRole('link');
+    expect(links).toHaveLength(rs1Content.references.length);
+  });
+
+  it('no dead href="#" links', () => {
+    render(<RSReferences />);
+    expect(document.querySelectorAll('a[href="#"]')).toHaveLength(0);
+  });
+
+  it('has no axe violations', async () => {
+    const { container } = render(<RSReferences />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
