@@ -6,7 +6,7 @@ export function RSHero() {
     <section
       id="overview"
       aria-labelledby="rs1-heading"
-      className="border-b border-outline-variant bg-[radial-gradient(var(--color-outline-variant)_1px,transparent_1px)] bg-[size:24px_24px]"
+      className="border-b border-outline-variant dot-grid"
     >
       <div className="max-w-site mx-auto px-[var(--spacing-margin-edge)] py-16 md:py-24">
         <p className="font-mono text-label-caps uppercase tracking-widest text-secondary mb-6">
