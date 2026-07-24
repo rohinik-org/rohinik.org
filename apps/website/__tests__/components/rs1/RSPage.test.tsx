@@ -4,6 +4,7 @@ import type { CoverageStatus } from '@/content/reference-standards/rs1';
 import { render, screen } from '@testing-library/react';
 import { axe, toHaveNoViolations } from 'jest-axe';
 import { RSHero } from '@/components/reference-standard/RSHero';
+import { RSOverview } from '@/components/reference-standard/RSOverview';
 
 expect.extend(toHaveNoViolations);
 
@@ -114,6 +115,40 @@ describe('RSHero', () => {
 
   it('has no axe violations', async () => {
     const { container } = render(<RSHero />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
+  });
+});
+
+describe('RSOverview', () => {
+  it('renders section with id="what-is-rs1"', () => {
+    render(<RSOverview />);
+    expect(document.getElementById('what-is-rs1')).toBeInTheDocument();
+  });
+
+  it('renders h2 "What is RS-1?"', () => {
+    render(<RSOverview />);
+    expect(
+      screen.getByRole('heading', { level: 2, name: /^what is rs-1\?$/i }),
+    ).toBeInTheDocument();
+  });
+
+  it('renders all purpose items', () => {
+    render(<RSOverview />);
+    for (const item of rs1Content.overview.purpose) {
+      expect(screen.getByText(item)).toBeInTheDocument();
+    }
+  });
+
+  it('renders all notIntendedTo items', () => {
+    render(<RSOverview />);
+    for (const item of rs1Content.overview.notIntendedTo) {
+      expect(screen.getByText(item)).toBeInTheDocument();
+    }
+  });
+
+  it('has no axe violations', async () => {
+    const { container } = render(<RSOverview />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
