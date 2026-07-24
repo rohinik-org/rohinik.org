@@ -1,8 +1,5 @@
 import { ecosystemContent, IMPLEMENTATION_STATUS_LABEL } from '@/content/ecosystem/ecosystem';
 
-// ponytail: avoid ESLint strict comparison elimination; runtime-opaque Set
-const ACTIVE_STATUSES = new Set(['foundation-implementation']);
-
 export function SDKSection() {
   const { items, note } = ecosystemContent.sdks;
   return (
@@ -32,13 +29,13 @@ export function SDKSection() {
             </thead>
             <tbody className="divide-y divide-outline-variant">
               {items.map((sdk) => {
-                const isActive = ACTIVE_STATUSES.has(sdk.status);
+                const isFoundationImpl = sdk.status === 'foundation-implementation';
                 return (
                   <tr key={sdk.id} className="hover:bg-surface-container transition-colors">
                     <td
                       className={[
                         'p-4 font-mono text-technical-code font-semibold',
-                        isActive ? 'text-secondary' : 'text-on-surface',
+                        isFoundationImpl ? 'text-secondary' : 'text-on-surface',
                       ].join(' ')}
                     >
                       {sdk.language}
@@ -46,7 +43,7 @@ export function SDKSection() {
                     <td
                       className={[
                         'p-4 font-mono text-label-caps uppercase tracking-widest',
-                        isActive ? 'text-secondary' : 'text-on-surface-variant',
+                        isFoundationImpl ? 'text-secondary' : 'text-on-surface-variant',
                       ].join(' ')}
                     >
                       {IMPLEMENTATION_STATUS_LABEL[sdk.status]}
